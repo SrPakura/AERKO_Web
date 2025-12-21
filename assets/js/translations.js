@@ -336,7 +336,7 @@ de: {
         hero_code_message: "> SYSTEM_MESSAGE: \"Ich programmiere meine eigene Lösung.\"",
         
         hero_specs_title: "SYSTEM_SPECS",
-        hero_specs_list: "ARCHITEKTUR: ................ LOCAL-FIRST / PWA<br>DATENBANK: ............................ INDEXEDDB<br>VERSCHLÜSSELUNG: ....................... AES-256 <br>LIZENZ: ................ Open Source (GNU AGPLv3)<br>KOSTEN: ........................ 0€ (Self-Hosted)",
+        hero_specs_list: "ARCHITEKTUR: ................. LOCAL-FIRST / PWA<br>DATENBANK: ........................... INDEXEDDB<br>VERSCHLÜSSELUNG: ....................... AES-256 <br>LIZENZ: ............... Open Source (GNU AGPLv3)<br>KOSTEN: ....................... 0€ (Self-Hosted)",
 
         manifesto_title: "OPEN SOURCE<br>PHILOSOPHIE",
         manifesto_points: "> KEINE TOXISCHE GAMIFICATION.<br>> WERKZEUGE, KEINE SPIELZEUGE.<br>> KEIN MARKETING-BULLSHIT. NUR SCHWERKRAFT.",
