@@ -181,6 +181,21 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     .btn-input-white, .btn-input-black { width: 100%; }
 }
 
+/* --- FIX DESBORDAMIENTO DE TEXTO --- */
+    h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
+        /* Obliga al texto a romperse si no cabe */
+        overflow-wrap: break-word; 
+        word-break: break-word; 
+        
+        /* Reduce un pelín más el tamaño si es necesario */
+        max-width: 100%;
+    }
+    
+    /* Ajuste específico para que "PLAN_DE_DESPLIEGUE" no se coma la pantalla */
+    .deployment-header .h1-title {
+        font-size: 2.2rem; /* Un pelín más pequeño para que entre mejor */
+    }
+
 
 /* Contenido para specs.html */
 
