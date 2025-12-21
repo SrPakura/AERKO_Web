@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AERKO_ // SPECS</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!-- === MODAL WAITLIST (Cyberpunk Style) === -->
+<div id="waitlist-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-box">
+        <h3 class="h3-title text-acid mb-small">/// INPUT_REQUIRED</h3>
+        <p class="body-base text-white mb-medium">Introduce tu coordenadas de contacto para unirte a la resistencia.</p>
+        
+        <input type="email" id="waitlist-email" class="cyber-input" placeholder="tu@email.com" autocomplete="email">
+        
+        <div class="modal-actions">
+            <button id="modal-cancel" class="btn-secondary-inverted">CANCEL_</button>
+            <button id="modal-confirm" class="btn-primary">CONFIRM_</button>
+        </div>
+    </div>
+</div>
+
+<body>
+
+    <!-- === HEADER (Modificado para Specs) === -->
+    <header class="header-container">
+        <div class="logo-box">
+            <a href="index.html">
+                <img src="assets/img/logo.svg" alt="AERKO_" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <button class="nav-btn body-label" data-i18n="nav_manifesto" onclick="location.href='manifesto.html'">MANIFIESTO</button>
+            <button class="nav-btn body-label" data-i18n="nav_roadmap" onclick="location.href='roadmap.html'">ROADMAP</button>
+            
+            <!-- EL BOTÓN "VOLVER" -->
+            <button class="nav-btn body-label" onclick="location.href='index.html'">&lt; HOME</button>
+            
+            <button class="nav-btn btn-acid body-label join-trigger" data-i18n="nav_waitlist">WAITLIST</button>
+        </nav>
+        <button class="mobile-toggle body-label" data-i18n="nav_mobile_menu">MENU [+]</button>
+    </header>
+
+<!-- === SPECS SECTION === -->
+    <section class="deployment-container">
+        <!-- Header de la sección -->
+        <div class="deployment-header">
+            <h1 class="h1-title" data-i18n="specs_page_title"></h1>
+            <p class="body-base text-black mt-gap" data-i18n="specs_page_subtitle"></p>
+        </div>
+
+        <div class="specs-container">
+            
+            <!-- 1. TABS SELECTOR -->
+            <div class="tabs-row">
+                <button class="tab-btn active" data-target="track" data-i18n="tab_tracking">ENTRENAMIENTO</button>
+                <button class="tab-btn" data-target="nutri" data-i18n="tab_nutrition">NUTRICIÓN</button>
+                <button class="tab-btn" data-target="biomech" data-i18n="tab_biomechanics">BIOMECÁNICA</button>
+                <button class="tab-btn" data-target="sys" data-i18n="tab_system">SISTEMA</button>
+            </div>
+
+            <!-- 2. CONTENT AREA -->
+            <div class="tab-content-box">
+                
+                <!-- PANEL 1: ENTRENAMIENTO -->
+                <div id="track" class="tab-panel active">
+                    <div class="specs-grid">
+                        <!-- Izquierda: Killer Feature (LIMPIO) -->
+                        <div class="killer-box">
+                            <div>
+                                <span class="killer-tag">KILLER_FEATURE</span>
+                                <h2 class="h2-title text-black" data-i18n="spec_track_killer_title"></h2>
+                                <p class="body-base mt-medium" data-i18n="spec_track_killer_desc"></p>
+                            </div>
+                        </div>
+                        <!-- Derecha: Lista -->
+                        <div class="features-box">
+                            <h3 class="h4-title text-black" data-i18n="spec_other_modules"></h3>
+                            <ul class="features-list" data-i18n="spec_track_list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL 2: NUTRICIÓN -->
+                <div id="nutri" class="tab-panel">
+                    <div class="specs-grid">
+                        <div class="killer-box">
+                            <div>
+                                <span class="killer-tag">KILLER_FEATURE</span>
+                                <h2 class="h2-title text-black" data-i18n="spec_nutri_killer_title"></h2>
+                                <p class="body-base mt-medium" data-i18n="spec_nutri_killer_desc"></p>
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <h3 class="h4-title text-black" data-i18n="spec_other_modules"></h3>
+                            <ul class="features-list" data-i18n="spec_nutri_list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL 3: BIOMECÁNICA -->
+                <div id="biomech" class="tab-panel">
+                    <div class="specs-grid">
+                        <div class="killer-box">
+                            <div>
+                                <span class="killer-tag">KILLER_FEATURE</span>
+                                <h2 class="h2-title text-black" data-i18n="spec_bio_killer_title"></h2>
+                                <p class="body-base mt-medium" data-i18n="spec_bio_killer_desc"></p>
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <h3 class="h4-title text-black" data-i18n="spec_other_modules"></h3>
+                            <ul class="features-list" data-i18n="spec_bio_list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL 4: SISTEMA -->
+                <div id="sys" class="tab-panel">
+                    <div class="specs-grid">
+                        <div class="killer-box">
+                            <div>
+                                <span class="killer-tag">KILLER_FEATURE</span>
+                                <h2 class="h2-title text-black" data-i18n="spec_sys_killer_title"></h2>
+                                <p class="body-base mt-medium" data-i18n="spec_sys_killer_desc"></p>
+                            </div>
+                        </div>
+                        <div class="features-box">
+                            <h3 class="h4-title text-black" data-i18n="spec_other_modules"></h3>
+                            <ul class="features-list" data-i18n="spec_sys_list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === FOOTER (Copiado de index) === -->
+    <footer class="main-footer footer-seamless">
+        <!-- Columna Izquierda: Source & Protocols -->
+        <div class="footer-left">
+            <div class="footer-col">
+                <h4 data-i18n="footer_source_title"></h4>
+                <ul class="footer-links body-base text-white">
+                    <li><a href="https://github.com/SrPakura/AERKO_Web" data-i18n="footer_link_page"></a></li>
+                    <li><a href="https://github.com/SrPakura/AERKO_PWA" data-i18n="footer_link_core"></a></li>
+                    <li><a href="https://github.com/SrPakura/AERKO_Cloud" data-i18n="footer_link_cloud"></a></li>
+                    <li><a href="https://github.com/SrPakura/Aerko_Cloud_Pro" data-i18n="footer_link_pro"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_protocols_title"></h4>
+                <ul class="footer-links body-base text-white">
+                    <li><a href="manifesto.html" data-i18n="footer_link_privacy"></a></li>
+                    <li><a href="https://www.gnu.org/licenses/agpl-3.0.html" data-i18n="footer_link_terms"></a></li>
+                    <li><a href="manifesto.html" data-i18n="footer_link_data"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Columna Derecha: CTA -->
+        <div class="footer-right">
+            <div class="footer-right-content">
+                <h2 class="h2-title text-acid mb-32" data-i18n="footer_cta_title"></h2>  
+                <p class="body-base text-white" data-i18n="footer_cta_text"></p>
+            </div>
+            <div class="footer-cta-row">
+                <!-- Botón Waitlist (Abre modal JS) -->
+                <button class="btn-primary-inverted-shadow join-trigger" data-i18n="footer_btn_join"></button>
+                
+                <!-- Redes Sociales (Enlaces reales) -->
+                <a href="https://www.reddit.com/r/aerko_/" target="_blank" class="btn-secondary-inverted">[ R/AERKO ]</a>
+                <a href="https://x.com/AerkoApp" target="_blank" class="btn-secondary-inverted">[ TWITTER ]</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

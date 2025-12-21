@@ -1,0 +1,497 @@
+/* =========================================
+   AERKO_ WEB SYSTEM | STYLE.CSS v2.1
+   Optimized: Clean Architecture / DRY / Compact
+   ========================================= */
+
+/* --- 1. VARIABLES & RESET --- */
+:root { --white:#FFFFFF; --grey:#F2F1F4; --black:#1A1A1A; --grey-hover:#2F2F2F; --acid:#CCFF00; --acid-hover:#DFFF4F; --font-display:'Clash Display', sans-serif; --font-mono:'JetBrains Mono', monospace; --border-std:1px solid var(--black); --border-white:1px solid var(--white); --shadow-hard:4px 4px 0 0 var(--black); --shadow-white:4px 4px 0 0 var(--white); --max-width:1440px; --pad-std:1.5rem; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background-color:var(--white); color:var(--black); font-family:var(--font-mono); overflow-x:hidden; line-height:1.5; }
+
+/* --- 2. LAYOUT FRAMEWORK --- */
+.header-container, .hero-grid, .manifesto-grid, .deployment-container, .terminal-grid, .main-footer { max-width:var(--max-width); margin:0 auto; border-left:var(--border-std); border-right:var(--border-std); }
+.mt-small { margin-top:1rem; } .mb-small { margin-bottom:1rem; } .mt-medium { margin-top:1.5rem; } .mb-medium { margin-bottom:1.5rem; } .mb-32 { margin-bottom:2rem; } .mb-48 { margin-bottom:3rem; }
+.text-white { color:var(--white); } .text-acid { color:var(--acid); } .text-grey { color:var(--grey-hover); } .text-grey-light { color:#999; } .text-black { color:var(--black); }
+
+/* --- 3. TYPOGRAPHY SYSTEM --- */
+h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:currentColor; }
+.h0-title { font-size:6rem; font-weight:700; line-height:100%; letter-spacing:-0.96px; }
+.h1-title { font-size:4rem; font-weight:700; line-height:110%; letter-spacing:-0.64px; }
+.h2-title { font-size:3rem; font-weight:700; line-height:120%; letter-spacing:-0.48px; }
+.h3-title { font-size:2rem; font-weight:600; line-height:120%; }
+.h4-title { font-size:1.5rem; font-weight:600; line-height:120%; }
+.body-large { font-family:var(--font-mono); font-size:1.25rem; font-weight:400; line-height:150%; }
+.body-base { font-family:var(--font-mono); font-size:1rem; font-weight:400; line-height:150%; }
+.body-label { font-family:var(--font-mono); font-size:1rem; font-weight:500; line-height:100%; text-transform:uppercase; }
+.caption { font-family:var(--font-mono); font-size:0.875rem; font-weight:400; line-height:140%; }
+.body-small { font-family:var(--font-mono); font-size:0.75rem; font-weight:500; line-height:130%; }
+
+/* --- 4. BUTTONS & LINKS (DRY Architecture) --- */
+.btn-primary, .btn-secondary, .nav-btn, .btn-input-white, .btn-input-black, .btn-primary-inverted-shadow, .btn-secondary-inverted, .mobile-toggle { display:inline-flex; justify-content:center; align-items:center; padding:1rem 2rem; font-family:var(--font-mono); font-weight:500; text-transform:uppercase; cursor:pointer; border:var(--border-std); transition:all 0.2s ease-in-out; background:transparent; font-size:1rem; line-height:1; text-decoration:none; }
+
+/* 4.1 Header Nav */
+.nav-btn { border:none; border-left:var(--border-std); height:100%; font-weight:500; padding:var(--pad-std); }
+.nav-btn:hover { background-color:var(--grey); } .nav-btn.btn-acid { background-color:var(--acid); } .nav-btn.btn-acid:hover { background-color:var(--acid-hover); }
+
+/* 4.2 Hero Buttons */
+.btn-primary { background-color:var(--acid); box-shadow:var(--shadow-hard); }
+.btn-secondary { color: var(--black); }
+.btn-primary:hover { background-color:var(--acid-hover); transform:translateY(-2px); } .btn-primary:active { transform:translate(2px, 2px); box-shadow:2px 2px 0 0 var(--black); }
+.btn-secondary:hover { background-color:var(--black); color:var(--white); }
+
+/* 4.3 Terminal Buttons */
+.btn-input-white { background:var(--white); box-shadow:var(--shadow-hard); flex:1; font-size:0.875rem; }
+.btn-input-white:hover { background:var(--black); color:var(--white); box-shadow:var(--shadow-white); } .btn-input-white:active { transform:translate(2px, 2px); box-shadow:none; }
+.btn-input-black { background:var(--black); color:var(--white); flex:1; font-size:0.875rem; }
+.btn-input-black:hover { background:var(--white); color:var(--black); }
+
+/* 4.4 Footer Buttons */
+.btn-primary-inverted-shadow { background-color:var(--acid); box-shadow:var(--shadow-white); }
+.btn-primary-inverted-shadow:hover { background-color:var(--acid-hover); } .btn-primary-inverted-shadow:active { transform:translate(2px, 2px); box-shadow:2px 2px 0 0 var(--white); }
+.btn-secondary-inverted { border-color:var(--white); color:var(--white); } .btn-secondary-inverted:hover { background-color:var(--white); color:var(--black); }
+
+/* Links */
+.link-full { display:block; text-decoration:none; transition:padding-left 0.2s; } .link-full:hover { padding-left:10px; }
+
+/* --- 5. SECTIONS --- */
+
+/* Header */
+.header-container { display: flex; border-bottom: var(--border-std); height: auto; position: relative; }
+.logo-box { padding: var(--pad-std); border-right: var(--border-std); display: flex; align-items: center; }
+.logo-img { height: 4rem; width: auto; display: block; }
+.nav-links { display: flex; flex-grow: 1; justify-content: flex-end; }
+/* Menú Móvil - Estado Activo (JS toggle class) */
+.nav-links.is-open {
+    display: flex; flex-direction: column;
+    position: absolute; top: 100%; left: 0; width: 100%;
+    background: var(--white); border-bottom: var(--border-std); z-index: 99;
+}
+.nav-links.is-open .nav-btn { border-left: none; border-bottom: var(--border-std); width: 100%; text-align: left; }
+.mobile-toggle { display: none; margin-left: auto; background: var(--black); color: var(--acid); border: none; padding: var(--pad-std); }
+
+/* Marquee */
+.marquee-section { width: 100%; max-width: 1440px; margin: 0 auto; background-color: var(--black); padding: 0.5rem 0; overflow: hidden; white-space: nowrap; }
+.marquee-content { color: var(--white); display: inline-block; animation: marquee 20s linear infinite; }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* Hero */
+.hero-grid { display: grid; grid-template-columns: 61% 39%; }
+.hero-left, .hero-right { border-bottom: var(--border-std); padding: var(--pad-std); }
+.hero-left {
+    border-right: var(--border-std); min-height: 60vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 1.5rem 1.5rem 5rem 1.5rem; /* Ajuste específico */
+}
+.hero-left p { border-left: 2px solid var(--black); padding-left: 1rem; max-width: 550px; margin-top: 2rem; margin-bottom: 2.5rem; }
+.hero-buttons { display: flex; gap: 1rem; }
+.hero-right { background-color: var(--grey); display: flex; flex-direction: column; justify-content: space-between; }
+.phase-tag { display: inline-block; border: var(--border-std); background: var(--white); padding: 0.25rem 0.5rem; margin-bottom: 1.5rem; font-size: 0.875rem; width: fit-content; }
+.specs-card { margin-top: 1.5rem; padding: var(--pad-std); border: var(--border-std); box-shadow: var(--shadow-hard); background: var(--white); }
+
+/* Manifesto (Dark) */
+.manifesto-grid { display: grid; grid-template-columns: 35% 65%; background-color: var(--black); border-bottom: var(--border-std); }
+.manifesto-left { padding: 1.5rem 2.25rem; border-right: var(--border-white); border-bottom: var(--border-white); }
+.manifesto-right { padding: var(--pad-std); border-bottom: var(--border-white); }
+.manifesto-bottom { grid-column: 1 / -1; padding: var(--pad-std); }
+
+/* Deployment / Roadmap */
+.deployment-header { padding: 2rem var(--pad-std) 4rem; border-bottom: var(--border-std); }
+.cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+.card { border-right: var(--border-std); border-bottom: var(--border-std); display: flex; flex-direction: column; }
+.card:last-child { border-right: none; }
+.card-green { background-color: var(--acid); }
+.card-white { background-color: var(--white); }
+.card-trama { 
+    background-color: #F2F1F4; /* Fondo Gris base */
+    
+    /* GENERADOR DE LÍNEAS CSS (Adiós SVG) */
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 4px,
+        rgba(0, 0, 0, 0.05) 4px, /* Color de la línea (negro al 5% opacidad) */
+        rgba(0, 0, 0, 0.05) 5px
+    );
+    
+    /* Quitamos propiedades viejas que ya no sirven */
+    background-blend-mode: normal; 
+}
+.card-top { padding: var(--pad-std); display: flex; justify-content: space-between; align-items: flex-start; }
+.tag-white, .tag-black { padding: 4px 8px; border: 1px solid; }
+.tag-white { background: var(--white); border-color: var(--black); }
+.tag-black { background: var(--white); border-color: #ccc; color: #999; }
+.card-content { padding: 0 var(--pad-std) 2.25rem; flex-grow: 1; }
+.card-content ul { list-style: none; }
+.card-content li { margin-bottom: 0.5rem; }
+.card-footer { padding: 1rem 0 1.5rem; border-top: 1px solid var(--black); margin: 0 1.5rem; font-weight: 500; font-family: var(--font-mono); }
+.deployment-bottom { padding: var(--pad-std); border-bottom: var(--border-std); }
+
+/* Terminal / Specs */
+.terminal-grid { display: grid; grid-template-columns: 55% 45%; border-bottom: 4px solid var(--white); }
+.terminal-col { background: var(--black); padding: 1.5rem; border-right: 1px solid var(--black); display: flex; align-items: center; overflow: hidden; }
+.input-col { background: var(--acid); padding: 1.5rem 2.25rem; display: flex; flex-direction: column; justify-content: space-between; min-height: 400px; }
+.input-col .body-large { border-left: 2px solid var(--black); padding-left: 1rem; font-size: 1rem; margin-bottom: 1.5rem; }
+.input-buttons-row { display: flex; gap: 1rem; margin-top: 3rem; }
+.code-block .ml-4 { margin-left: 1rem; }
+.code-block .ml-8 { margin-left: 2rem; }
+.cursor-blink { animation: blink 1s step-end infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* Footer */
+.main-footer { background: var(--black); display: grid; grid-template-columns: 48% 52%; border-top: 4px solid var(--white); padding: 5rem 1.5rem 1.5rem; gap: 2rem; }
+.footer-left { display: flex; flex-direction: column; gap: 5rem; }
+.footer-col h4 { font-family: var(--font-display); color: var(--acid); font-size: 1.5rem; margin-bottom: 2rem; text-transform: uppercase; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+.footer-links a { color: var(--white); text-decoration: none; font-family: var(--font-mono); font-size: 0.875rem; }
+.footer-links a:hover { color: var(--acid); }
+.footer-right .body-base { border-left: 2px solid var(--white); padding-left: 1rem; }
+.footer-cta-row { display: flex; gap: 1rem; margin-top: 4rem; }
+
+/* --- 6. RESPONSIVE (Mobile) --- */
+@media (max-width: 900px) {
+    /* Tipografías */
+    .h0-title { font-size: 3rem; }
+    .h1-title { font-size: 2.6rem; }
+    .h2-title { font-size: 2rem; }
+
+    /* Estructura & Bordes */
+    body > header, body > section, body > div, body > footer,
+    .header-container, .hero-grid, .manifesto-grid, .deployment-container, .terminal-grid, .main-footer {
+        border-left: none; border-right: none;
+    }
+    .header-container { flex-wrap: wrap; }
+    
+    /* Navegación */
+    .nav-links { display: none; } /* JS activa .is-open */
+    .mobile-toggle { display: block; }
+    
+    /* Layouts a Columna */
+    .hero-grid, .manifesto-grid, .cards-grid, .terminal-grid, .main-footer, .input-buttons-row, .footer-cta-row {
+        grid-template-columns: 1fr; display: flex; flex-direction: column;
+    }
+    
+    /* Ajustes Específicos */
+    .hero-left { border-right: none; min-height: auto; padding-bottom: 2rem; }
+    .hero-buttons { flex-direction: column; }
+    .manifesto-left { border-right: none; border-bottom: none; }
+    .card { border-right: none; border-bottom: var(--border-std); }
+    .terminal-col { border-right: none; border-bottom: 1px solid var(--black); min-height: 300px; }
+    .footer-left { border-bottom: 1px solid var(--acid); padding-bottom: 2rem; margin-bottom: 2rem; gap: 3rem; }
+    .input-buttons-row, .footer-cta-row { gap: 1rem; margin-top: 2rem; }
+    .btn-input-white, .btn-input-black { width: 100%; }
+}
+
+
+/* Contenido para specs.html */
+
+/* =========================================
+   SPECS PAGE v2.1 (Tabs Fix & Grid)
+   ========================================= */
+
+/* --- 1. TABS SELECTOR (Los botones de arriba) --- */
+.tabs-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap; /* Para que en móvil bajen */
+}
+
+.tab-btn {
+    flex: 1; /* Todos del mismo ancho */
+    padding: 1rem 1rem;
+    border: var(--border-std);
+    background: var(--white);
+    color: var(--grey-hover); /* Texto gris apagado si no está activo */
+    font-family: var(--font-mono);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.tab-btn:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+/* Estado Activo del Botón */
+.tab-btn.active {
+    background: var(--acid);
+    color: var(--black);
+    box-shadow: var(--shadow-hard);
+    border-color: var(--black);
+    opacity: 1;
+}
+
+/* --- 2. LOGICA DE VISIBILIDAD (La magia) --- */
+/* Por defecto, OCULTAMOS todos los paneles */
+.tab-panel {
+    display: none;
+}
+
+/* Solo mostramos el que tenga la clase active */
+.tab-panel.active {
+    display: block;
+    /* Sin animación, cambio seco y limpio */
+}
+
+/* --- 3. LAYOUT DEL CONTENIDO (Grid 60/40) --- */
+.specs-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* 60% - 40% */
+    gap: 2rem;
+    align-items: stretch;
+}
+
+/* Caja Izquierda: KILLER (Acid) */
+.killer-box {
+    background-color: var(--acid);
+    border: var(--border-std);
+    box-shadow: var(--shadow-hard);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.killer-tag {
+    background: var(--black);
+    color: var(--acid);
+    padding: 4px 8px;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.tech-snippet {
+    margin-top: 3rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-left: 4px solid var(--black);
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
+/* Caja Derecha: LISTA (Blanca) */
+.features-box {
+    background-color: var(--white);
+    border: var(--border-std);
+    padding: 2.5rem;
+}
+
+.features-list {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.features-list li {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.4;
+}
+
+.features-list li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: var(--black);
+}
+
+/* Responsive Móvil */
+@media (max-width: 900px) {
+    .specs-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .killer-box, .features-box { padding: 1.5rem; }
+    .tabs-row { gap: 0.5rem; }
+    .tab-btn { padding: 0.75rem 0.5rem; font-size: 0.8rem; }
+}
+
+
+
+/* Contenido para roadmap.html */
+
+/* =========================================
+   ROADMAP SYSTEM v3.0 (Grid Alignment)
+   ========================================= */
+
+/* Contenedor principal */
+.roadmap-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative; /* Contexto para la línea */
+    padding-bottom: 5rem;
+}
+
+/* --- LA LÍNEA VERTICAL (Fondo) --- */
+/* La sacamos del flujo para que cruce todo sin molestar */
+.roadmap-track-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80px; /* Centrado en la columna izquierda (aprox) */
+    width: 4px; /* Grosor línea */
+    background-color: var(--black); /* Línea negra base */
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+/* La línea de progreso verde */
+.roadmap-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%; /* JS cambiará esto */
+    background-color: var(--acid);
+    transition: height 0.1s linear;
+    z-index: 1;
+}
+
+/* --- ESTRUCTURA GRID (Contenido) --- */
+/* Cada ítem es una fila con 2 columnas: Marcador | Contenido */
+.rm-row {
+    display: grid;
+    grid-template-columns: 160px 1fr; /* 160px para el marcador, resto para texto */
+    position: relative;
+    z-index: 2; /* Encima de la línea */
+    margin-bottom: 4rem; /* Separación entre bloques */
+}
+
+/* Columna Izquierda: El Marcador */
+.rm-marker-col {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* ESTO ES LA MAGIA: CENTRADO VERTICAL */
+    height: 100%; /* Ocupa toda la altura de la tarjeta */
+}
+
+/* Estilo de la Bola Grande (Fases) */
+.phase-marker {
+    width: 64px; height: 64px;
+    background: var(--white);
+    border: 3px solid var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 2rem;
+    transition: all 0.3s ease;
+}
+/* Cuando la línea verde pasa por encima */
+.phase-marker.active {
+    background-color: var(--acid);
+    box-shadow: 0 0 15px var(--acid);
+    border-color: var(--black);
+}
+
+/* Estilo del Punto Pequeño (Objetivos) */
+.obj-dot {
+    width: 24px; height: 24px;
+    background: var(--black); /* Por defecto negro para verse sobre blanco */
+    border: 2px solid var(--white); /* Borde blanco para separar de la línea */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.obj-dot.active {
+    background: var(--acid);
+    transform: scale(1.5);
+    border-color: var(--black);
+}
+
+/* Columna Derecha: Las Tarjetas */
+.rm-card {
+    padding: 3rem;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Tema Negro (Fases) */
+.rm-card.theme-black {
+    background-color: var(--black);
+    color: var(--white);
+    border: none; /* Se funde si el fondo es negro, o le ponemos borde si queremos */
+}
+.rm-card.theme-black h2 { color: var(--acid); margin-bottom: 1rem; }
+.rm-card.theme-black p { color: var(--white); opacity: 0.9; }
+
+/* Tema Blanco (Objetivos) */
+.rm-card.theme-white {
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: 8px 8px 0 var(--black); /* Sombra dura estilo Figma */
+}
+.rm-card.theme-white h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; }
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 900px) {
+    .roadmap-track-container { left: 30px; } /* Mover línea a la izq */
+    .rm-row { grid-template-columns: 60px 1fr; gap: 1rem; padding-right: 1.5rem; }
+    .phase-marker { width: 40px; height: 40px; font-size: 1.2rem; border-width: 2px; }
+    .obj-dot { width: 16px; height: 16px; }
+    .rm-card { padding: 1.5rem; }
+    .rm-card.theme-white h3 { font-size: 1.5rem; }
+}
+
+
+
+/* Para minifiesto.html */
+
+/* --- MANIFESTO PAGE: READING MODE --- */
+.manifesto-section { background-color:var(--black); min-height:100vh; border-top:var(--border-std); }
+.reading-container { max-width:800px; margin:0 auto; padding:5rem 1.5rem 8rem; }
+.manifesto-text p { font-family:var(--font-mono); font-size:1.1rem; line-height:1.8; color:var(--white); margin-bottom:2rem; }
+.manifesto-highlight { border-left:4px solid var(--acid); padding-left:1.5rem; font-size:1.5rem; font-family:var(--font-display); color:var(--acid); margin:3rem 0; line-height:1.3; }
+.manifesto-divider { height:1px; background-color:var(--grey-hover); margin:4rem 0; width:100%; }
+
+/* --- UTILS: DARK MODE & MANIFESTO OVERRIDES --- */
+.header-container { background-color:var(--white); position:relative; z-index:10; }
+.bg-black-force { background-color:var(--black)!important; }
+.footer-seamless { border-top:none!important; }
+
+/* --- MODAL SYSTEM --- */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Fondo oscuro semi-transparente */
+    backdrop-filter: blur(5px); /* Efecto borroso pro */
+    z-index: 9999;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.modal-box {
+    background: var(--black);
+    border: 1px solid var(--acid); /* Borde verde ácido */
+    padding: 2rem;
+    width: 90%; max-width: 500px;
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.2);
+}
+
+.cyber-input {
+    width: 100%;
+    background: var(--black);
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 1rem;
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+.cyber-input:focus {
+    border-color: var(--acid);
+    box-shadow: 0 0 10px var(--acid);
+}
+
+.modal-actions {
+    display: flex; gap: 1rem; justify-content: flex-end;
+}
