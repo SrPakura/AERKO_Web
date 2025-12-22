@@ -328,7 +328,10 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     .killer-box, .features-box { padding: 1.5rem; }
     .tabs-row { gap: 0.5rem; }
     .tab-btn { padding: 0.75rem 0.5rem; font-size: 0.8rem; }
+    .hero-right { display: none; }
 }
+
+
 
 
 
