@@ -153,6 +153,14 @@ es: {
 
         // FIRMA
         mani_sign: "// FIN_DE_TRANSMISIÓN<br>// COMPILANDO_RESISTENCIA...",
+
+            
+        // MODAL WAITLIST
+        modal_title: "/// INPUT_REQUIRED",
+        modal_desc: "Introduce tus coordenadas para unirte a la resistencia.",
+        modal_privacy: "Al confirmar, aceptas nuestra <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Política de Privacidad</a>.",
+        btn_cancel: "CANCEL_",
+        btn_confirm: "CONFIRM_"
     },
 
 
@@ -311,6 +319,14 @@ en: {
 
         // FIRMA
         mani_sign: "// END_OF_TRANSMISSION<br>// COMPILING_RESISTANCE...",
+
+            
+        // MODAL WAITLIST
+        modal_title: "/// INPUT_REQUIRED",
+        modal_desc: "Enter your coordinates to join the resistance.",
+        modal_privacy: "By confirming, you accept our <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Privacy Policy</a>.",
+        btn_cancel: "CANCEL_",
+        btn_confirm: "CONFIRM_"
     },
 
 
@@ -468,5 +484,13 @@ de: {
 
         // FIRMA
         mani_sign: "// ENDE_DER_ÜBERTRAGUNG<br>// KOMPILIERE_WIDERSTAND...",
+
+            
+        // MODAL WAITLIST
+        modal_title: "/// EINGABE_ERFORDERLICH",
+        modal_desc: "Geben Sie Ihre Koordinaten ein, um dem Widerstand beizutreten.",
+        modal_privacy: "Mit der Bestätigung akzeptieren Sie unsere <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Datenschutzerklärung</a>.",
+        btn_cancel: "ABBRECHEN_",
+        btn_confirm: "BESTÄTIGEN_"
     }
 };
