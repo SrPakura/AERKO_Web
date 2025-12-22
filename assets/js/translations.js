@@ -161,6 +161,22 @@ es: {
         modal_privacy: "Al confirmar, aceptas nuestra <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Política de Privacidad</a>.",
         btn_cancel: "CANCEL_",
         btn_confirm: "CONFIRM_"
+
+        // PRIVACY PAGE
+        priv_title: "POLÍTICA_DE_PRIVACIDAD",
+        priv_responsable_t: "1. RESPONSABLE",
+        priv_responsable_d: "Proyecto AERKO_ (Open Source). Contacto: srpakura@proton.me",
+        priv_finalidad_t: "2. FINALIDAD",
+        priv_finalidad_d: "Gestionar tu inscripción en la lista de espera (Waitlist) para notificarte del lanzamiento.",
+        priv_legit_t: "3. LEGITIMACIÓN",
+        priv_legit_d: "Tu consentimiento expreso al introducir tu email voluntariamente.",
+        priv_dest_t: "4. DESTINATARIOS (INFRAESTRUCTURA)",
+        priv_dest_d: "Tus datos no se venden. Se procesan de forma segura usando:",
+        priv_dest_list: "<li>> <strong>Cloudflare:</strong> Seguridad y Base de Datos.</li><li>> <strong>Resend:</strong> Envío de emails.</li>",
+        priv_rights_t: "5. DERECHOS",
+        priv_rights_d: "Puedes solicitar la eliminación de tus datos escribiendo a la dirección de contacto.",
+        priv_end: "// FIN_DEL_DOC_LEGAL",
+        nav_back: "< VOLVER",
     },
 
 
@@ -327,6 +343,22 @@ en: {
         modal_privacy: "By confirming, you accept our <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Privacy Policy</a>.",
         btn_cancel: "CANCEL_",
         btn_confirm: "CONFIRM_"
+
+        // PRIVACY PAGE
+        priv_title: "PRIVACY_POLICY",
+        priv_responsable_t: "1. CONTROLLER",
+        priv_responsable_d: "AERKO_ Project (Open Source). Contact: srpakura@proton.me",
+        priv_finalidad_t: "2. PURPOSE",
+        priv_finalidad_d: "Managing your Waitlist subscription to notify you about the launch.",
+        priv_legit_t: "3. LEGITIMACY",
+        priv_legit_d: "Your express consent by voluntarily providing your email.",
+        priv_dest_t: "4. RECIPIENTS (INFRASTRUCTURE)",
+        priv_dest_d: "We do not sell data. It is securely processed using:",
+        priv_dest_list: "<li>> <strong>Cloudflare:</strong> Security & Database.</li><li>> <strong>Resend:</strong> Email delivery.</li>",
+        priv_rights_t: "5. RIGHTS",
+        priv_rights_d: "You can request data deletion by writing to the contact address.",
+        priv_end: "// END_OF_LEGAL_DOC",
+        nav_back: "< BACK",
     },
 
 
@@ -492,5 +524,21 @@ de: {
         modal_privacy: "Mit der Bestätigung akzeptieren Sie unsere <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Datenschutzerklärung</a>.",
         btn_cancel: "ABBRECHEN_",
         btn_confirm: "BESTÄTIGEN_"
+
+        // PRIVACY PAGE
+        priv_title: "DATENSCHUTZERKLÄRUNG",
+        priv_responsable_t: "1. VERANTWORTLICHER",
+        priv_responsable_d: "AERKO_ Projekt (Open Source). Kontakt: srpakura@proton.me",
+        priv_finalidad_t: "2. ZWECK",
+        priv_finalidad_d: "Verwaltung Ihrer Anmeldung auf der Warteliste zur Benachrichtigung über den Start.",
+        priv_legit_t: "3. RECHTSGRUNDLAGE",
+        priv_legit_d: "Ihre ausdrückliche Einwilligung durch freiwillige Angabe Ihrer E-Mail.",
+        priv_dest_t: "4. EMPFÄNGER (INFRASTRUKTUR)",
+        priv_dest_d: "Wir verkaufen keine Daten. Verarbeitung erfolgt sicher über:",
+        priv_dest_list: "<li>> <strong>Cloudflare:</strong> Sicherheit & Datenbank.</li><li>> <strong>Resend:</strong> E-Mail-Versand.</li>",
+        priv_rights_t: "5. RECHTE",
+        priv_rights_d: "Sie können die Löschung Ihrer Daten jederzeit per E-Mail anfordern.",
+        priv_end: "// ENDE_DES_DOKUMENTS",
+        nav_back: "< ZURÜCK",
     }
 };
