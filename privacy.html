@@ -12,16 +12,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-black-force">
-
-    <!-- HEADER SIMPLE -->
-    <header class="header-container bg-black-force" style="border-bottom: 1px solid var(--white);">
-        <div class="logo-box" style="border-right:none;">
+    
+<!-- HEADER BLANCO (CONTRASTE) -->
+    <header class="header-container" style="background-color: var(--white); border-bottom: 1px solid var(--black);">
+        <div class="logo-box" style="border-right: 1px solid var(--black);">
             <a href="index.html"><img src="assets/img/logo.svg" alt="AERKO_" class="logo-img"></a>
         </div>
         <nav class="nav-links">
-            <button class="nav-btn body-label btn-secondary-inverted" data-i18n="nav_back" onclick="location.href='index.html'">&lt; BACK</button>
+            <!-- Usamos btn-secondary normal (texto negro) en vez de inverted -->
+            <button class="nav-btn body-label btn-secondary" data-i18n="nav_back" onclick="location.href='index.html'">&lt; BACK</button>
         </nav>
     </header>
+
 
     <!-- CONTENT -->
     <section class="manifesto-section">
