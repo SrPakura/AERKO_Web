@@ -160,7 +160,7 @@ es: {
         modal_desc: "Introduce tus coordenadas para unirte a la resistencia.",
         modal_privacy: "Al confirmar, aceptas nuestra <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Política de Privacidad</a>.",
         btn_cancel: "CANCEL_",
-        btn_confirm: "CONFIRM_"
+        btn_confirm: "CONFIRM_",
 
         // PRIVACY PAGE
         priv_title: "POLÍTICA_DE_PRIVACIDAD",
@@ -342,7 +342,7 @@ en: {
         modal_desc: "Enter your coordinates to join the resistance.",
         modal_privacy: "By confirming, you accept our <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Privacy Policy</a>.",
         btn_cancel: "CANCEL_",
-        btn_confirm: "CONFIRM_"
+        btn_confirm: "CONFIRM_",
 
         // PRIVACY PAGE
         priv_title: "PRIVACY_POLICY",
@@ -523,7 +523,7 @@ de: {
         modal_desc: "Geben Sie Ihre Koordinaten ein, um dem Widerstand beizutreten.",
         modal_privacy: "Mit der Bestätigung akzeptieren Sie unsere <a href='privacy.html' target='_blank' style='text-decoration:underline; color:inherit;'>Datenschutzerklärung</a>.",
         btn_cancel: "ABBRECHEN_",
-        btn_confirm: "BESTÄTIGEN_"
+        btn_confirm: "BESTÄTIGEN_",
 
         // PRIVACY PAGE
         priv_title: "DATENSCHUTZERKLÄRUNG",
