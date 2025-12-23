@@ -12,7 +12,7 @@ es: {
         hero_title: "COMPILA<br>TU<br>ESFUERZO",
         hero_desc: "Tu cuerpo genera Terabytes de datos. Deja de regalárselos a apps 'bonitas'. AERKO_ es nutrición y biomecánica sin conexión a internet: tus datos viven en tu dispositivo. <br> <br> Código abierto, privacidad absoluta y carga instantánea.",
         btn_join: "UNIRSE_WAITLIST",
-        btn_source: "CÓDIGO_FUENTE", 
+        btn_source: "DIARIO_DEV", 
 
         hero_code_context: "> CONTEXTO: TFM_PROYECTO_FINAL",
         hero_code_author: "> AUTOR: PAKURA // ESTUDIANTE_19",
@@ -194,7 +194,7 @@ en: {
         hero_title: "COMPILE<br>YOUR<br>EFFORT",
         hero_desc: "Your body generates Terabytes of data. Stop donating them to 'pretty' spyware apps. AERKO_ is offline biomechanics & nutrition: your data lives on your device. <br> <br> Open source, radical privacy, and zero latency.",
         btn_join: "JOIN_WAITLIST",
-        btn_source: "SOURCE_CODE", 
+        btn_source: "DEV_DIARY", 
 
         hero_code_context: "> CONTEXT: FINAL_DEGREE_PROJECT",
         hero_code_author: "> AUTHOR: PAKURA // STUDENT_19",
@@ -375,7 +375,7 @@ de: {
         hero_title: "KOMPILIERE<br>DEINE<br>LEISTUNG",
         hero_desc: "Dein Körper generiert Terabytes an Daten. Hör auf, sie an 'hübsche' Spyware-Apps zu verschenken. AERKO_ ist Biomechanik & Ernährung ohne Internetzwang: Deine Daten leben auf deinem Gerät. <br> <br> Open Source, radikaler Datenschutz und Null Latenz.",
         btn_join: "WARTELISTE_BEITRETEN",
-        btn_source: "QUELLCODE", 
+        btn_source: "DEV_LOG", 
 
         hero_code_context: "> KONTEXT: MASTER_THESIS_PROJEKT",
         hero_code_author: "> AUTOR: PAKURA // STUDENT_19",
