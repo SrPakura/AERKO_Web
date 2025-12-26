@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://landing.aerko.app/</loc>
+    <lastmod>2025-12-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://landing.aerko.app/manifesto.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landing.aerko.app/roadmap.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landing.aerko.app/specs.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://landing.aerko.app/privacy.html</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>
