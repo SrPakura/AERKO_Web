@@ -97,7 +97,7 @@ es: {
         // Panel System
         spec_sys_killer_title: "OFFLINE FIRST REAL",
         spec_sys_killer_desc: "Latencia Cero. La base de datos vive en tu dispositivo, no en la nube. Funciona instantáneamente incluso en sótanos sin cobertura.",
-        spec_sys_list: "<li>> Exportación JSON/CSV Granular</li><li>> Encriptación AES-256 (Client-side)</li><li>> Código 100% Auditable (Open Source)</li>",
+        spec_sys_list: "<li>Exportación JSON/CSV Granular</li><li>Encriptación AES-256 (Client-side)</li><li>Código 100% Auditable (Open Source)</li>",
 
        spec_other_modules: "OTROS_MÓDULOS",
 
@@ -279,7 +279,7 @@ en: {
         // Panel System
         spec_sys_killer_title: "TRUE OFFLINE FIRST",
         spec_sys_killer_desc: "Zero Latency. The database lives on your device, not in the cloud. Works instantly even in basements with zero signal.",
-        spec_sys_list: "<li>> Granular JSON/CSV Export</li><li>> AES-256 Encryption (Client-side)</li><li>> 100% Auditable Code (Open Source)</li>",
+        spec_sys_list: "<li>Granular JSON/CSV Export</li><li>AES-256 Encryption (Client-side)</li><li>100% Auditable Code (Open Source)</li>",
 
        spec_other_modules: "OTHER_MODULES",
 
@@ -460,7 +460,7 @@ de: {
         // Panel System
         spec_sys_killer_title: "ECHTES OFFLINE FIRST",
         spec_sys_killer_desc: "Null Latenz. Die Datenbank lebt auf deinem Gerät, nicht in der Cloud. Funktioniert sofort, selbst in Kellern ohne Signal.",
-        spec_sys_list: "<li>> Granularer JSON/CSV Export</li><li>> AES-256 Verschlüsselung (Client-side)</li><li>> 100% Auditierbarer Code (Open Source)</li>",
+        spec_sys_list: "<li>Granularer JSON/CSV Export</li><li>AES-256 Verschlüsselung (Client-side)</li><li>100% Auditierbarer Code (Open Source)</li>",
 
        spec_other_modules: "ANDERE_MODULE",
 
