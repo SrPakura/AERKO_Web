@@ -375,7 +375,7 @@ de: {
         hero_phase: "PHASE_USABILITY_TEST",
         hero_title: "KOMPILIERE<br>DEINE<br>LEISTUNG",
         hero_desc: "Dein Körper generiert Terabytes an Daten. Hör auf, sie an 'hübsche' Spyware-Apps zu verschenken. AERKO_ ist Biomechanik & Ernährung ohne Internetzwang: Deine Daten leben auf deinem Gerät. <br> <br> Open Source, radikaler Datenschutz und Null Latenz.",
-        "BEITRAGEN_(KOSTENLOS)",
+        btn_join: "BEITRAGEN_(KOSTENLOS)",
         btn_source: "DEV_LOG", 
 
         hero_code_context: "> KONTEXT: MASTER_THESIS_PROJEKT",
