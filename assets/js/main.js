@@ -59,6 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch(ANALYTICS_URL, { method: 'POST' });
         console.log('> AERKO_SYSTEM: Ping de analítica enviado.');
     } catch (e) {
-        // Fallo silencioso (el usuario no debe notar nada si el worker duerme)
+        // Fallo silencioso
     }
 });
