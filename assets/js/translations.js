@@ -2,16 +2,15 @@ const translations = {
 es: {
         nav_manifesto: "MANIFIESTO",
         nav_roadmap: "ROADMAP",
-        nav_specs: "SPECS",
-        nav_waitlist: "WAITLIST",
+        nav_features: "FUNCIONES",
         nav_mobile_menu: "MENU [+]", 
         
         marquee_text: "/// ESTADO DEL SISTEMA: ONLINE /// FASE 0: PROTOTIPADO /// ARQUITECTURA OPEN SOURCE /// TUS DATOS SON TUYOS /// NÚCLEO LOCAL-FIRST /// PROTOCOLO DE PRIVACIDAD /// ESTADO DEL SISTEMA: ONLINE /// FASE 0: PROTOTIPADO /// ARQUITECTURA OPEN SOURCE /// TUS DATOS SON TUYOS /// NÚCLEO LOCAL-FIRST /// PROTOCOLO DE PRIVACIDAD ///", 
 
-        hero_phase: "FASE_DISEÑO_TFM",
+        hero_phase: "FASE_PRUEBAS_USABILIDAD",
         hero_title: "COMPILA<br>TU<br>ESFUERZO",
         hero_desc: "Tu cuerpo genera Terabytes de datos. Deja de regalárselos a apps 'bonitas'. AERKO_ es nutrición y biomecánica sin conexión a internet: tus datos viven en tu dispositivo. <br> <br> Código abierto, privacidad absoluta y carga instantánea.",
-        btn_join: "UNIRSE_WAITLIST",
+        btn_join: "CONTRIBUIR_(GRATIS)",
         btn_source: "DIARIO_DEV", 
 
         hero_code_context: "> CONTEXTO: TFM_PROYECTO_FINAL",
@@ -29,7 +28,7 @@ es: {
         manifesto_link: "> LEER_MANIFIESTO_COMPLETO_",
 
         roadmap_title: "PLAN_DE_DESPLIEGUE",
-        roadmap_status: "/// ESTADO ACTUAL: FASE 0 (DESIGN_THINKING + PROTOTIPADO)",
+        roadmap_status: "/// ESTADO ACTUAL: FASE 0.5 (PRUEBAS DE USABILIDAD)",
         roadmap_link: "> VER_CALENDARIO_DESPLIEGUE_",
 
         // Card 1
@@ -51,7 +50,7 @@ es: {
         card3_status: "ESTADO: PENDIENTE_REQUISITOS",
 
         input_title: "DEBUGGEA_CONMIGO",
-        input_desc: "> Proyecto nacido como TFM. <br> > Desarrollado por un solo estudiante.<br>> Tu feedback ha compilado las funciones de la Local_PWA.<br>> Próximamente: Tests de usabilidad en Maze.",
+        input_desc: "> Proyecto nacido como TFM. <br> > Desarrollado por un solo estudiante.<br>> Tu feedback ha compilado las funciones de la Local_PWA.<br>> ACTUALMENTE: Tests de usabilidad en Maze.",
         btn_contribute: "[ CONTRIBUIR_DATOS ]",
         btn_read_features: "> LEER_FUNCIONES_",
 
@@ -177,6 +176,8 @@ es: {
         priv_rights_d: "Puedes solicitar la eliminación de tus datos escribiendo a la siguiente dirección de contacto: <a href='mailto:SrPakura@proton.me' style='text-decoration:underline; color:inherit;'>SrPakura@proton.me</a>.",
         priv_end: "// FIN_DEL_DOC_LEGAL",
         nav_back: "< VOLVER",
+
+        footer_reddit_cta: "ÚNETE A LA COMUNIDAD DE REDDIT r/aerko",
     },
 
 
@@ -184,16 +185,15 @@ es: {
 en: {
         nav_manifesto: "MANIFESTO",
         nav_roadmap: "ROADMAP",
-        nav_specs: "SPECS",
-        nav_waitlist: "WAITLIST",
+        nav_features: "FEATURES",
         nav_mobile_menu: "MENU [+]", 
         
         marquee_text: "/// SYSTEM STATUS: ONLINE /// PHASE 0: PROTOTYPING /// OPEN SOURCE ARCHITECTURE /// DATA SOVEREIGNTY /// LOCAL-FIRST CORE /// PRIVACY PROTOCOL /// SYSTEM STATUS: ONLINE /// PHASE 0: PROTOTYPING /// OPEN SOURCE ARCHITECTURE /// DATA SOVEREIGNTY /// LOCAL-FIRST CORE /// PRIVACY PROTOCOL ///", 
 
-        hero_phase: "PHASE_DESIGN_THESIS",
+        hero_phase: "PHASE_USABILITY_TEST",
         hero_title: "COMPILE<br>YOUR<br>EFFORT",
         hero_desc: "Your body generates Terabytes of data. Stop donating them to 'pretty' spyware apps. AERKO_ is offline biomechanics & nutrition: your data lives on your device. <br> <br> Open source, radical privacy, and zero latency.",
-        btn_join: "JOIN_WAITLIST",
+        btn_join: "CONTRIBUTE_(FREE)",
         btn_source: "DEV_DIARY", 
 
         hero_code_context: "> CONTEXT: FINAL_DEGREE_PROJECT",
@@ -211,7 +211,7 @@ en: {
         manifesto_link: "> READ_FULL_MANIFESTO_",
 
         roadmap_title: "DEPLOYMENT_PLAN",
-        roadmap_status: "/// CURRENT STATUS: PHASE 0 (DESIGN_THINKING + PROTOTYPING)",
+        roadmap_status: "/// CURRENT STATUS: PHASE 0.5 (USABILITY TESTING)",
         roadmap_link: "> VIEW_DEPLOYMENT_LOG_",
 
         // Card 1
@@ -233,7 +233,7 @@ en: {
         card3_status: "STATUS: AWAITING_REQUIREMENTS",
 
         input_title: "DEBUG_WITH_ME",
-        input_desc: "> Project born as a CS Thesis. <br> > Developed by a single student.<br>> Your feedback compiled the Local_PWA features.<br>> Upcoming: Usability tests on Maze.",
+        input_desc: "> Project born as a CS Thesis. <br> > Developed by a single student.<br>> Your feedback compiled the Local_PWA features.<br>> CURRENTLY: Usability tests on Maze.",
         btn_contribute: "[ CONTRIBUTE_DATA ]",
         btn_read_features: "> READ_FEATURES_",
 
@@ -359,22 +359,23 @@ en: {
         priv_rights_d: "You can request the deletion of your data by writing to the following contact address: <a href='mailto:SrPakura@proton.me' style='text-decoration:underline; color:inherit;'>SrPakura@proton.me</a>.",
         priv_end: "// END_OF_LEGAL_DOC",
         nav_back: "< BACK",
+
+        footer_reddit_cta: "JOIN THE REDDIT COMMUNITY r/aerko",
     },
 
 
 de: {
         nav_manifesto: "MANIFEST",
         nav_roadmap: "ROADMAP",
-        nav_specs: "SPECS",
-        nav_waitlist: "WAITLIST",
+        nav_features: "FUNKTIONEN",
         nav_mobile_menu: "MENÜ [+]", 
         
         marquee_text: "/// SYSTEMSTATUS: ONLINE /// PHASE 0: PROTOTYPING /// OPEN SOURCE ARCHITEKTUR /// DEINE DATEN GEHÖREN DIR /// LOCAL-FIRST KERN /// DATENSCHUTZ-PROTOKOLL /// SYSTEMSTATUS: ONLINE /// PHASE 0: PROTOTYPING /// OPEN SOURCE ARCHITEKTUR /// DEINE DATEN GEHÖREN DIR /// LOCAL-FIRST KERN /// DATENSCHUTZ-PROTOKOLL ///", 
 
-        hero_phase: "PHASE_ABSCHLUSSARBEIT",
+        hero_phase: "PHASE_USABILITY_TEST",
         hero_title: "KOMPILIERE<br>DEINE<br>LEISTUNG",
         hero_desc: "Dein Körper generiert Terabytes an Daten. Hör auf, sie an 'hübsche' Spyware-Apps zu verschenken. AERKO_ ist Biomechanik & Ernährung ohne Internetzwang: Deine Daten leben auf deinem Gerät. <br> <br> Open Source, radikaler Datenschutz und Null Latenz.",
-        btn_join: "WARTELISTE_BEITRETEN",
+        "BEITRAGEN_(KOSTENLOS)",
         btn_source: "DEV_LOG", 
 
         hero_code_context: "> KONTEXT: MASTER_THESIS_PROJEKT",
@@ -392,7 +393,7 @@ de: {
         manifesto_link: "> VOLLSTÄNDIGES_MANIFEST_LESEN_",
 
         roadmap_title: "DEPLOYMENT_PLAN",
-        roadmap_status: "/// AKTUELLER STATUS: PHASE 0 (DESIGN_THINKING + PROTOTYPING)",
+        roadmap_status: "/// AKTUELLER STATUS: PHASE 0.5 (USABILITY_TEST)",
         roadmap_link: "> ZEITPLAN_ANSEHEN_",
 
         // Card 1
@@ -414,7 +415,7 @@ de: {
         card3_status: "STATUS: WARTE_AUF_ANFORDERUNGEN",
 
         input_title: "DEBUGGE_MIT_MIR",
-        input_desc: "> Projekt gestartet als Masterarbeit. <br> > Entwickelt von einem einzelnen Studenten.<br>> Dein Feedback hat die Funktionen der Local_PWA kompiliert.<br>> Demnächst: Usability-Tests auf Maze.",
+        input_desc: "> Projekt gestartet als Masterarbeit. <br> > Entwickelt von einem einzelnen Studenten.<br>> Dein Feedback hat die Funktionen der Local_PWA kompiliert.<br>> AKTUELL: Usability-Tests auf Maze.",
         btn_contribute: "[ DATEN_BEITRAGEN ]",
         btn_read_features: "> FUNKTIONEN_LESEN_",
 
@@ -540,5 +541,7 @@ de: {
         priv_rights_d: "Sie können die Löschung Ihrer Daten beantragen, indem Sie an die folgende Kontaktadresse schreiben: <a href='mailto:SrPakura@proton.me' style='text-decoration:underline; color:inherit;'>SrPakura@proton.me</a>.",
         priv_end: "// ENDE_DES_DOKUMENTS",
         nav_back: "< ZURÜCK",
+
+        footer_reddit_cta: "TRITT DER REDDIT-COMMUNITY r/aerko BEI",
     }
 };
