@@ -46,9 +46,22 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 .btn-input-black:hover { background:var(--white); color:var(--black); }
 
 /* 4.4 Footer Buttons */
-.btn-primary-inverted-shadow { background-color: var(--acid); box-shadow: var(--shadow-white);color: var(--black); }
-.btn-primary-inverted-shadow:hover { background-color:var(--acid-hover); } .btn-primary-inverted-shadow:active { transform:translate(2px, 2px); box-shadow:2px 2px 0 0 var(--white); }
-.btn-secondary-inverted { border-color:var(--white); color:var(--white); } .btn-secondary-inverted:hover { background-color:var(--white); color:var(--black); }
+.btn-primary-inverted-shadow, 
+.btn-primary-inverted-shadow:visited { 
+    background-color: var(--acid); 
+    box-shadow: var(--shadow-white); 
+    color: var(--black); 
+}
+
+.btn-primary-inverted-shadow:hover { 
+    background-color: var(--acid-hover); 
+    color: var(--black); 
+} 
+
+.btn-primary-inverted-shadow:active { 
+    transform: translate(2px, 2px); 
+    box-shadow: 2px 2px 0 0 var(--white); 
+}
 
 
 /* Links */
