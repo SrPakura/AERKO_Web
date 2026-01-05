@@ -33,29 +33,6 @@
     <meta name="google-site-verification" content="mW_cunWhHB4j9glx3jHfX6hrP-NG63VT1T7rPWOgWII" />
 </head>
 
-    
-<!-- === MODAL WAITLIST (Cyberpunk Style) === -->
-<div id="waitlist-modal" class="modal-overlay" style="display: none;">
-    <div class="modal-box">
-        <!-- Título Traducido -->
-        <h3 class="h3-title text-acid mb-small" data-i18n="modal_title"></h3>
-        
-        <!-- Texto Traducido -->
-        <p class="body-base text-white mb-medium" data-i18n="modal_desc"></p>
-        
-        <input type="email" id="waitlist-email" class="cyber-input" placeholder="user@aerko.app" autocomplete="email">
-        
-        <!-- AVISO LEGAL (Micro-texto) -->
-        <p class="caption text-grey-light mb-medium" style="font-size: 0.75rem;" data-i18n="modal_privacy"></p>
-
-        <div class="modal-actions">
-            <!-- Botones Traducidos -->
-            <button id="modal-cancel" class="btn-secondary-inverted" data-i18n="btn_cancel"></button>
-            <button id="modal-confirm" class="btn-primary" data-i18n="btn_confirm"></button>
-        </div>
-    </div>
-</div>
-
 <body>
 
     <!-- === HEADER === -->
@@ -65,11 +42,12 @@
             <span class="logo-text" style="display:none; font-family:'Clash Display', sans-serif; font-weight:700; font-size:24px;">AERKO_</span>
         </div>
         <nav class="nav-links">
-            <button class="nav-btn body-label" data-i18n="nav_manifesto" onclick="location.href='manifesto.html'">MANIFIESTO</button>
-            <button class="nav-btn body-label" data-i18n="nav_roadmap" onclick="location.href='roadmap.html'">ROADMAP</button>
-            <button class="nav-btn body-label" data-i18n="nav_specs" onclick="location.href='specs.html'">SPECS</button>
-            <!-- Botón Waitlist Destacado -->
-            <button class="nav-btn btn-acid body-label join-trigger" data-i18n="nav_waitlist">WAITLIST</button>
+    <button class="nav-btn body-label" data-i18n="nav_manifesto" onclick="location.href='manifesto.html'">MANIFIESTO</button>
+    <button class="nav-btn body-label" data-i18n="nav_roadmap" onclick="location.href='roadmap.html'">ROADMAP</button>
+    <!-- CAMBIO: Specs ahora es Features -->
+    <button class="nav-btn body-label" data-i18n="nav_features" onclick="location.href='specs.html'">SPECS</button>
+    <!-- CAMBIO: Botón directo a Maze (sin clase join-trigger) -->
+    <button class="nav-btn btn-acid body-label" onclick="window.open('https://t.maze.co/487183250', '_blank')" data-i18n="btn_join">CONTRIBUIR</button>
         </nav>
         <!-- Mobile Toggle (Añadido data-i18n) -->
         <button class="mobile-toggle body-label" data-i18n="nav_mobile_menu">MENU [+]</button>
@@ -91,10 +69,10 @@
             <h1 class="h0-title" data-i18n="hero_title">COMPILA TU ESFUERZO</h1>
             <p class="body-base mt-small" data-i18n="hero_desc">Tu cuerpo genera Terabytes de datos. Deja de regalárselos a apps 'bonitas'. AERKO_ es nutrición y biomecánica sin conexión a internet: tus datos viven en tu dispositivo. <br> <br> Código abierto, privacidad absoluta y carga instantánea.</p>
             <div class="hero-buttons">
-                <button class="btn-primary body-label join-trigger" data-i18n="btn_join"></button>
-                <a href="https://www.reddit.com/r/aerko_/" target="_blank" class="btn-secondary body-label" data-i18n="btn_source"></a>
-            </div>
-        </div>
+    <!-- CAMBIO: Enlace directo a Maze -->
+    <button class="btn-primary body-label" onclick="window.open('https://t.maze.co/487183250', '_blank')" data-i18n="btn_join">CONTRIBUIR</button>
+    <a href="https://www.reddit.com/r/aerko_/" target="_blank" class="btn-secondary body-label" data-i18n="btn_source">DIARIO_DEV</a>
+</div>
 
 <!-- Frame Derecho -->
         <div class="hero-right">
@@ -227,7 +205,7 @@
             
             <!-- Botones al fondo -->
             <div class="input-buttons-row">
-                <button class="btn-input-white" data-i18n="btn_contribute"></button>
+                <button class="btn-input-white" onclick="window.open('https://t.maze.co/487183250', '_blank')" data-i18n="btn_contribute">[ CONTRIBUIR_DATOS ]</button>
                 <button class="btn-input-black" data-i18n="btn_read_features" onclick="location.href='specs.html'">> READ_FULL_FEATURES_</
             </div>
         </div>
@@ -252,25 +230,22 @@
                 <ul class="footer-links body-base text-white">
                     <li><a href="manifesto.html" data-i18n="footer_link_privacy"></a></li>
                     <li><a href="https://www.gnu.org/licenses/agpl-3.0.html" data-i18n="footer_link_terms"></a></li>
-                    <li><a href="privacy.html" data-i18n="footer_link_data"></a></li>
+                    <li><a href="manifesto.html" data-i18n="footer_link_data"></a></li>
                 </ul>
             </div>
         </div>
 
         <!-- Columna Derecha: CTA -->
         <div class="footer-right">
-            <div class="footer-right-content">
-                <h2 class="h2-title text-acid mb-32" data-i18n="footer_cta_title"></h2>  
-                <p class="body-base text-white" data-i18n="footer_cta_text"></p>
-            </div>
-            <div class="footer-cta-row">
-                <!-- Botón Waitlist (Abre modal JS) -->
-                <button class="btn-primary-inverted-shadow join-trigger" data-i18n="footer_btn_join"></button>
-                
-                <!-- Redes Sociales (Enlaces reales) -->
-                <a href="https://www.reddit.com/r/aerko_/" target="_blank" class="btn-secondary-inverted">[ R/AERKO ]</a>
-                <a href="https://x.com/AerkoApp" target="_blank" class="btn-secondary-inverted">[ TWITTER ]</a>
-            </div>
+    <div class="footer-right-content">
+        <h2 class="h2-title text-acid mb-32" data-i18n="footer_cta_title">¿LISTO?</h2>  
+        <p class="body-base text-white" data-i18n="footer_cta_text">Texto CTA</p>
+    </div>
+    <div class="footer-cta-row">
+        <!-- CAMBIO: Un solo botón grande para Reddit -->
+        <a href="https://www.reddit.com/r/aerko_/" target="_blank" class="btn-primary-inverted-shadow link-full" style="text-align: center;" data-i18n="footer_reddit_cta">UNETE A R/AERKO</a>
+    </div>
+</div>
         </div>
     </footer>
 
