@@ -1,4 +1,4 @@
-const translations = {
+const translations = { 
 es: {
         nav_manifesto: "MANIFIESTO",
         nav_roadmap: "ROADMAP",
