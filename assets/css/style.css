@@ -711,19 +711,23 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 .rm-marker-col {
     display: flex;
     justify-content: center;
-    /* Ajuste para alinear la bola con el título de la derecha */
-    padding-top: 2.8rem; 
+    /* Alineación vertical: Ajusta esto si la bola no queda centrada con el título */
+    padding-top: 2rem; 
 }
 
 /* COLUMNA DERECHA (Textos) */
 .rm-content-cell {
-    padding: 3rem;
-    border-bottom: 1px solid #e5e5e5;
+    /* PADDING AJUSTADO PARA SIMETRÍA */
+    /* Arriba: 2rem | Derecha: 0 | Abajo: 2rem | Izquierda: 2rem */
+    padding: 2rem 0 2rem 2rem;
+    
+    border-bottom: 1px solid #e5e5e5; /* La línea gris separadora */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-/* Quitar borde al último */
+
+/* Quitar la línea gris al último elemento para que no se vea feo al final */
 .rm-row:last-child .rm-content-cell { border-bottom: none; }
 
 
