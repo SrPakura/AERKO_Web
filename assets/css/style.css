@@ -649,13 +649,13 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 }
 
 /* =========================================
-   ROADMAP V2 (Clean Grid)
+   ROADMAP V2 (Hybrid Animation)
    ========================================= */
 
-/* Reutilizamos estilo de la barra superior (copia esto si no lo tenías global) */
+/* BARRA SUPERIOR (Igual que manifiesto) */
 .roadmap-bar {
     display: grid;
-    grid-template-columns: 145px 1fr; /* 145px a la izquierda, resto derecha */
+    grid-template-columns: 145px 1fr; /* 145px fijo a la izquierda */
     align-items: center;
     background-color: var(--black);
     padding: 0.5rem 0;
@@ -663,120 +663,75 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     border-right: var(--border-std);
     max-width: var(--max-width);
     margin: 0 auto;
+    z-index: 10; position: relative; /* Para que tape la línea si sube */
 }
 
-.rm-bar-left {
-    text-align: center;
-    border-right: 1px solid var(--acid); /* Detalle estético separador */
-}
-
-.rm-bar-right {
-    padding-left: 1.5rem;
-}
+.rm-bar-left { text-align: center; border-right: 1px solid var(--acid); }
+.rm-bar-right { padding-left: 1.5rem; }
 
 /* CONTENEDOR PRINCIPAL */
-.roadmap-v2-grid {
-    display: grid;
-    grid-template-columns: 145px 1fr; /* 145px fijo | Resto fluido */
+.roadmap-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    border-left: var(--border-std);
-    border-right: var(--border-std);
-    border-bottom: var(--border-std);
-    background-color: var(--white);
     position: relative;
+    padding-bottom: 5rem;
+    border-left: var(--border-std); /* Borde exterior */
+    border-right: var(--border-std); /* Borde exterior */
+    background: var(--white);
+    overflow: hidden; /* Para que la línea no se salga */
 }
 
-/* LA LÍNEA VERTICAL (El truco) */
-/* Dibujamos una línea en el fondo del contenedor, centrada en la columna de 145px */
-.roadmap-v2-grid::before {
-    content: '';
+/* LA LÍNEA (TRACK) - Ajustada al centro de 145px */
+.roadmap-track-container {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 72.5px; /* La mitad exacta de 145px */
+    left: 72.5px; /* <--- ¡IMPORTANTE! Mitad de 145px */
     width: 4px;
-    background-color: var(--black);
-    transform: translateX(-50%);
+    background-color: var(--black); /* Línea negra de fondo */
     z-index: 0;
+    transform: translateX(-50%);
 }
 
-/* CELDAS IZQUIERDA (Marcadores) */
-.rm-marker-cell {
+.roadmap-progress-bar {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 0%;
+    background-color: var(--acid); /* La línea verde que baja */
+    transition: height 0.1s linear;
+    z-index: 1;
+}
+
+/* FILAS (GRID) */
+.rm-row {
+    display: grid;
+    grid-template-columns: 145px 1fr; /* <--- Alineado con la barra de arriba */
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0; /* Pegados unos a otros */
+}
+
+.rm-marker-col {
     display: flex;
     justify-content: center;
-    padding-top: 2.5rem; /* Alineación con el título de la derecha */
-    position: relative;
-    z-index: 1; /* Para estar encima de la línea */
+    padding-top: 3rem; /* Bajamos un poco la bola */
 }
 
-/* La Bola Grande (Fases) */
-.rm-bubble {
-    width: 64px; height: 64px;
-    background: var(--white);
-    border: 3px solid var(--black);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--font-display);
-    font-weight: 700; font-size: 2rem;
-}
-/* Estado Activo (Verde) - Para la Fase 1 */
-.rm-bubble.active {
-    background-color: var(--acid);
-}
-
-/* El Punto Pequeño (Objetivos) */
-.rm-dot {
-    width: 24px; height: 24px;
-    background: var(--black);
-    border: 4px solid var(--white); /* Borde blanco para separar de la línea */
-    border-radius: 50%;
-    margin-top: 0.5rem; /* Ajuste fino visual */
-}
-
-/* CELDAS DERECHA (Contenido) */
 .rm-content-cell {
-    padding: 2.5rem; /* 24px aprox en Figma */
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-bottom: 4rem; /* Aire al final de cada bloque */
+    padding: 3rem;
+    border-bottom: 1px solid #e5e5e5; /* Separador sutil entre fases */
 }
+/* Quitamos borde al último */
+.rm-row:last-child .rm-content-cell { border-bottom: none; }
 
-/* TIPOGRAFÍA ESPECÍFICA ROADMAP */
-.rm-title-h2 {
-    font-family: var(--font-display);
-    font-size: 3rem; 
-    font-weight: 700;
-    color: #1A1A1A; /* Negro Suave */
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-}
-
-.rm-obj-h3 {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    font-weight: 700;
-    color: #2F2F2F; /* Gris Suave */
-    margin-bottom: 0.5rem;
-}
-
-.rm-text-p {
-    font-family: var(--font-mono);
-    font-size: 1rem;
-    color: #1A1A1A; /* Negro Suave */
-    line-height: 1.6;
-    max-width: 800px; /* Para que no sea infinito en pantallas grandes */
-}
+/* Estilos de Texto V2 */
+.rm-title-h2 { font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem; }
+.rm-obj-h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
+.rm-text-p { font-family: var(--font-mono); font-size: 1rem; line-height: 1.6; max-width: 800px; white-space: pre-line; }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-    .roadmap-bar, .roadmap-v2-grid {
-        grid-template-columns: 60px 1fr; /* Reducimos la columna izq en móvil */
-    }
-    .roadmap-v2-grid::before { left: 30px; } /* Ajustamos la línea */
-    .rm-bubble { width: 40px; height: 40px; font-size: 1.2rem; border-width: 2px; }
+    .roadmap-bar, .rm-row { grid-template-columns: 60px 1fr; }
+    .roadmap-track-container { left: 30px; }
     .rm-content-cell { padding: 1.5rem; }
     .rm-title-h2 { font-size: 2rem; }
-    .rm-obj-h3 { font-size: 1.5rem; }
 }
