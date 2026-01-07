@@ -649,13 +649,13 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 }
 
 /* =========================================
-   ROADMAP V2 (Hybrid Animation)
+   ROADMAP V2 (CORREGIDO - CON BOLAS Y PUNTOS)
    ========================================= */
 
-/* BARRA SUPERIOR (Igual que manifiesto) */
+/* BARRA SUPERIOR */
 .roadmap-bar {
     display: grid;
-    grid-template-columns: 145px 1fr; /* 145px fijo a la izquierda */
+    grid-template-columns: 145px 1fr;
     align-items: center;
     background-color: var(--black);
     padding: 0.5rem 0;
@@ -663,7 +663,7 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     border-right: var(--border-std);
     max-width: var(--max-width);
     margin: 0 auto;
-    z-index: 10; position: relative; /* Para que tape la línea si sube */
+    z-index: 10; position: relative;
 }
 
 .rm-bar-left { text-align: center; border-right: 1px solid var(--acid); }
@@ -675,20 +675,21 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     margin: 0 auto;
     position: relative;
     padding-bottom: 5rem;
-    border-left: var(--border-std); /* Borde exterior */
-    border-right: var(--border-std); /* Borde exterior */
+    border-left: var(--border-std);
+    border-right: var(--border-std);
     background: var(--white);
-    overflow: hidden; /* Para que la línea no se salga */
+    /* Importante para que la línea no se salga */
+    overflow: hidden; 
 }
 
-/* LA LÍNEA (TRACK) - Ajustada al centro de 145px */
+/* --- LA LÍNEA (TRACK) --- */
 .roadmap-track-container {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 72.5px; /* <--- ¡IMPORTANTE! Mitad de 145px */
+    top: 0; bottom: 0;
+    /* CENTRADO EXACTO EN LA COLUMNA DE 145px */
+    left: 72.5px; 
     width: 4px;
-    background-color: var(--black); /* Línea negra de fondo */
+    background-color: var(--black); /* Línea base negra */
     z-index: 0;
     transform: translateX(-50%);
 }
@@ -696,42 +697,90 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 .roadmap-progress-bar {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 0%;
-    background-color: var(--acid); /* La línea verde que baja */
+    background-color: var(--acid); /* Línea verde que crece */
     transition: height 0.1s linear;
     z-index: 1;
 }
 
-/* FILAS (GRID) */
+/* --- LAS FILAS --- */
 .rm-row {
     display: grid;
-    grid-template-columns: 145px 1fr; /* <--- Alineado con la barra de arriba */
+    grid-template-columns: 145px 1fr; /* Mismo grid que la barra */
     position: relative;
-    z-index: 2;
-    margin-bottom: 0; /* Pegados unos a otros */
+    z-index: 2; /* Encima de la línea */
 }
 
+/* COLUMNA IZQUIERDA (Marcadores) */
 .rm-marker-col {
     display: flex;
     justify-content: center;
-    padding-top: 3rem; /* Bajamos un poco la bola */
+    /* Ajuste para alinear la bola con el título de la derecha */
+    padding-top: 2.8rem; 
 }
 
+/* COLUMNA DERECHA (Textos) */
 .rm-content-cell {
     padding: 3rem;
-    border-bottom: 1px solid #e5e5e5; /* Separador sutil entre fases */
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-/* Quitamos borde al último */
+/* Quitar borde al último */
 .rm-row:last-child .rm-content-cell { border-bottom: none; }
 
-/* Estilos de Texto V2 */
-.rm-title-h2 { font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem; }
-.rm-obj-h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
-.rm-text-p { font-family: var(--font-mono); font-size: 1rem; line-height: 1.6; max-width: 800px; white-space: pre-line; }
+
+/* --- ESTILOS DE LAS BOLAS (LO QUE FALTABA) --- */
+
+/* 1. La Bola Grande (Fases) */
+.rm-bubble {
+    width: 64px; height: 64px;
+    background-color: var(--white); /* Fondo blanco para tapar línea */
+    border: 3px solid var(--black); /* Borde negro */
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 2rem;
+    z-index: 5; /* Importante: encima de la línea */
+    transition: all 0.3s ease;
+}
+
+/* Estado Activo (Cuando la línea pasa) */
+.rm-bubble.active {
+    background-color: var(--acid);
+    box-shadow: 0 0 15px var(--acid); /* Glow cyberpunk */
+}
+
+/* 2. El Punto Pequeño (Objetivos) */
+.rm-dot {
+    width: 24px; height: 24px;
+    background-color: var(--black);
+    border: 4px solid var(--white); /* Borde blanco grueso para separarse */
+    border-radius: 50%;
+    margin-top: 0.5rem; /* Pequeño ajuste visual */
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+
+.rm-dot.active {
+    background-color: var(--acid);
+    border-color: var(--black);
+    transform: scale(1.3);
+}
+
+/* TIPOGRAFÍA */
+.rm-title-h2 { font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1; margin-bottom: 1.5rem; }
+.rm-obj-h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: #333; margin-bottom: 1.5rem; }
+.rm-text-p { font-family: var(--font-mono); font-size: 1rem; line-height: 1.6; max-width: 800px; }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .roadmap-bar, .rm-row { grid-template-columns: 60px 1fr; }
-    .roadmap-track-container { left: 30px; }
+    .roadmap-track-container { left: 30px; } /* Mitad de 60 */
+    .rm-bubble { width: 40px; height: 40px; font-size: 1.2rem; border-width: 2px; }
+    .rm-dot { width: 16px; height: 16px; border-width: 2px; }
     .rm-content-cell { padding: 1.5rem; }
+    .rm-marker-col { padding-top: 1.5rem; }
     .rm-title-h2 { font-size: 2rem; }
 }
