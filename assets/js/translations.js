@@ -90,6 +90,30 @@ es: {
         footer_reddit_cta: "ÚNETE A LA COMUNIDAD DE REDDIT r/aerko",
 
         
+        // ROADMAP PAGE V2
+        rm_bar_center: "ROADMAP", // Nueva variable única
+
+        // FASE 1
+        rm_p1_title: "Fase 01: Local Pwa",
+        rm_p1_desc: "El núcleo de todo. HTML, CSS y JS, alojado en github pages. Cualquier persona puede entrar, probarla, instalarla (PWA), modificarla, auditarla, o hacer lo que quiera, el código es libre, y la app totalmente gratis.\n\nNo hay backend, no hay cookies, no hay anuncios, no hay micropagos, y no hay malas intenciones, es mi primera declaración de guerra a la asquerosa industria del fitness actual. Todo se ejecuta en tu móvil, offline si lo instalas, y todo se guarda en tu móvil. Tienes la posibilidad de coger tus datos, e irte donde quieras si no te gusta la app.",
+        
+        // OBJETIVO 1
+        rm_obj1_title: "Objetivo 1: Masa crítica",
+        rm_obj1_desc: "Antes de seguir con la fase dos, que requiere la participación de otro profesional y preparar la infraestructura necesaria, necesito validar el desarrollo, por ello, he pensado en que se cumpla una de estas dos opciones:\n\n• 1500 Usuarios activos (mes) en la PWA gratuita.\n• 750 miembros en r/aerko_\n\nUna vez alcanzado uno de estos objetivos, activaremos una fase de financiación participativa (Crowdfunding), en la que ofreceremos la suscripción cloud a un precio reducido (3€ por 3 meses, y 15€ por un año), con el objetivo financiar la infraestructura de servidores, marketing y el desarrollo continuo sin vender el proyecto a inversores externos.",
+
+        // FASE 2
+        rm_p2_title: "Fase 02: Cloud",
+        rm_p2_desc: "No es una simple “versión mejorada”, es la evolución total del núcleo. Mantendremos el código 100% Open-source, pero migramos el backend a Python sobre una infraestructura híbrida de vanguardia (VPS, Litestream + Cloudflare D1 y R2). Aún más funciones, más potencia, misma privacidad, y todas las ventajas que la nube ofrece, sin ceder tus datos o comodidad.\n\nAdemás, la app estará traducida desde día 1 al Portugués, Francés y Japonés, además del Español, Inglés y Alemán. La internacionalización de la app no se quedará ahí, dado que desplegaremos dos nuevas interfaces globales, mientras que actualizamos la actual para reducir la fricción de uso. Dentro de las nuevas, encontramos una interfaz estándar, permitiendo a cualquier persona usarla, y otra diseñada para los estándares de densidad de información japoneses (y para añadir una waifu).\n\nAunque todavía no puedo desvelar todas las funciones nuevas que vendrán, sí puedo confirmar que la filosofía permanecerá intacta: NO vamos a exprimirte.\n\n• Self-Hosted: Si valoras la soberanía, podrás alojar tu propia instancia gratis.\n• Aerko Cloud: Si prefieres comodidad, ofreceremos una suscripción de 3€/mes (con precio adaptado por paridad) para que el equipo gestione la seguridad, los backups y la infraestructura por ti.\n\nAh, y preparaos para el protocolo “Anti-Email_Marketing”, porque tengo pensado redefinir los estándares de respeto hacia el usuario.",
+
+        // OBJETIVO 2
+        rm_obj2_title: "Objetivo 2: Sostenibilidad",
+        rm_obj2_desc: "Garantizar la autonomía financiera del proyecto. A diferencia de las startups infladas que queman millones en marketing, Aerko_ está diseñada bajo principios de eficiencia de costes. Gracias a que los costes de infraestructura son bajos, y escalan de forma eficiente, el objetivo de esta fase es alcanzar el punto de equilibrio con las suscripciones Cloud.\n\nEsto nos permitirá asegurar la continuidad del servicio a largo plazo y financiar el marketing necesario para rescatar a más usuarios de las apps actuales, sin comprometer nuestros principios éticos.",
+
+        // FASE 3
+        rm_p3_title: "Fase 03: Cloud PRO",
+        rm_p3_desc: "El sistema completo. Esta versión no solo seguirá siendo 100% open-source, sino que será el siguiente y último paso: añadir a la ecuación a los entrenadores. En esta versión se meterán funcionalidades de gestión de alumnos para que los entrenadores puedan entrar al ecosistema. Si bien el precio del entrenador será más alto, se creará un plan gratuito para los alumnos. Nuevamente, como todo se liberará bajo la licencia AGPLv3, cualquiera de vosotros podrá revisar el código, o hostearlo en su propia raspberry.",
+
+
         
         // SPECS PAGE
         specs_page_title: "ESPECIFICACIONES_SISTEMA",
@@ -121,31 +145,6 @@ es: {
         spec_sys_list: "<li>Exportación JSON/CSV Granular</li><li>Encriptación AES-256 (Client-side)</li><li>Código 100% Auditable (Open Source)</li>",
 
        spec_other_modules: "OTROS_MÓDULOS",
-
-
-        
-        // ROADMAP PAGE V2
-        rm_bar_center: "ROADMAP", // Nueva variable única
-
-        // FASE 1 (Con tu texto completo)
-        rm_p1_title: "Fase 01: Local Pwa",
-        rm_p1_desc: "El núcleo de todo. HTML, CSS y JS, alojado en github pages. Cualquier persona puede entrar, probarla, instalarla (PWA), modificarla, auditarla, o hacer lo que quiera, el código es libre, y la app totalmente gratis.\n\nNo hay backend, no hay cookies, no hay anuncios, no hay micropagos, y no hay malas intenciones, es mi primera declaración de guerra a la asquerosa industria del fitness actual. Todo se ejecuta en tu móvil, offline si lo instalas, y todo se guarda en tu móvil. Tienes la posibilidad de coger tus datos, e irte donde quieras si no te gusta la app.",
-        
-        // OBJETIVO 1
-        rm_obj1_title: "Objetivo 1: Masa crítica",
-        rm_obj1_desc: "TEXTO TEMPORAL: Antes de seguir con la fase dos, necesito validar el desarrollo.\n\nTarget: 1500 Usuarios activos o 750 miembros en Reddit.",
-
-        // FASE 2
-        rm_p2_title: "Fase 02: Cloud",
-        rm_p2_desc: "TEXTO TEMPORAL: Migración a Python sobre infraestructura híbrida.\n\nFunciones cloud opcionales, misma privacidad. Self-Hosted o gestionado.",
-
-        // OBJETIVO 2
-        rm_obj2_title: "Objetivo 2: Sostenibilidad",
-        rm_obj2_desc: "TEXTO TEMPORAL: Garantizar la autonomía financiera.\n\nAlcanzar el punto de equilibrio con las suscripciones Cloud para mantener servidores.",
-
-        // FASE 3
-        rm_p3_title: "Fase 03: Cloud PRO",
-        rm_p3_desc: "TEXTO TEMPORAL: El sistema completo para entrenadores.\n\nGestión de alumnos y ecosistema profesional bajo licencia AGPLv3.",
         
     },
 
