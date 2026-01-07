@@ -124,34 +124,21 @@ es: {
         rm_phase3_title: "FASE_03: CLOUD_PRO",
         rm_phase3_desc: "El sistema completo. Dashboard B2B para entrenadores sobre la misma arquitectura Python escalable. Gestión de clientes sin hojas de cálculo. Nuevamente: Todo liberado bajo licencia AGPLv3. Tú eres el dueño de la infraestructura.",
 
-        // MANIFESTO PAGE
-        mani_meta: "/// TIPO_DOC: MANIFIESTO_FUNDACIONAL /// AUTOR: SR_PAKURA",
-        mani_title: "EL_PROTOCOLO_AERKO",
-        
-        // INTRO
-        mani_intro: "Esto no es una startup. No tengo inversores, no tengo un departamento de marketing y, desde luego, no tengo intención de vender tus datos para comprarme un yate. <br><br>Soy un estudiante de 19 años que se cansó de ver cómo la industria del fitness se convertía en un atraco, y un casino de dopamina, con muchos influencers, esteroides, mentiras y tonterías. <br> <br> AERKO_ es mi trabajo de fin de Máster, pero también es mi declaración de guerra contra el software mediocre.",
+        // MANIFESTO PAGE V2
+        mani_bar_left: "MANIFIESTO_FUNDACIONAL",
+        mani_bar_right: "/// AUTOR: SR_PAKURA",
 
-        // PUNTO 1
-        mani_p1_title: "01. DAVID CONTRA EL 'BLOATWARE'",
-        mani_p1_text: "Las apps actuales pesan 200MB, tardan 10 segundos en abrirse y te piden matrimonio (suscripción) antes de la primera cita. <br><br>Yo programo desde mi habitación con una obsesión: Eficiencia. AERKO_ está escrito en código nativo ligero. Sin frameworks pesados. Sin grasa. Si la app tarda más de 0.5 segundos en responder, lo considero un bug personal.",
+        // COLUMNA 1
+        mani_01_title: "01_EL_PROTOCOLO_AERKO",
+        mani_01_text: "Esto no es una startup: no hay inversores, no hay departamento de marketing, y desde luego, no hay intención de vender tus datos para comprarme un yate.\n\nEsto es un proyecto open source, pero más que eso, mi declaración de guerra contra el software mediocre, y las corporaciones que se aprovechan del usuario para enriquecerse a costa de su privacidad.\n\nSoy un diseñador UX/UI y WebDev, pero también una persona que está harta de aplicaciones como Myfitnesspal, hevy, u otras aplicaciones cuyo modelo de negocio es sacar tus datos, secuestrarlos, intentar cobrarte una suscripción, y todo eso para acabar vendiendo los datos igualmente.\n\nSí, claro que el Bloc de notas y Excel funcionan, pero son tediosos. Por eso mismo nace Aerko, mi primer proyecto open source y la aplicación con la que quiero ofrecer a todo el mundo, no solo algo mejor que esas aplicaciones, sino la herramienta definitiva, libre, privada y potente.\n\nMi filosofía es muy sencilla ofrecer: algo ligero, realmente bueno, orientado a las personas y no a sus cuentas bancarias, Y como diría mi referente, Linus Torvalds, libre para toda la comunidad.\n\nPor eso, desde el diseño neo-brutalista (pensado para la velocidad y claridad) hasta el código (construido en JS Vanilla puro, renunciando a la comodidad de los frameworks pesados en favor del rendimiento extremo), todo está hecho para que el usuario final tenga el control absoluto.\n\nÚsalo. Edítalo. Hazlo tuyo.",
 
-        // PUNTO 2
-        mani_p2_title: "02. TUS DATOS, TU DISCO DURO",
-        mani_p2_text: "Subir tus fotos de progreso o tus marcas de salud a la nube de una corporación es un acto de fe que no deberías tener que hacer. <br><br>En AERKO_, la base de datos es un archivo SQLite que vive en TU teléfono. No hay 'Vendor Lock-in'. Puedes exportar todo a JSON o CSV cuando quieras. Eres el administrador de tu propia biología.",
+        // COLUMNA 2 (Arriba Derecha)
+        mani_02_title: "02_Privacidad",
+        mani_02_text: "Da igual cuando leas esto, mi enfoque siempre será el mismo. Tus datos son tus datos, y a mi, con todo el respeto, no me interesan mucho.\n\nSiempre te voy a ofrecer herramientas para exportar/importar, proteger (encriptar) y borrar tus datos.",
 
-        // CITA
-        mani_quote: "Tus datos biométricos no son mercancía.",
-
-        // PUNTO 3
-        mani_p3_title: "03. LATENCIA CERO",
-        mani_p3_text: "Registrar un set debe ser tan rápido como hacerlo. <br><br>He diseñado AERKO_ para que la interacción sea instantánea. La nube llegará (para backups y sync), pero será una utilidad silenciosa en segundo plano, nunca un muro de carga entre tú y tu entrenamiento.",
-
-        // PUNTO 4
-        mani_p4_title: "04. CONFIANZA VERIFICABLE",
-        mani_p4_text: "No me creas a mí. Confía en el código. <br><br>Todo el núcleo de AERKO_ es Open Source (Licencia GNU AGPLv3). Cualquiera puede auditar qué hace la aplicación con sus datos. Si mañana desaparezco, la comunidad puede coger el relevo. No alquilas una caja negra; adoptas una herramienta transparente.",
-
-        // FIRMA
-        mani_sign: "// FIN_DE_TRANSMISIÓN<br>// COMPILANDO_RESISTENCIA...",
+        // COLUMNA 3 (Abajo Derecha)
+        mani_03_title: "03_Mi_Objetivo",
+        mani_03_text: "Mi principal objetivo con esta app es darla a conocer al mundo,\n\n”no para hacerme rico, que ya dejo por escrito que con lo que gane pienso contribuir personal y financieramente al open-source para que salgan más proyectos como el mío,”\n\nsino para derrocar a las mierdas de aplicaciones actuales, y empezar a poner estándares en las aplicaciones, tanto éticos como tecnológicos.\n\nEso si, para ello no voy a sobrepasar ni olvidar mis principios, ni los principios que conforman la app.",
 
         footer_reddit_cta: "ÚNETE A LA COMUNIDAD DE REDDIT r/aerko",
     },
