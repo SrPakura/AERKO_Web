@@ -125,12 +125,11 @@ es: {
 
         
         // ROADMAP PAGE V2
-        rm_bar_left: "Línea Temporal",
-        rm_bar_right: "ROADMAP",
+        rm_bar_center: "ROADMAP", // Nueva variable única
 
-        // FASE 1
+        // FASE 1 (Con tu texto completo)
         rm_p1_title: "Fase 01: Local Pwa",
-        rm_p1_desc: "TEXTO TEMPORAL: El núcleo de todo. HTML, CSS y JS, alojado en GitHub Pages.\n\nPrivacidad absoluta y código libre. Sin backend, sin cookies.",
+        rm_p1_desc: "El núcleo de todo. HTML, CSS y JS, alojado en github pages. Cualquier persona puede entrar, probarla, instalarla (PWA), modificarla, auditarla, o hacer lo que quiera, el código es libre, y la app totalmente gratis.\n\nNo hay backend, no hay cookies, no hay anuncios, no hay micropagos, y no hay malas intenciones, es mi primera declaración de guerra a la asquerosa industria del fitness actual. Todo se ejecuta en tu móvil, offline si lo instalas, y todo se guarda en tu móvil. Tienes la posibilidad de coger tus datos, e irte donde quieras si no te gusta la app.",
         
         // OBJETIVO 1
         rm_obj1_title: "Objetivo 1: Masa crítica",
