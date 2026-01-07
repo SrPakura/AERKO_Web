@@ -35,23 +35,8 @@
 
 <body>
 
-    <!-- === HEADER === -->
-    <header class="header-container">
-        <div class="logo-box">
-            <img src="assets/img/logo.svg" alt="AERKO_ Open Source Fitness" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-            <span class="logo-text" style="display:none; font-family:'Clash Display', sans-serif; font-weight:700; font-size:24px;">AERKO_</span>
-        </div>
-        <nav class="nav-links">
-    <button class="nav-btn body-label" data-i18n="nav_manifesto" onclick="location.href='manifesto.html'">MANIFIESTO</button>
-    <button class="nav-btn body-label" data-i18n="nav_roadmap" onclick="location.href='roadmap.html'">ROADMAP</button>
-    <!-- CAMBIO: Specs ahora es Features -->
-    <button class="nav-btn body-label" data-i18n="nav_features" onclick="location.href='specs.html'">SPECS</button>
-    <!-- CAMBIO: Botón directo a Maze (sin clase join-trigger) -->
-    <button class="nav-btn btn-acid body-label" onclick="window.open('https://t.maze.co/487183250', '_blank')" data-i18n="btn_join">CONTRIBUIR</button>
-        </nav>
-        <!-- Mobile Toggle (Añadido data-i18n) -->
-        <button class="mobile-toggle body-label" data-i18n="nav_mobile_menu">MENU [+]</button>
-    </header>
+<!-- Header Dinámico -->
+<header id="app-header" class="header-container"></header>
 
     <!-- === MARQUEE === -->
     <div class="marquee-section">
@@ -213,44 +198,11 @@
 
     </section>
 
-    <!-- === FOOTER CORREGIDO === -->
-    <footer class="main-footer">
-        <!-- Columna Izquierda: Source & Protocols -->
-        <div class="footer-left">
-            <div class="footer-col">
-                <h4 data-i18n="footer_source_title"></h4>
-                <ul class="footer-links body-base text-white">
-                    <li><a href="https://github.com/SrPakura/AERKO_Web" data-i18n="footer_link_page"></a></li>
-                    <li><a href="https://github.com/SrPakura/AERKO_PWA" data-i18n="footer_link_core"></a></li>
-                    <li><a href="https://github.com/SrPakura/AERKO_Cloud" data-i18n="footer_link_cloud"></a></li>
-                    <li><a href="https://github.com/SrPakura/Aerko_Cloud_Pro" data-i18n="footer_link_pro"></a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 data-i18n="footer_protocols_title"></h4>
-                <ul class="footer-links body-base text-white">
-                    <li><a href="manifesto.html" data-i18n="footer_link_privacy"></a></li>
-                    <li><a href="https://www.gnu.org/licenses/agpl-3.0.html" data-i18n="footer_link_terms"></a></li>
-                    <li><a href="manifesto.html" data-i18n="footer_link_data"></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Columna Derecha: CTA -->
-        <div class="footer-right">
-    <div class="footer-right-content">
-        <h2 class="h2-title text-acid mb-32" data-i18n="footer_cta_title">¿LISTO?</h2>  
-        <p class="body-base text-white" data-i18n="footer_cta_text">Texto CTA</p>
-    </div>
-    <div class="footer-cta-row">
-        <!-- CAMBIO: Un solo botón grande para Reddit -->
-        <a href="https://www.reddit.com/r/aerko_/" target="_blank" class="btn-primary-inverted-shadow link-full" style="text-align: center;" data-i18n="footer_reddit_cta">UNETE A R/AERKO</a>
-    </div>
-</div>
-        </div>
-    </footer>
+<!-- Footer Dinámico -->
+<footer id="app-footer" class="main-footer footer-seamless"></footer>
 
     <!-- Scripts -->
+    <script src="assets/js/components.js"></script>
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
