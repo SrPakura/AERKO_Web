@@ -130,23 +130,23 @@ es: {
 
         // FASE 1
         rm_p1_title: "Fase 01: Local Pwa",
-        rm_p1_text: "TEXTO TEMPORAL: El núcleo de todo. HTML, CSS y JS, alojado en GitHub Pages. Privacidad absoluta y código libre.\n\nNo hay backend, no hay cookies, no hay tonterías.",
+        rm_p1_desc: "TEXTO TEMPORAL: El núcleo de todo. HTML, CSS y JS, alojado en GitHub Pages.\n\nPrivacidad absoluta y código libre. Sin backend, sin cookies.",
         
         // OBJETIVO 1
         rm_obj1_title: "Objetivo 1: Masa crítica",
-        rm_obj1_text: "TEXTO TEMPORAL: Antes de seguir con la fase dos, necesito validar el desarrollo. 1500 Usuarios activos o 750 miembros en Reddit.",
+        rm_obj1_desc: "TEXTO TEMPORAL: Antes de seguir con la fase dos, necesito validar el desarrollo.\n\nTarget: 1500 Usuarios activos o 750 miembros en Reddit.",
 
         // FASE 2
         rm_p2_title: "Fase 02: Cloud",
-        rm_p2_text: "TEXTO TEMPORAL: No es una simple versión mejorada. Migramos el backend a Python. Aún más funciones, más potencia, misma privacidad.\n\nSelf-Hosted o Aerko Cloud gestionado.",
+        rm_p2_desc: "TEXTO TEMPORAL: Migración a Python sobre infraestructura híbrida.\n\nFunciones cloud opcionales, misma privacidad. Self-Hosted o gestionado.",
 
         // OBJETIVO 2
         rm_obj2_title: "Objetivo 2: Sostenibilidad",
-        rm_obj2_text: "TEXTO TEMPORAL: Garantizar la autonomía financiera del proyecto. Alcanzar el punto de equilibrio con las suscripciones Cloud.",
+        rm_obj2_desc: "TEXTO TEMPORAL: Garantizar la autonomía financiera.\n\nAlcanzar el punto de equilibrio con las suscripciones Cloud para mantener servidores.",
 
         // FASE 3
         rm_p3_title: "Fase 03: Cloud PRO",
-        rm_p3_text: "TEXTO TEMPORAL: El sistema completo. Funcionalidades de gestión de alumnos para entrenadores. Todo bajo licencia AGPLv3.",
+        rm_p3_desc: "TEXTO TEMPORAL: El sistema completo para entrenadores.\n\nGestión de alumnos y ecosistema profesional bajo licencia AGPLv3.",
         
     },
 
