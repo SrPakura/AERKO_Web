@@ -560,7 +560,7 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     /* IMPORTANTE: Aquí definimos el ancho. 
        Si el menú corta al 61% (como tu hero antiguo), usamos eso. 
        Ajusta este porcentaje si la línea no casa perfecta. */
-    grid-template-columns: 61% 39%; 
+    grid-template-columns: 59% 41%; 
     max-width: var(--max-width);
     margin: 0 auto;
     border-left: var(--border-std);
