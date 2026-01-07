@@ -69,6 +69,8 @@ es: {
         footer_cta_text: "> Deja de usar hojas de cálculo.<br>> Únete a la evolución del fitness técnico.",
         footer_btn_join: "[ UNIRSE_WAITLIST ]",
 
+
+        
         // SPECS PAGE
         specs_page_title: "ESPECIFICACIONES_SISTEMA",
         specs_page_subtitle: "/// FUNCIONES_DESTACADAS /// OBJETIVO_V.1.0",
@@ -100,6 +102,8 @@ es: {
 
        spec_other_modules: "OTROS_MÓDULOS",
 
+
+        
         // ROADMAP PAGE
         roadmap_page_title: "REGISTRO_DESPLIEGUE",
         roadmap_page_subtitle: "/// LÍNEA_TEMPORAL /// HITOS /// VISIÓN_FUTURA",
@@ -124,21 +128,23 @@ es: {
         rm_phase3_title: "FASE_03: CLOUD_PRO",
         rm_phase3_desc: "El sistema completo. Dashboard B2B para entrenadores sobre la misma arquitectura Python escalable. Gestión de clientes sin hojas de cálculo. Nuevamente: Todo liberado bajo licencia AGPLv3. Tú eres el dueño de la infraestructura.",
 
+
+        
         // MANIFESTO PAGE V2
         mani_bar_left: "MANIFIESTO_FUNDACIONAL",
         mani_bar_right: "/// AUTOR: SR_PAKURA",
 
         // COLUMNA 1
-        mani_01_title: "01_EL_PROTOCOLO_AERKO",
-        mani_01_text: "Esto no es una startup: no hay inversores, no hay departamento de marketing, y desde luego, no hay intención de vender tus datos para comprarme un yate.\n\nEsto es un proyecto open source, pero más que eso, mi declaración de guerra contra el software mediocre, y las corporaciones que se aprovechan del usuario para enriquecerse a costa de su privacidad.\n\nSoy un diseñador UX/UI y WebDev, pero también una persona que está harta de aplicaciones como Myfitnesspal, hevy, u otras aplicaciones cuyo modelo de negocio es sacar tus datos, secuestrarlos, intentar cobrarte una suscripción, y todo eso para acabar vendiendo los datos igualmente.\n\nSí, claro que el Bloc de notas y Excel funcionan, pero son tediosos. Por eso mismo nace Aerko, mi primer proyecto open source y la aplicación con la que quiero ofrecer a todo el mundo, no solo algo mejor que esas aplicaciones, sino la herramienta definitiva, libre, privada y potente.\n\nMi filosofía es muy sencilla ofrecer: algo ligero, realmente bueno, orientado a las personas y no a sus cuentas bancarias, Y como diría mi referente, Linus Torvalds, libre para toda la comunidad.\n\nPor eso, desde el diseño neo-brutalista (pensado para la velocidad y claridad) hasta el código (construido en JS Vanilla puro, renunciando a la comodidad de los frameworks pesados en favor del rendimiento extremo), todo está hecho para que el usuario final tenga el control absoluto.\n\nÚsalo. Edítalo. Hazlo tuyo.",
+        mani_01_title: "01_PROTOCOLO_AERKO",
+        mani_01_text: "Esto no es una startup: no hay inversores, no hay departamento de marketing, y desde luego, no hay intención de vender tus datos para comprarme un yate. \n\n Esto es un proyecto open source, pero más que eso, mi declaración de guerra contra el software mediocre, y las corporaciones que se aprovechan del usuario para enriquecerse a costa de su privacidad. \n\n Soy un diseñador UX/UI y WebDev, pero también una persona que está harta de aplicaciones como Myfitnesspal, hevy, u otras aplicaciones cuyo modelo de negocio es sacar tus datos, secuestrarlos, intentar cobrarte una suscripción, y todo eso para acabar vendiendo los datos igualmente. \n\n Sí, claro que el Bloc de notas y Excel funcionan, pero son tediosos. Por eso mismo nace Aerko, mi primer proyecto open source y la aplicación con la que quiero ofrecer a todo el mundo, no solo algo mejor que esas aplicaciones, sino la herramienta definitiva, libre, privada y potente. \n\n Mi filosofía es muy sencilla ofrecer: algo ligero, realmente bueno, orientado a las personas y no a sus cuentas bancarias, Y como diría mi referente, Linus Torvalds, libre para toda la comunidad. \n\n Por eso, desde el diseño neo-brutalista (pensado para la velocidad y claridad) hasta el código (construido en JS Vanilla puro, renunciando a la comodidad de los frameworks pesados en favor del rendimiento extremo), todo está hecho para que el usuario final tenga el control absoluto. \n\n Úsalo. Edítalo. Hazlo tuyo.",
 
         // COLUMNA 2 (Arriba Derecha)
         mani_02_title: "02_Privacidad",
-        mani_02_text: "Da igual cuando leas esto, mi enfoque siempre será el mismo. Tus datos son tus datos, y a mi, con todo el respeto, no me interesan mucho.\n\nSiempre te voy a ofrecer herramientas para exportar/importar, proteger (encriptar) y borrar tus datos.",
+        mani_02_text: "Da igual cuando leas esto, mi enfoque siempre será el mismo. Tus datos son tus datos, y a mi, con todo el respeto, no me interesan mucho. \n\n Siempre te voy a ofrecer herramientas para exportar/importar, proteger (encriptar) y borrar tus datos.",
 
         // COLUMNA 3 (Abajo Derecha)
         mani_03_title: "03_Mi_Objetivo",
-        mani_03_text: "Mi principal objetivo con esta app es darla a conocer al mundo,\n\n”no para hacerme rico, que ya dejo por escrito que con lo que gane pienso contribuir personal y financieramente al open-source para que salgan más proyectos como el mío,”\n\nsino para derrocar a las mierdas de aplicaciones actuales, y empezar a poner estándares en las aplicaciones, tanto éticos como tecnológicos.\n\nEso si, para ello no voy a sobrepasar ni olvidar mis principios, ni los principios que conforman la app.",
+        mani_03_text: "Mi principal objetivo con esta app es darla a conocer al mundo, \n\n ”no para hacerme rico, que ya dejo por escrito que con lo que gane pienso contribuir personal y financieramente al open-source para que salgan más proyectos como el mío”, \n\n sino para derrocar a las mierdas de aplicaciones actuales, y empezar a poner estándares en las aplicaciones, tanto éticos como tecnológicos. \n\n Eso si, para ello no voy a sobrepasar ni olvidar mis principios, ni los principios que conforman la app.",
 
         footer_reddit_cta: "ÚNETE A LA COMUNIDAD DE REDDIT r/aerko",
     },
