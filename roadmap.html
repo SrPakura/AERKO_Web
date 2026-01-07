@@ -5,92 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AERKO_ // ROADMAP</title>
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <!-- Fuentes -->
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<!-- Header Dinámico -->
-<header id="app-header" class="header-container"></header>
+<body class="bg-black-force">
 
-    <!-- TITULO -->
-<section class="deployment-container" style="border-bottom:var(--border-std);">
-    <div class="deployment-header">
-        <h1 class="h1-title" data-i18n="roadmap_page_title"></h1>
-        <p class="body-base text-black mt-gap" data-i18n="roadmap_page_subtitle"></p>
+    <!-- Header Dinámico -->
+    <header id="app-header" class="header-container"></header>
+
+    <!-- BARRA SUPERIOR (Nuevo Diseño) -->
+    <div class="roadmap-bar">
+        <div class="rm-bar-left">
+            <span class="body-label text-acid" data-i18n="rm_bar_left"></span>
+        </div>
+        <div class="rm-bar-right">
+            <span class="body-label text-acid" data-i18n="rm_bar_right"></span>
+        </div>
     </div>
-</section>
 
-<!-- CONTENEDOR PRINCIPAL -->
-    <!-- CONTENEDOR PRINCIPAL -->
+    <!-- CONTENEDOR PRINCIPAL CON ANIMACIÓN -->
     <section class="roadmap-container">
         
-        <!-- 1. LA LÍNEA (TRACK) -->
+        <!-- 1. LA LÍNEA DE FONDO + BARRA VERDE ANIMADA -->
         <div class="roadmap-track-container">
             <div class="roadmap-progress-bar" id="progressBar"></div>
         </div>
 
         <!-- 2. LAS FILAS (ITEMS) -->
         
-        <!-- ITEM 1: FASE 1 (Negro) -->
+        <!-- ITEM 1: FASE 1 -->
         <div class="rm-row">
             <div class="rm-marker-col">
-                <div class="phase-marker" id="m1">1</div>
+                <div class="rm-bubble active" id="m1">1</div>
             </div>
-            <div class="rm-card theme-black">
-                <h2 class="h2-title" data-i18n="rm_phase1_title"></h2>
-                <p class="body-base" data-i18n="rm_phase1_desc"></p>
+            <div class="rm-content-cell">
+                <h2 class="rm-title-h2 text-black" data-i18n="rm_p1_title"></h2>
+                <p class="rm-text-p text-black" data-i18n="rm_p1_desc"></p>
             </div>
         </div>
 
-        <!-- ITEM 2: OBJETIVO 1 (Blanco) -->
+        <!-- ITEM 2: OBJETIVO 1 -->
         <div class="rm-row">
             <div class="rm-marker-col">
-                <div class="obj-dot" id="d1"></div>
+                <div class="rm-dot" id="d1"></div>
             </div>
-            <div class="rm-card theme-white">
-                <h3 data-i18n="rm_obj1_title"></h3>
-                <p class="body-base" data-i18n="rm_obj1_desc"></p>
+            <div class="rm-content-cell">
+                <h3 class="rm-obj-h3" data-i18n="rm_obj1_title"></h3>
+                <p class="rm-text-p text-black" data-i18n="rm_obj1_desc"></p>
             </div>
         </div>
 
-        <!-- ITEM 3: FASE 2 (Negro) -->
+        <!-- ITEM 3: FASE 2 -->
         <div class="rm-row">
             <div class="rm-marker-col">
-                <div class="phase-marker" id="m2">2</div>
+                <div class="rm-bubble" id="m2">2</div>
             </div>
-            <div class="rm-card theme-black">
-                <h2 class="h2-title" data-i18n="rm_phase2_title"></h2>
-                <p class="body-base" data-i18n="rm_phase2_desc"></p>
+            <div class="rm-content-cell">
+                <h2 class="rm-title-h2 text-black" data-i18n="rm_p2_title"></h2>
+                <p class="rm-text-p text-black" data-i18n="rm_p2_desc"></p>
             </div>
         </div>
 
-        <!-- ITEM 4: OBJETIVO 2 (Blanco) -->
+        <!-- ITEM 4: OBJETIVO 2 -->
         <div class="rm-row">
             <div class="rm-marker-col">
-                <div class="obj-dot" id="d2"></div>
+                <div class="rm-dot" id="d2"></div>
             </div>
-            <div class="rm-card theme-white">
-                <h3 data-i18n="rm_obj2_title"></h3>
-                <p class="body-base" data-i18n="rm_obj2_desc"></p>
+            <div class="rm-content-cell">
+                <h3 class="rm-obj-h3" data-i18n="rm_obj2_title"></h3>
+                <p class="rm-text-p text-black" data-i18n="rm_obj2_desc"></p>
             </div>
         </div>
 
-        <!-- ITEM 5: FASE 3 (Negro) -->
+        <!-- ITEM 5: FASE 3 -->
         <div class="rm-row">
             <div class="rm-marker-col">
-                <div class="phase-marker" id="m3">3</div>
+                <div class="rm-bubble" id="m3">3</div>
             </div>
-            <div class="rm-card theme-black">
-                <h2 class="h2-title" data-i18n="rm_phase3_title"></h2>
-                <p class="body-base" data-i18n="rm_phase3_desc"></p>
+            <div class="rm-content-cell">
+                <h2 class="rm-title-h2 text-black" data-i18n="rm_p3_title"></h2>
+                <p class="rm-text-p text-black" data-i18n="rm_p3_desc"></p>
             </div>
         </div>
 
     </section>
 
-<!-- Footer Dinámico -->
-<footer id="app-footer" class="main-footer footer-seamless"></footer>
+    <!-- Footer Dinámico -->
+    <footer id="app-footer" class="main-footer footer-seamless"></footer>
 
     <!-- SCRIPTS -->
     <script src="assets/js/components.js"></script>
@@ -98,60 +103,55 @@
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <!-- SCRIPT DE ANIMACIÓN (Actualizado con nuevas posiciones) -->
-        <script>
+    <!-- SCRIPT DE ANIMACIÓN (Manteniendo lo que funcionaba) -->
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const progressBar = document.getElementById('progressBar');
             const container = document.querySelector('.roadmap-container');
-            // IDs de los marcadores que queremos animar
             const markers = ['m1', 'd1', 'm2', 'd2', 'm3']; 
 
             function updateRoadmap() {
                 if (!container) return;
 
-                // 1. Cálculos de posición
+                // Cálculos de posición
                 const rect = container.getBoundingClientRect();
                 const windowHeight = window.innerHeight;
                 
-                // Punto de "corte" (la línea verde se dibuja hasta el 40% de la pantalla aprox)
-                const triggerPoint = windowHeight * 0.5; 
+                // La barra se empieza a llenar cuando el container entra por la mitad de la pantalla
+                const triggerPoint = windowHeight * 0.6; 
                 
-                // Distancia desde el top del container hasta el triggerPoint
                 let progress = -rect.top + triggerPoint;
-                
-                // Límites (0% a 100%)
                 const totalHeight = container.offsetHeight;
+                
                 let heightPercentage = (progress / totalHeight) * 100;
                 heightPercentage = Math.max(0, Math.min(100, heightPercentage));
 
-                // 2. Aplicar altura a la barra verde
+                // Pintar la barra
                 progressBar.style.height = heightPercentage + '%';
 
-                // 3. Activar marcadores
-                // Calculamos la posición absoluta en píxeles de la barra verde dentro del container
+                // Activar bolas al pasar
                 const currentBarPx = (heightPercentage / 100) * totalHeight;
 
                 markers.forEach(id => {
                     const el = document.getElementById(id);
                     if(!el) return;
-
-                    // Buscamos la posición del marcador relativa al container
-                    // Truco: offsetTop nos da la posición relativa al padre posicionado más cercano (row),
-                    // así que sumamos el offsetTop del padre (la fila) para tener la posición real.
                     const row = el.closest('.rm-row');
-                    const markerPosition = row.offsetTop + (row.offsetHeight / 2); // Centro de la fila
+                    // Ajuste: Calculamos cuando la barra llega a la bola
+                    const markerPosition = row.offsetTop + 50; 
 
                     if (currentBarPx > markerPosition) {
                         el.classList.add('active');
                     } else {
-                        el.classList.remove('active');
+                        // Opcional: si quieres que se apaguen al subir, deja esto.
+                        // Si quieres que se queden encendidas, quita el else.
+                        // el.classList.remove('active'); 
+                        if (id !== 'm1') el.classList.remove('active'); // M1 siempre activo
                     }
                 });
             }
 
             window.addEventListener('scroll', updateRoadmap);
-            window.addEventListener('resize', updateRoadmap); // Recalcular si cambian tamaño ventana
-            // Llamada inicial
+            window.addEventListener('resize', updateRoadmap);
             updateRoadmap();
         });
     </script>
