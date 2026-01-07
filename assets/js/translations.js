@@ -124,29 +124,29 @@ es: {
 
 
         
-        // ROADMAP PAGE
-        roadmap_page_title: "REGISTRO_DESPLIEGUE",
-        roadmap_page_subtitle: "/// LÍNEA_TEMPORAL /// HITOS /// VISIÓN_FUTURA",
+        // ROADMAP PAGE V2
+        rm_bar_left: "Línea Temporal",
+        rm_bar_right: "ROADMAP",
 
-        // FASE 1 (Negro)
-        rm_phase1_title: "FASE_01: LOCAL_PWA",
-        rm_phase1_desc: "El núcleo del sistema. HTML/CSS/JS puro alojado en GitHub Pages. Sin backend, sin cookies, sin tonterías. Tus datos viven en IndexedDB. Código 100% abierto: Si sabes leerlo, sabes que no te espío.",
+        // FASE 1
+        rm_p1_title: "Fase 01: Local Pwa",
+        rm_p1_text: "TEXTO TEMPORAL: El núcleo de todo. HTML, CSS y JS, alojado en GitHub Pages. Privacidad absoluta y código libre.\n\nNo hay backend, no hay cookies, no hay tonterías.",
+        
+        // OBJETIVO 1
+        rm_obj1_title: "Objetivo 1: Masa crítica",
+        rm_obj1_text: "TEXTO TEMPORAL: Antes de seguir con la fase dos, necesito validar el desarrollo. 1500 Usuarios activos o 750 miembros en Reddit.",
 
-        // OBJETIVO 1 (Blanco)
-        rm_obj1_title: "OBJETIVO_1: MASA CRÍTICA",
-        rm_obj1_desc: "Para justificar el desarrollo del Backend, necesito señales de vida inteligente. <br> <br> Target: 1.500 Usuarios Activos/mes (Gratis) O Comunidad (750 en r/aerko + 250 en Twitter). Si llegamos, arranco el servidor.",
+        // FASE 2
+        rm_p2_title: "Fase 02: Cloud",
+        rm_p2_text: "TEXTO TEMPORAL: No es una simple versión mejorada. Migramos el backend a Python. Aún más funciones, más potencia, misma privacidad.\n\nSelf-Hosted o Aerko Cloud gestionado.",
 
-        // FASE 2 (Negro)
-        rm_phase2_title: "FASE_02: CLOUD_SYNC",
-        rm_phase2_desc: "Web App con motor Python. Arquitectura híbrida (VPS + Litestream + Cloudflare D1/R2). Sincronización encriptada entre dispositivos. <br> <br> Modelo: Open Source (Self-Host gratis) o paga una miseria para que yo lo gestione por ti.",
+        // OBJETIVO 2
+        rm_obj2_title: "Objetivo 2: Sostenibilidad",
+        rm_obj2_text: "TEXTO TEMPORAL: Garantizar la autonomía financiera del proyecto. Alcanzar el punto de equilibrio con las suscripciones Cloud.",
 
-        // OBJETIVO 2 (Blanco)
-        rm_obj2_title: "OBJETIVO_2: SOSTENIBILIDAD",
-        rm_obj2_desc: "Validar que esto es un negocio, no un hobby caro. <br> <br> Target: 500 Usuarios de pago (Early Adopters). Esto cubre costes de servidores y café para desarrollar el ecosistema profesional.",
-
-        // FASE 3 (Negro)
-        rm_phase3_title: "FASE_03: CLOUD_PRO",
-        rm_phase3_desc: "El sistema completo. Dashboard B2B para entrenadores sobre la misma arquitectura Python escalable. Gestión de clientes sin hojas de cálculo. Nuevamente: Todo liberado bajo licencia AGPLv3. Tú eres el dueño de la infraestructura.",
+        // FASE 3
+        rm_p3_title: "Fase 03: Cloud PRO",
+        rm_p3_text: "TEXTO TEMPORAL: El sistema completo. Funcionalidades de gestión de alumnos para entrenadores. Todo bajo licencia AGPLv3.",
         
     },
 
