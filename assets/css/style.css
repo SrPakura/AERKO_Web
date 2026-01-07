@@ -781,10 +781,15 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     line-height: 1.6;
     color: var(--black);
     
-    /* ESTAS DOS LÍNEAS SON LA CLAVE: */
-    white-space: pre-line; /* Permite saltos de línea \n */
-    max-width: 100%;       /* Ocupa todo el ancho */
-    padding-right: 1.5rem; /* Margen derecho de seguridad */
+    /* 1. SOLUCIÓN SALTOS DE LÍNEA: 
+       'pre-line' obliga al navegador a respetar los \n que pusiste en el JSON */
+    white-space: pre-line; 
+    
+    /* 2. SOLUCIÓN ANCHO 100%: 
+       Asegura el ancho total y elimina el margen derecho que lo frenaba */
+    width: 100%;      
+    max-width: 100%;
+    padding-right: 0; /* Antes tenías 1.5rem, esto lo cortaba antes de llegar al borde */
 }
 
 /* RESPONSIVE */
