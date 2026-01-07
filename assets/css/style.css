@@ -542,14 +542,16 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 
 /* Barra Superior (Marquee estático) */
 .manifesto-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid; /* Cambiamos Flex por Grid */
+    grid-template-columns: 59% 41%; /* IGUAL QUE TU GRID DE ABAJO */
+    align-items: center; /* Centrado vertical */
+    justify-items: center; /* ESTO ES LA MAGIA: Centrado horizontal en su columna */
+    
     background-color: var(--black);
-    padding: 0.5rem 1.5rem; /* Ajustado al padding estándar */
+    padding: 0.5rem 0; /* Quitamos padding lateral para que el centro sea matemático */
+    
     border-left: var(--border-std);
     border-right: var(--border-std);
-    /* Para que coincida con el ancho máximo */
     max-width: var(--max-width);
     margin: 0 auto;
 }
@@ -635,8 +637,13 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
         font-size: 2.5rem; /* Un poco más pequeño en móvil */
     }
     .manifesto-bar {
+        display: flex; /* En móvil volvemos a flex columna */
         flex-direction: column;
         gap: 0.5rem;
-        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .manifesto-v2-grid {
+        grid-template-columns: 1fr; /* Una columna en móvil */
     }
 }
