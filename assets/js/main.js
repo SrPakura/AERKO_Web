@@ -7,23 +7,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('AERKO_ SYSTEM: ONLINE');
 
-    // --- 1. MENÚ HAMBURGUESA ---
-    const toggleBtn = document.querySelector('.mobile-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    
-    if (toggleBtn) {
-        toggleBtn.addEventListener('click', () => {
-            // Alternar clase CSS
-            navLinks.classList.toggle('is-open');
-            
-            // Cambiar texto del botón
-            if (navLinks.classList.contains('is-open')) {
-                toggleBtn.innerText = 'MENU [-]';
-            } else {
-                toggleBtn.innerText = 'MENU [+]';
-            }
-        });
-    }
+    // --- 1. MENÚ HAMBURGUESA (trasladada a components.js) ---
 
     // --- 2. LÓGICA DE TABS (SPECS PAGE) ---
     const tabs = document.querySelectorAll('.tab-btn');
