@@ -773,7 +773,17 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 /* TIPOGRAFÍA */
 .rm-title-h2 { font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1; margin-bottom: 1.5rem; }
 .rm-obj-h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: #333; margin-bottom: 1.5rem; }
-.rm-text-p { font-family: var(--font-mono); font-size: 1rem; line-height: 1.6; max-width: 800px; }
+.rm-text-p {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--black);
+    
+    /* ¡AQUÍ ESTÁ LA MAGIA! */
+    white-space: pre-line; /* Esto respeta los saltos de línea (\n) */
+    max-width: 100%;       /* Esto deja que use todo el ancho disponible */
+    padding-right: 1.5rem; /* Un pequeño margen a la derecha para que no pegue al borde de pantalla */
+}
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
