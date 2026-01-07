@@ -652,11 +652,11 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
    ROADMAP V2 (CORREGIDO - CON BOLAS Y PUNTOS)
    ========================================= */
 
-/* BARRA SUPERIOR */
+/* BARRA SUPERIOR (Modificada: Solo ROADMAP centrado) */
 .roadmap-bar {
-    display: grid;
-    grid-template-columns: 145px 1fr;
-    align-items: center;
+    display: flex;             /* Usamos Flex para centrar fácil */
+    justify-content: center;   /* Centrado horizontal */
+    align-items: center;       /* Centrado vertical */
     background-color: var(--black);
     padding: 0.5rem 0;
     border-left: var(--border-std);
@@ -665,9 +665,6 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     margin: 0 auto;
     z-index: 10; position: relative;
 }
-
-.rm-bar-left { text-align: center; border-right: 1px solid var(--acid); }
-.rm-bar-right { padding-left: 1.5rem; }
 
 /* CONTENEDOR PRINCIPAL */
 .roadmap-container {
