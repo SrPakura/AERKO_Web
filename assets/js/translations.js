@@ -835,7 +835,7 @@ pt: {
         hero_code_message: "> SYSTEM_MESSAGE: \"Codando minha própria solução.\"",
         
         hero_specs_title: "ESPECIFICAÇÕES",
-        hero_specs_list: "ARQUITETURA: ................ LOCAL-FIRST / PWA<br>BANCO DE DADOS: ...................... INDEXEDDB<br>CRIPTOGRAFIA: .......................... AES-256 <br>LICENÇA: .............. Open Source (GNU AGPLv3)<br>CUSTO: ....................... R$0 (Auto-hospedado)",
+        hero_specs_list: "ARQUITETURA: ................ LOCAL-FIRST / PWA<br>BANCO DE DADOS: ...................... INDEXEDDB<br>CRIPTOGRAFIA: .......................... AES-256 <br>LICENÇA: .............. Open Source (GNU AGPLv3)<br>CUSTO: ...................... R$0 (Auto-hospedado)",
 
         manifesto_title: "FILOSOFIA<br>CÓDIGO ABERTO",
         manifesto_points: "> SEM GAMIFICAÇÃO TÓXICA.<br>> FERRAMENTAS, NÃO BRINQUEDOS.<br>> SEM CONVERSA FIADA. SÓ A GRAVIDADE.",
