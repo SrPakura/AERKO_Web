@@ -22,36 +22,41 @@
 
         <div class="explorer-grid">
             
-            <!-- === SIDEBAR === -->
+            <!-- === SIDEBAR LIMPIA v3.2 === -->
             <aside class="explorer-sidebar">
                 
                 <!-- SECCIÓN 1: DISCOS -->
                 <div class="sidebar-section-title" data-i18n="specs_sec_disks"></div>
-                <!-- El botón activo por defecto debe coincidir con el panel visible -->
-                <button class="nav-item active" data-target="panel-local" data-i18n="specs_nav_local"></button>
+                
+                <!-- LOCAL_PWA: Siempre activo visualmente, pero SIN data-target (no cambia panel) -->
+                <!-- Le ponemos la clase 'static-active' para que el JS no se la quite al hacer click en otros -->
+                <div class="nav-item active static-active" style="cursor: default;">
+                    > Local_PWA
+                </div>
+                
                 <button class="nav-item disabled" data-i18n="specs_nav_cloud"></button>
                 <button class="nav-item disabled" data-i18n="specs_nav_pro"></button>
 
-                <div class="stripe-bar"></div>
+                <!-- Espacio vacío donde antes estaban las stripes (opcional, margen) -->
+                <div style="margin-bottom: 2rem;"></div>
 
                 <!-- SECCIÓN 2: FUNCIONES -->
                 <div class="sidebar-section-title" data-i18n="specs_sec_funcs"></div>
-                <button class="nav-item" data-target="panel-system" data-i18n="specs_nav_system"></button>
+                
+                <!-- SISTEMA: Activo por defecto (Este sí abre panel) -->
+                <button class="nav-item active" data-target="panel-system" data-i18n="specs_nav_system"></button>
                 <button class="nav-item" data-target="panel-nutri" data-i18n="specs_nav_nutri"></button>
                 <button class="nav-item" data-target="panel-train" data-i18n="specs_nav_train"></button>
                 <button class="nav-item" data-target="panel-progress" data-i18n="specs_nav_progress"></button>
                 <button class="nav-item" data-target="panel-special" data-i18n="specs_nav_special"></button>
 
-                <div class="stripe-bar"></div>
-
-                <!-- SECCIÓN 3: REPOSITORIOS (Links externos) -->
-                <div class="sidebar-section-title" data-i18n="specs_sec_repos"></div>
-                <a href="#" class="sidebar-link">Esta_Page</a>
-                <a href="#" class="sidebar-link">Core_App_PWA</a>
-
-                <!-- SECCIÓN 4: PROTOCOLOS -->
-                <div class="sidebar-section-title" data-i18n="specs_sec_proto"></div>
-                <a href="manifesto.html" class="sidebar-link">Manifiesto</a>
+                <!-- PROTOCOLOS (Si quieres mantenerlo abajo del todo) -->
+                <div style="margin-top: auto;">
+                    <div class="sidebar-section-title" data-i18n="specs_sec_proto"></div>
+                    <a href="manifesto.html" class="sidebar-link">Manifiesto_Privacidad</a>
+                    <a href="#" class="sidebar-link">Terminos_Uso (GNU AGPLv3)</a>
+                    <a href="#" class="sidebar-link">Propiedad_De_Datos</a>
+                </div>
                 
             </aside>
 
@@ -196,26 +201,30 @@
         <!-- SCRIPT ESPECÍFICO PARA EL EXPLORADOR -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const navItems = document.querySelectorAll('.nav-item');
+            // Seleccionamos solo los botones que tengan data-target (las Funciones)
+            const navButtons = document.querySelectorAll('button.nav-item[data-target]');
             const panels = document.querySelectorAll('.explorer-panel');
 
-            navItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    // Ignorar si está desactivado
-                    if(item.classList.contains('disabled')) return;
+            navButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Ignorar si disabled
+                    if(btn.classList.contains('disabled')) return;
 
-                    const targetId = item.getAttribute('data-target');
-                    if(!targetId) return; // Si es un link que no apunta a panel
+                    const targetId = btn.getAttribute('data-target');
+                    
+                    // 1. Quitar active solo de los botones de navegación (Funciones)
+                    // NO tocamos el Local_PWA porque es un div estático
+                    navButtons.forEach(b => b.classList.remove('active'));
+                    
+                    // 2. Quitar active de paneles
+                    panels.forEach(p => p.classList.remove('active'));
 
-                    // 1. Quitar active de todo
-                    navItems.forEach(nav => nav.classList.remove('active'));
-                    panels.forEach(panel => panel.classList.remove('active'));
+                    // 3. Activar el clickeado
+                    btn.classList.add('active');
+                    const targetPanel = document.getElementById(targetId);
+                    if(targetPanel) targetPanel.classList.add('active');
 
-                    // 2. Activar clickeado
-                    item.classList.add('active');
-                    document.getElementById(targetId).classList.add('active');
-
-                    // 3. (Opcional) Scroll top en móvil
+                    // Scroll móvil
                     if(window.innerWidth < 900) {
                         window.scrollTo({top: 0, behavior: 'smooth'});
                     }
