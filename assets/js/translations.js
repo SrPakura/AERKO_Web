@@ -115,34 +115,60 @@ es: {
 
 
         
-        // SPECS PAGE
-        specs_page_title: "ESPECIFICACIONES_SISTEMA",
-        specs_page_subtitle: "/// FUNCIONES_DESTACADAS /// OBJETIVO_V.1.0",
+        // SPECS PAGE v3.0 (EXPLORER)
+        specs_explorer_title: "Explorador de Funciones",
         
-        tab_tracking: "ENTRENAMIENTO",
-        tab_nutrition: "NUTRICIÓN",
-        tab_biomechanics: "BIOMETRÍA",
-        tab_system: "SISTEMA",
+        // Sidebar Sections
+        specs_sec_disks: "// Discos locales",
+        specs_sec_funcs: "/// Funciones",
+        specs_sec_repos: "REPOSITORIOS",
+        specs_sec_proto: "PROTOCOLOS",
 
-        // Panel Tracking
-        spec_track_killer_title: "SMART FLOW",
-        spec_track_killer_desc: "El gimnasio es una selva caótica. AERKO_ permite crear rutinas, analizarlas para saber si no entrenas bien y reordenar ejercicios al vuelo para adaptar la rutina en tiempo real.", 
-        spec_track_list: "<li>Lógica Muscular</li><li>Registro Serie: Peso + Repes + RPE/RIR</li><li>Sobrecarga Progresiva Autosugerida</li>",
+        // Sidebar Items
+        specs_nav_local: "> Local_PWA",
+        specs_nav_cloud: "> Cloud (próximamente)",
+        specs_nav_pro: "> Cloud_PRO (próx)",
+        
+        specs_nav_system: "> Sistema",
+        specs_nav_nutri: "> Nutrición",
+        specs_nav_train: "> Entrenamiento",
+        specs_nav_progress: "> Progreso",
+        specs_nav_special: "> Especiales",
 
-        // Panel Nutrition
-        spec_nutri_killer_title: "NUTRICIÓN MODULAR",
-        spec_nutri_killer_desc: "Aplica la lógica de sistemas de diseño a tu dieta. Define una dieta base con 'Componentes Maestros' (los que se repiten) y alimentos variables, y disfruta de la flexibilidad y libertad total mientras controlas las calorías.",
-        spec_nutri_list: "<li>Smart Checks</li><li>TMB + Harris-Benedict automático</li><li>DB Local Curada + OpenFoodFacts API</li>",
+        // Content Headers
+        specs_title_system: "Sistema",
+        specs_title_nutri: "Nutrición",
+        specs_title_train: "Entrenamiento",
+        specs_title_progress: "Progreso",
+        specs_title_special: "Especiales",
 
-        // Panel Biomechanics
-        spec_bio_killer_title: "BIOMECÁNICA COMPUTACIONAL",
-        spec_bio_killer_desc: "Tu rendimiento no es una adivinanza. Analiza por ti mismo la técnica de tus ejercicios.",
-        spec_bio_list: "<li>Cálculo de 1RM inteligente</li><li>Calculadora de Grasa (Pliegues)</li><li>Body Tracking con estadísticas avanzadas</li>",
+        // Tags
+        specs_tag_killer: "Killer_Feature",
 
-        // Panel System
-        spec_sys_killer_title: "OFFLINE FIRST REAL",
-        spec_sys_killer_desc: "Latencia Cero. La base de datos vive en tu dispositivo, no en la nube. Funciona instantáneamente incluso en sótanos sin cobertura.",
-        spec_sys_list: "<li>Exportación JSON/CSV Granular</li><li>Encriptación AES-256 (Client-side)</li><li>Código 100% Auditable (Open Source)</li>",
+        // Subtítulos (Hardcodeados en i18n por ahora, texto en "Lorem")
+        spec_sub_arch: "Arquitectura",
+        spec_sub_storage: "Almacenamiento y encriptación",
+        spec_sub_export: "Gestor de importación y exportación de datos",
+        
+        spec_sub_smart: "Smart Checks",
+        spec_sub_diet: "Creación de dietas",
+        spec_sub_cals: "Gestión de calorías y macros",
+        spec_sub_obj: "Calculadora de objetivos",
+
+        spec_sub_create: "Creación y análisis de rutinas",
+        spec_sub_meso: "Mesociclos y sobrecarga progresiva",
+        spec_sub_ia: "Análisis de forma con IA local",
+        spec_sub_flow: "Smart Flow",
+        spec_sub_1rm: "Calculo de 1RM",
+
+        spec_sub_logs: "Registros completos y evolución",
+        spec_sub_fat: "Calculadora de grasa mediante pliegues",
+
+        spec_sub_zen: "Modo Zen",
+        spec_sub_tsundere: "Modo Tsundere/Bullying",
+
+        // Texto Temporal (Placeholder)
+        specs_temp_text: "Texto temporal del sistema. Aquí irá la descripción detallada de la función seleccionada. El contenido final se redactará más adelante.",
 
        spec_other_modules: "OTROS_MÓDULOS",
         
