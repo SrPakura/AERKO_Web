@@ -1,17 +1,81 @@
 /* =========================================
-   AERKO_ WEB SYSTEM | STYLE.CSS v2.1
-   Optimized: Clean Architecture / DRY / Compact
+   AERKO_ WEB SYSTEM | STYLE.CSS Versión ya no sé cual porque lo habré actualizado 40 veces | Optimizado y no compacto para que ni yo ni nadie muera leyendo el código.
    ========================================= */
 
+
+
 /* --- 1. VARIABLES & RESET --- */
-:root { --white:#FFFFFF; --grey:#F2F1F4; --black:#1A1A1A; --grey-hover:#2F2F2F; --acid:#CCFF00; --acid-hover:#DFFF4F; --font-display:'Clash Display', sans-serif; --font-mono:'JetBrains Mono', monospace; --border-std:1px solid var(--black); --border-white:1px solid var(--white); --shadow-hard:4px 4px 0 0 var(--black); --shadow-white:4px 4px 0 0 var(--white); --max-width:1440px; --pad-std:1.5rem; }
-* { margin:0; padding:0; box-sizing:border-box; }
-body { background-color:var(--white); color:var(--black); font-family:var(--font-mono); overflow-x:hidden; line-height:1.5; }
+:root {
+    /* Colores */
+    --white: #FFFFFF;
+    --grey: #F2F1F4;
+    --black: #1A1A1A;
+    --grey-hover: #2F2F2F;
+    --acid: #CCFF00;
+    --acid-hover: #DFFF4F;
+
+    /* Tipografía */
+    --font-display: 'Clash Display', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* UI (Bordes y Sombras) */
+    --border-std: 1px solid var(--black);
+    --border-white: 1px solid var(--white);
+    --shadow-hard: 4px 4px 0 0 var(--black);
+    --shadow-white: 4px 4px 0 0 var(--white);
+
+    /* Layout */
+    --max-width: 1440px;
+    --pad-std: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--font-mono);
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+
 
 /* --- 2. LAYOUT FRAMEWORK --- */
-.header-container, .hero-grid, .manifesto-grid, .deployment-container, .terminal-grid, .main-footer { max-width:var(--max-width); margin:0 auto; border-left:var(--border-std); border-right:var(--border-std); }
-.mt-small { margin-top:1rem; } .mb-small { margin-bottom:1rem; } .mt-medium { margin-top:1.5rem; } .mb-medium { margin-bottom:1.5rem; } .mb-32 { margin-bottom:2rem; } .mb-48 { margin-bottom:3rem; }
-.text-white { color:var(--white); } .text-acid { color:var(--acid); } .text-grey { color:var(--grey-hover); } .text-grey-light { color:#999; } .text-black { color:var(--black); }
+/* Contenedores Principales (Estructura base) */
+.header-container,
+.hero-grid,
+.manifesto-grid,
+.deployment-container,
+.terminal-grid,
+.main-footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    border-left: var(--border-std);
+    border-right: var(--border-std);
+}
+
+/* Espaciado (Utilities) */
+.mt-small  { margin-top: 1rem; }
+.mb-small  { margin-bottom: 1rem; }
+
+.mt-medium { margin-top: 1.5rem; } /* Mantenido por simetría */
+.mb-medium { margin-bottom: 1.5rem; }
+
+.mb-32     { margin-bottom: 2rem; }
+.mb-48     { margin-bottom: 3rem; }
+
+/* Colores de Texto (Utilities) */
+.text-white { color: var(--white); }
+.text-acid  { color: var(--acid); }
+.text-black { color: var(--black); }
+.text-grey  { color: var(--grey-hover); } /* Nota: Es gris oscuro (#2F2F2F) */
+
+
 
 /* --- 3. TYPOGRAPHY SYSTEM --- */
 h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:currentColor; }
