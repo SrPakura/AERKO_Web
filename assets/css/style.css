@@ -839,22 +839,35 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 
 /* --- SIDEBAR IZQUIERDA --- */
 .explorer-sidebar {
-    background-color: #111; /* Un poco más claro que el negro puro */
-    border-right: 1px solid #333;
-    padding: 1.5rem 0;
-    position: sticky; /* Sticky Magic */
+    background-color: var(--black); /* #1A1A1A */
+    width: 280px; /* Ancho fijo según Figma */
+    border-right: var(--border-std); /* Borde derecho estándar */
+    
+    /* Configuración Sticky */
+    position: sticky; 
     top: 0;
     height: 100vh;
     overflow-y: auto;
+    
+    /* Flex para distribuir si fuera necesario, pero block va bien */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Secciones de la Sidebar */
 .sidebar-section-title {
-    color: #666; /* Gris oscuro tipo comentario código */
+    color: var(--white); /* Blanco puro #FFFFFF */
     font-family: var(--font-mono);
-    font-size: 0.75rem;
-    padding: 1.5rem 1.5rem 0.5rem;
-    text-transform: uppercase;
+    
+    /* Tipografía Figma: 16px / Medium / 100% */
+    font-size: 1rem;       /* 16px */
+    font-weight: 500;
+    line-height: 100%;
+    
+    /* Espaciado Figma: 24px alrededor */
+    padding: 24px; 
+    
+    text-transform: none; /* Quitamos uppercase forzado si lo había */
 }
 
 /* Items de Navegación */
@@ -864,59 +877,82 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     text-align: left;
     background: transparent;
     border: none;
-    padding: 0.75rem 1.5rem;
-    color: #999;
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
     cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none; /* Por si usamos <a> en repos */
+    text-decoration: none;
+    
+    /* Tipografía Figma: 14px / Regular / 140% */
+    font-family: var(--font-mono);
+    font-size: 0.875rem;   /* 14px */
+    font-weight: 400;
+    line-height: 140%;
+    
+    /* Espaciado Figma: Top/Bot 8px, Left 40px, Right 20px */
+    padding: 8px 20px 8px 40px; 
+    
+    /* Color por defecto */
+    color: var(--white);
+    transition: background-color 0.2s;
 }
 
 .nav-item:hover {
-    color: var(--white);
-    background-color: #222;
+    background-color: var(--grey-hover); /* #2F2F2F */
+    color: var(--white); /* Se mantiene blanco */
 }
 
-/* ESTADO ACTIVO (El Acid) */
 .nav-item.active {
-    background-color: var(--acid);
-    color: var(--black);
-    font-weight: 700;
+    background-color: var(--grey-hover); /* #2F2F2F */
+    color: var(--acid); /* #CCFF00 (Verde Ácido) */
 }
 
-/* Item Desactivado (Próximamente) */
+/* ESTADO DISABLED (Próximamente) */
 .nav-item.disabled {
-    opacity: 0.4;
     cursor: not-allowed;
+    /* Opcional: Si quieres que se note un poco menos, baja la opacidad, 
+       pero si quieres contraste puro, déjalo así */
+    opacity: 0.5; 
 }
 
 /* Trama rallada decorativa (Stripes) */
 .stripe-bar {
-    height: 12px;
+    height: 32px; /* Según captura */
     width: 100%;
+    
+    /* Patrón rallado: Negro y Verde (o el color que prefieras de la trama) */
+    /* Si en la captura era rosa/negro por debugging, aquí pongo el estilo final Acid/Black */
     background-image: repeating-linear-gradient(
         -45deg,
-        var(--acid),
-        var(--acid) 2px,
-        var(--black) 2px,
-        var(--black) 4px
+        transparent,
+        transparent 4px,
+        var(--acid) 4px,
+        var(--acid) 5px
     );
-    margin: 0.5rem 0 1rem;
-    opacity: 0.5;
+    
+    /* Borde superior e inferior para separar visualmente si es necesario */
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    
+    margin: 0; /* Sin margen externo, pega con los elementos */
 }
 
 /* Links externos en sidebar (Repositorios) */
 .sidebar-link {
+    /* Hereda estilos base de nav-item para consistencia */
     display: block;
-    padding: 0.5rem 1.5rem;
-    color: var(--white);
+    width: 100%;
+    text-align: left;
     font-family: var(--font-mono);
-    font-size: 0.85rem;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--white);
+    padding: 8px 20px 8px 40px;
     text-decoration: underline;
-    text-decoration-color: #444;
+    text-decoration-color: #555; /* Subrayado sutil */
 }
-.sidebar-link:hover { color: var(--acid); text-decoration-color: var(--acid); }
+.sidebar-link:hover {
+    background-color: var(--grey-hover);
+    color: var(--acid);
+}
 
 /* --- CONTENIDO DERECHA --- */
 .explorer-content {
