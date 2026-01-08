@@ -10,103 +10,180 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<!-- Header Dinámico -->
-<header id="app-header" class="header-container"></header>
+<body>
 
-<!-- === SPECS SECTION === -->
-    <section class="deployment-container">
-        <!-- Header de la sección -->
-        <div class="deployment-header">
-            <h1 class="h1-title" data-i18n="specs_page_title"></h1>
-            <p class="body-base text-black mt-gap" data-i18n="specs_page_subtitle"></p>
-        </div>
+    <!-- Header Dinámico -->
+    <header id="app-header" class="header-container"></header>
 
-        <div class="specs-container">
+    <div class="explorer-container">
+        
+        <!-- Barra "Explorador" -->
+        <div class="explorer-bar" data-i18n="specs_explorer_title"></div>
+
+        <div class="explorer-grid">
             
-            <!-- 1. TABS SELECTOR -->
-            <div class="tabs-row">
-                <button class="tab-btn active" data-target="track" data-i18n="tab_tracking">ENTRENAMIENTO</button>
-                <button class="tab-btn" data-target="nutri" data-i18n="tab_nutrition">NUTRICIÓN</button>
-                <button class="tab-btn" data-target="biomech" data-i18n="tab_biomechanics">BIOMECÁNICA</button>
-                <button class="tab-btn" data-target="sys" data-i18n="tab_system">SISTEMA</button>
-            </div>
-
-            <!-- 2. CONTENT AREA -->
-            <div class="tab-content-box">
+            <!-- === SIDEBAR === -->
+            <aside class="explorer-sidebar">
                 
-                <!-- PANEL 1: ENTRENAMIENTO -->
-                <div id="track" class="tab-panel active">
-                    <div class="specs-grid">
-                        <!-- Izquierda: Killer Feature (LIMPIO) -->
-                        <div class="killer-box">
-                            <div>
-                                <span class="killer-tag">KILLER_FEATURE</span>
-                                <h2 class="h2-title text-black" data-i18n="spec_track_killer_title"></h2>
-                                <p class="body-base mt-medium" data-i18n="spec_track_killer_desc"></p>
-                            </div>
-                        </div>
-                        <!-- Derecha: Lista -->
-                        <div class="features-box">
-                            <h3 class="h4-title text-black" data-i18n="spec_other_modules"></h3>
-                            <ul class="features-list" data-i18n="spec_track_list"></ul>
-                        </div>
+                <!-- SECCIÓN 1: DISCOS -->
+                <div class="sidebar-section-title" data-i18n="specs_sec_disks"></div>
+                <!-- El botón activo por defecto debe coincidir con el panel visible -->
+                <button class="nav-item active" data-target="panel-local" data-i18n="specs_nav_local"></button>
+                <button class="nav-item disabled" data-i18n="specs_nav_cloud"></button>
+                <button class="nav-item disabled" data-i18n="specs_nav_pro"></button>
+
+                <div class="stripe-bar"></div>
+
+                <!-- SECCIÓN 2: FUNCIONES -->
+                <div class="sidebar-section-title" data-i18n="specs_sec_funcs"></div>
+                <button class="nav-item" data-target="panel-system" data-i18n="specs_nav_system"></button>
+                <button class="nav-item" data-target="panel-nutri" data-i18n="specs_nav_nutri"></button>
+                <button class="nav-item" data-target="panel-train" data-i18n="specs_nav_train"></button>
+                <button class="nav-item" data-target="panel-progress" data-i18n="specs_nav_progress"></button>
+                <button class="nav-item" data-target="panel-special" data-i18n="specs_nav_special"></button>
+
+                <div class="stripe-bar"></div>
+
+                <!-- SECCIÓN 3: REPOSITORIOS (Links externos) -->
+                <div class="sidebar-section-title" data-i18n="specs_sec_repos"></div>
+                <a href="#" class="sidebar-link">Esta_Page</a>
+                <a href="#" class="sidebar-link">Core_App_PWA</a>
+
+                <!-- SECCIÓN 4: PROTOCOLOS -->
+                <div class="sidebar-section-title" data-i18n="specs_sec_proto"></div>
+                <a href="manifesto.html" class="sidebar-link">Manifiesto</a>
+                
+            </aside>
+
+
+            <!-- === CONTENT MAIN === -->
+            <main class="explorer-content">
+
+                <!-- 1. PANEL LOCAL (Explicación general o redirigir a System) -->
+                <!-- Truco: Usaremos este panel como "Intro" o igual que Sistema -->
+                <div id="panel-local" class="explorer-panel active">
+                    <div class="content-header-box header-trama-bg">LOCAL_PWA</div>
+                    <div class="feature-block">
+                        <h3 class="feature-title">Local First Core</h3>
+                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
                     </div>
                 </div>
 
-                <!-- PANEL 2: NUTRICIÓN -->
-                <div id="nutri" class="tab-panel">
-                    <div class="specs-grid">
-                        <div class="killer-box">
-                            <div>
-                                <span class="killer-tag">KILLER_FEATURE</span>
-                                <h2 class="h2-title text-black" data-i18n="spec_nutri_killer_title"></h2>
-                                <p class="body-base mt-medium" data-i18n="spec_nutri_killer_desc"></p>
-                            </div>
-                        </div>
-                        <div class="features-box">
-                            <h3 class="h4-title text-black" data-i18n="spec_other_modules"></h3>
-                            <ul class="features-list" data-i18n="spec_nutri_list"></ul>
-                        </div>
+                <!-- 2. PANEL SISTEMA -->
+                <div id="panel-system" class="explorer-panel">
+                    <div class="content-header-box header-trama-bg" data-i18n="specs_title_system"></div>
+                    
+                    <div class="feature-block">
+                        <h3 class="feature-title" data-i18n="spec_sub_arch"></h3>
+                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
+                    </div>
+
+                    <div class="feature-block">
+                        <h3 class="feature-title" data-i18n="spec_sub_storage"></h3>
+                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
+                    </div>
+
+                    <div class="feature-block">
+                        <h3 class="feature-title" data-i18n="spec_sub_export"></h3>
+                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
                     </div>
                 </div>
 
-                <!-- PANEL 3: BIOMECÁNICA -->
-                <div id="biomech" class="tab-panel">
-                    <div class="specs-grid">
-                        <div class="killer-box">
-                            <div>
-                                <span class="killer-tag">KILLER_FEATURE</span>
-                                <h2 class="h2-title text-black" data-i18n="spec_bio_killer_title"></h2>
-                                <p class="body-base mt-medium" data-i18n="spec_bio_killer_desc"></p>
-                            </div>
+                <!-- 3. PANEL NUTRICION -->
+                <div id="panel-nutri" class="explorer-panel">
+                    <div class="content-header-box header-trama-bg" data-i18n="specs_title_nutri"></div>
+
+                    <div class="feature-block">
+                        <div class="feature-top-row">
+                            <h3 class="feature-title" data-i18n="spec_sub_smart"></h3>
+                            <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <div class="features-box">
-                            <h3 class="h4-title text-black" data-i18n="spec_other_modules"></h3>
-                            <ul class="features-list" data-i18n="spec_bio_list"></ul>
+                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                    </div>
+
+                    <div class="feature-block">
+                        <div class="feature-top-row">
+                            <h3 class="feature-title" data-i18n="spec_sub_diet"></h3>
+                            <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
+                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                    </div>
+
+                    <div class="feature-block">
+                        <h3 class="feature-title" data-i18n="spec_sub_cals"></h3>
+                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
                     </div>
                 </div>
 
-                <!-- PANEL 4: SISTEMA -->
-                <div id="sys" class="tab-panel">
-                    <div class="specs-grid">
-                        <div class="killer-box">
-                            <div>
-                                <span class="killer-tag">KILLER_FEATURE</span>
-                                <h2 class="h2-title text-black" data-i18n="spec_sys_killer_title"></h2>
-                                <p class="body-base mt-medium" data-i18n="spec_sys_killer_desc"></p>
-                            </div>
+                <!-- 4. PANEL ENTRENAMIENTO -->
+                <div id="panel-train" class="explorer-panel">
+                    <div class="content-header-box header-trama-bg" data-i18n="specs_title_train"></div>
+                    
+                    <div class="feature-block">
+                        <div class="feature-top-row">
+                            <h3 class="feature-title" data-i18n="spec_sub_create"></h3>
+                            <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <div class="features-box">
-                            <h3 class="h4-title text-black" data-i18n="spec_other_modules"></h3>
-                            <ul class="features-list" data-i18n="spec_sys_list"></ul>
+                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                    </div>
+                    
+                    <div class="feature-block">
+                         <div class="feature-top-row">
+                            <h3 class="feature-title" data-i18n="spec_sub_meso"></h3>
+                            <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
+                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                    </div>
+
+                     <div class="feature-block">
+                        <div class="feature-top-row">
+                            <h3 class="feature-title" data-i18n="spec_sub_ia"></h3>
+                            <span class="feature-tag" data-i18n="specs_tag_killer"></span>
+                        </div>
+                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                    </div>
+                </div>
+                
+                 <!-- 5. PANEL PROGRESO -->
+                <div id="panel-progress" class="explorer-panel">
+                    <div class="content-header-box header-trama-bg" data-i18n="specs_title_progress"></div>
+                     <div class="feature-block">
+                        <div class="feature-top-row">
+                            <h3 class="feature-title" data-i18n="spec_sub_logs"></h3>
+                            <span class="feature-tag" data-i18n="specs_tag_killer"></span>
+                        </div>
+                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                    </div>
+                     <div class="feature-block">
+                        <h3 class="feature-title" data-i18n="spec_sub_fat"></h3>
+                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
                     </div>
                 </div>
 
-            </div>
+                <!-- 6. PANEL ESPECIALES -->
+                <div id="panel-special" class="explorer-panel">
+                    <div class="content-header-box header-trama-bg" data-i18n="specs_title_special"></div>
+                    
+                    <div class="feature-block">
+                        <div class="feature-top-row">
+                            <h3 class="feature-title" data-i18n="spec_sub_zen"></h3>
+                            <span class="feature-tag" data-i18n="specs_tag_killer"></span>
+                        </div>
+                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                    </div>
+
+                    <div class="feature-block">
+                        <div class="feature-top-row">
+                            <h3 class="feature-title" data-i18n="spec_sub_tsundere"></h3>
+                            <span class="feature-tag" data-i18n="specs_tag_killer"></span>
+                        </div>
+                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                    </div>
+                </div>
+
+            </main>
         </div>
-    </section>
+    </div>
 
 <!-- Footer Dinámico -->
 <footer id="app-footer" class="main-footer footer-seamless"></footer>
@@ -115,5 +192,36 @@
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
+
+        <!-- SCRIPT ESPECÍFICO PARA EL EXPLORADOR -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navItems = document.querySelectorAll('.nav-item');
+            const panels = document.querySelectorAll('.explorer-panel');
+
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // Ignorar si está desactivado
+                    if(item.classList.contains('disabled')) return;
+
+                    const targetId = item.getAttribute('data-target');
+                    if(!targetId) return; // Si es un link que no apunta a panel
+
+                    // 1. Quitar active de todo
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    panels.forEach(panel => panel.classList.remove('active'));
+
+                    // 2. Activar clickeado
+                    item.classList.add('active');
+                    document.getElementById(targetId).classList.add('active');
+
+                    // 3. (Opcional) Scroll top en móvil
+                    if(window.innerWidth < 900) {
+                        window.scrollTo({top: 0, behavior: 'smooth'});
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
