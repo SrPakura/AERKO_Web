@@ -802,3 +802,262 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     .rm-marker-col { padding-top: 1.5rem; }
     .rm-title-h2 { font-size: 2rem; }
 }
+
+/* =========================================
+   SPECS V3.0: EXPLORER LAYOUT
+   ========================================= */
+
+/* --- LAYOUT PRINCIPAL --- */
+.explorer-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    border-left: var(--border-std);
+    border-right: var(--border-std);
+    background-color: var(--black); /* Fondo general oscuro */
+    min-height: 100vh;
+}
+
+/* Barra Superior (Marquee estático) */
+.explorer-bar {
+    background-color: var(--black);
+    color: var(--acid);
+    font-family: var(--font-mono);
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #333;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grid: Sidebar (280px) | Content (Auto) */
+.explorer-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 80vh;
+}
+
+/* --- SIDEBAR IZQUIERDA --- */
+.explorer-sidebar {
+    background-color: #111; /* Un poco más claro que el negro puro */
+    border-right: 1px solid #333;
+    padding: 1.5rem 0;
+    position: sticky; /* Sticky Magic */
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Secciones de la Sidebar */
+.sidebar-section-title {
+    color: #666; /* Gris oscuro tipo comentario código */
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 1.5rem 1.5rem 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Items de Navegación */
+.nav-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: #999;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none; /* Por si usamos <a> en repos */
+}
+
+.nav-item:hover {
+    color: var(--white);
+    background-color: #222;
+}
+
+/* ESTADO ACTIVO (El Acid) */
+.nav-item.active {
+    background-color: var(--acid);
+    color: var(--black);
+    font-weight: 700;
+}
+
+/* Item Desactivado (Próximamente) */
+.nav-item.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Trama rallada decorativa (Stripes) */
+.stripe-bar {
+    height: 12px;
+    width: 100%;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        var(--acid),
+        var(--acid) 2px,
+        var(--black) 2px,
+        var(--black) 4px
+    );
+    margin: 0.5rem 0 1rem;
+    opacity: 0.5;
+}
+
+/* Links externos en sidebar (Repositorios) */
+.sidebar-link {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    color: var(--white);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    text-decoration: underline;
+    text-decoration-color: #444;
+}
+.sidebar-link:hover { color: var(--acid); text-decoration-color: var(--acid); }
+
+/* --- CONTENIDO DERECHA --- */
+.explorer-content {
+    background-color: var(--white); /* Contraste fuerte: Panel blanco */
+    padding: 3rem;
+    position: relative;
+}
+
+/* Título de Sección con caja negra/trama */
+.content-header-box {
+    background-color: var(--black);
+    color: var(--acid);
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden; /* Para contener las rayas */
+    border: 4px solid var(--black); /* Borde negro para encuadrar */
+}
+
+/* Las rayas azules/negras del diseño (Fondo del header) */
+.header-trama-bg {
+    /* Fondo negro base */
+    background-color: var(--black);
+    /* Rayas diagonales sutiles */
+    background-image: repeating-linear-gradient(
+        45deg,
+        #222,
+        #222 2px,
+        #000 2px,
+        #000 4px
+    );
+}
+
+/* Bloques de Texto */
+.feature-block {
+    margin-bottom: 4rem;
+    border-bottom: 1px dashed #ccc; /* Separador sutil */
+    padding-bottom: 2rem;
+}
+.feature-block:last-child { border-bottom: none; }
+
+.feature-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feature-title {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+    margin: 0;
+}
+
+.feature-tag {
+    background-color: var(--acid);
+    color: var(--black);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    border: 1px solid var(--black);
+}
+
+.feature-text {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 80ch; /* Limitar ancho de lectura */
+}
+
+/* Paneles (Lógica JS) */
+.explorer-panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+.explorer-panel.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 900px) {
+    .explorer-grid {
+        grid-template-columns: 1fr; /* Una columna */
+        display: block; /* Rompemos el grid */
+    }
+
+    /* Sidebar se convierte en Top Nav Scrollable */
+    .explorer-sidebar {
+        width: 100%;
+        height: auto;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background-color: var(--black);
+        padding: 0.5rem;
+        display: flex;
+        overflow-x: auto; /* SCROLL HORIZONTAL */
+        white-space: nowrap; /* Evitar salto de línea */
+        border-bottom: 1px solid var(--acid);
+    }
+    
+    /* Ocultamos títulos de sección en móvil para ahorrar espacio */
+    .sidebar-section-title, .stripe-bar, .sidebar-link {
+        display: none; 
+    }
+    
+    .nav-item {
+        display: inline-block;
+        width: auto;
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+        border: 1px solid #333;
+        color: var(--white);
+    }
+    
+    .nav-item.active {
+        border-color: var(--acid);
+    }
+
+    .explorer-content {
+        padding: 1.5rem;
+    }
+    
+    .content-header-box {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    .feature-title {
+        font-size: 1.5rem;
+    }
+}
