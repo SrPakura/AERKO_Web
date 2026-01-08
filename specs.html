@@ -61,27 +61,26 @@
             </aside>
 
 
-            <!-- === CONTENT MAIN === -->
+            <!-- === CONTENT MAIN CORREGIDO === -->
             <main class="explorer-content">
 
-                <!-- 1. PANEL SISTEMA (AHORA ES EL DEFAULT: class="active") -->
+                <!-- 1. PANEL SISTEMA -->
                 <div id="panel-system" class="explorer-panel active">
-                    <!-- Título con trama de fondo -->
                     <div class="content-header-box header-trama-bg" data-i18n="specs_title_system"></div>
                     
                     <div class="feature-block">
-                        <h3 class="feature-title" data-i18n="spec_sub_arch"></h3>
-                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
+                        <h3 class="feature-title" data-i18n="spec_title_arch"></h3>
+                        <p class="feature-text mt-small" data-i18n="spec_desc_arch"></p> <!-- Clave única -->
                     </div>
 
                     <div class="feature-block">
-                        <h3 class="feature-title" data-i18n="spec_sub_storage"></h3>
-                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
+                        <h3 class="feature-title" data-i18n="spec_title_storage"></h3>
+                        <p class="feature-text mt-small" data-i18n="spec_desc_storage"></p> <!-- Clave única -->
                     </div>
 
                     <div class="feature-block">
-                        <h3 class="feature-title" data-i18n="spec_sub_export"></h3>
-                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
+                        <h3 class="feature-title" data-i18n="spec_title_export"></h3>
+                        <p class="feature-text mt-small" data-i18n="spec_desc_export"></p> <!-- Clave única -->
                     </div>
                 </div>
 
@@ -89,25 +88,34 @@
                 <div id="panel-nutri" class="explorer-panel">
                     <div class="content-header-box header-trama-bg" data-i18n="specs_title_nutri"></div>
 
+                    <!-- 1. Smart Checks -->
                     <div class="feature-block">
                         <div class="feature-top-row">
-                            <h3 class="feature-title" data-i18n="spec_sub_smart"></h3>
+                            <h3 class="feature-title" data-i18n="spec_title_smart"></h3>
                             <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                        <p class="feature-text" data-i18n="spec_desc_smart"></p>
                     </div>
 
+                    <!-- 2. Creación de dietas -->
                     <div class="feature-block">
                         <div class="feature-top-row">
-                            <h3 class="feature-title" data-i18n="spec_sub_diet"></h3>
+                            <h3 class="feature-title" data-i18n="spec_title_diet"></h3>
                             <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                        <p class="feature-text" data-i18n="spec_desc_diet"></p>
                     </div>
 
+                    <!-- 3. Calorías y Macros -->
                     <div class="feature-block">
-                        <h3 class="feature-title" data-i18n="spec_sub_cals"></h3>
-                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
+                        <h3 class="feature-title" data-i18n="spec_title_cals"></h3>
+                        <p class="feature-text mt-small" data-i18n="spec_desc_cals"></p>
+                    </div>
+
+                    <!-- 4. Calculadora Objetivos (¡FALTABA ESTE!) -->
+                    <div class="feature-block">
+                        <h3 class="feature-title" data-i18n="spec_title_obj"></h3>
+                        <p class="feature-text mt-small" data-i18n="spec_desc_obj"></p>
                     </div>
                 </div>
 
@@ -115,44 +123,63 @@
                 <div id="panel-train" class="explorer-panel">
                     <div class="content-header-box header-trama-bg" data-i18n="specs_title_train"></div>
                     
+                    <!-- 1. Creación Rutinas -->
                     <div class="feature-block">
                         <div class="feature-top-row">
-                            <h3 class="feature-title" data-i18n="spec_sub_create"></h3>
+                            <h3 class="feature-title" data-i18n="spec_title_create"></h3>
                             <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                        <p class="feature-text" data-i18n="spec_desc_create"></p>
                     </div>
                     
+                    <!-- 2. Mesociclos -->
                     <div class="feature-block">
                          <div class="feature-top-row">
-                            <h3 class="feature-title" data-i18n="spec_sub_meso"></h3>
+                            <h3 class="feature-title" data-i18n="spec_title_meso"></h3>
                             <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                        <p class="feature-text" data-i18n="spec_desc_meso"></p>
                     </div>
 
+                    <!-- 3. Análisis IA -->
                      <div class="feature-block">
                         <div class="feature-top-row">
-                            <h3 class="feature-title" data-i18n="spec_sub_ia"></h3>
+                            <h3 class="feature-title" data-i18n="spec_title_ia"></h3>
                             <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                        <p class="feature-text" data-i18n="spec_desc_ia"></p>
+                    </div>
+
+                    <!-- 4. Smart Flow (¡FALTABA ESTE!) -->
+                    <div class="feature-block">
+                        <h3 class="feature-title" data-i18n="spec_title_flow"></h3>
+                        <p class="feature-text mt-small" data-i18n="spec_desc_flow"></p>
+                    </div>
+
+                    <!-- 5. Calculo 1RM (¡FALTABA ESTE!) -->
+                    <div class="feature-block">
+                        <h3 class="feature-title" data-i18n="spec_title_1rm"></h3>
+                        <p class="feature-text mt-small" data-i18n="spec_desc_1rm"></p>
                     </div>
                 </div>
                 
                  <!-- 4. PANEL PROGRESO -->
                 <div id="panel-progress" class="explorer-panel">
                     <div class="content-header-box header-trama-bg" data-i18n="specs_title_progress"></div>
-                     <div class="feature-block">
+                     
+                    <!-- 1. Registros Completos -->
+                    <div class="feature-block">
                         <div class="feature-top-row">
-                            <h3 class="feature-title" data-i18n="spec_sub_logs"></h3>
+                            <h3 class="feature-title" data-i18n="spec_title_logs"></h3>
                             <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                        <p class="feature-text" data-i18n="spec_desc_logs"></p>
                     </div>
+
+                    <!-- 2. Grasa -->
                      <div class="feature-block">
-                        <h3 class="feature-title" data-i18n="spec_sub_fat"></h3>
-                        <p class="feature-text mt-small" data-i18n="specs_temp_text"></p>
+                        <h3 class="feature-title" data-i18n="spec_title_fat"></h3>
+                        <p class="feature-text mt-small" data-i18n="spec_desc_fat"></p>
                     </div>
                 </div>
 
@@ -160,20 +187,22 @@
                 <div id="panel-special" class="explorer-panel">
                     <div class="content-header-box header-trama-bg" data-i18n="specs_title_special"></div>
                     
+                    <!-- 1. Zen -->
                     <div class="feature-block">
                         <div class="feature-top-row">
-                            <h3 class="feature-title" data-i18n="spec_sub_zen"></h3>
+                            <h3 class="feature-title" data-i18n="spec_title_zen"></h3>
                             <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                        <p class="feature-text" data-i18n="spec_desc_zen"></p>
                     </div>
 
+                    <!-- 2. Tsundere -->
                     <div class="feature-block">
                         <div class="feature-top-row">
-                            <h3 class="feature-title" data-i18n="spec_sub_tsundere"></h3>
+                            <h3 class="feature-title" data-i18n="spec_title_tsundere"></h3>
                             <span class="feature-tag" data-i18n="specs_tag_killer"></span>
                         </div>
-                        <p class="feature-text" data-i18n="specs_temp_text"></p>
+                        <p class="feature-text" data-i18n="spec_desc_tsundere"></p>
                     </div>
                 </div>
 
