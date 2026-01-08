@@ -1031,7 +1031,7 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
-    max-width: 80ch; /* Limitar ancho de lectura */
+    max-width: 100%;
 }
 
 /* Paneles (Lógica JS) */
