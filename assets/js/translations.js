@@ -610,6 +610,207 @@ de: {
         
     },
         
-// añadir portugues, frances, y dejar el hueco vacio para el japones. 
+//Francés de FRANCIA
+fr: {
+        nav_manifesto: "MANIFESTE",
+        nav_roadmap: "FEUILLE DE ROUTE",
+        nav_features: "SPÉCIFICATIONS",
+        nav_mobile_menu: "MENU [+]", 
+        
+        marquee_text: "/// ÉTAT DU SYSTÈME: EN LIGNE /// PHASE 0: PROTOTYPAGE /// ARCHITECTURE OPEN SOURCE /// SOUVERAINETÉ DES DONNÉES /// NOYAU LOCAL-FIRST /// PROTOCOLE DE CONFIDENTIALITÉ /// ÉTAT DU SYSTÈME: EN LIGNE /// PHASE 0: PROTOTYPAGE /// ARCHITECTURE OPEN SOURCE /// SOUVERAINETÉ DES DONNÉES /// NOYAU LOCAL-FIRST /// PROTOCOLE DE CONFIDENTIALITÉ ///", 
+
+        hero_phase: "PHASE_TESTS_USABILITÉ",
+        hero_title: "COMPILEZ<br>VOTRE<br>EFFORT",
+        hero_desc: "Votre corps génère des téraoctets de données. Arrêtez de les offrir aux applications 'jolies' des GAFAM. AERKO_ est de la nutrition et de la biomécanique sans connexion internet : vos données résident sur votre machine. <br> <br> Code source ouvert, confidentialité absolue et latence zéro.",
+        btn_join: "CONTRIBUER_(GRATUIT)",
+        btn_source: "JOURNAL_DEV", 
+
+        hero_code_context: "> CONTEXTE: PROJET_FIN_ÉTUDES",
+        hero_code_author: "> AUTEUR: PAKURA // ÉTUDIANT_19",
+        hero_code_arch: "> ARCHITECTURE: LOGICIEL_LIBRE",
+        hero_code_warning: "> AVERTISSEMENT: AUCUN_CAPITAL_RISQUE",
+        hero_code_message: "> SYSTEM_MESSAGE: \"Je code ma propre émancipation.\"",
+        
+        hero_specs_title: "SYSTÈME_SPECS",
+        hero_specs_list: "ARCHITECTURE: ................ LOCAL-FIRST / PWA<br>BASE DE DONNÉES: ..................... INDEXEDDB<br>CHIFFREMENT: ........................... AES-256 <br>LICENCE: .............. Open Source (GNU AGPLv3)<br>COÛT: ........................ 0€ (Auto-hébergé)",
+
+        manifesto_title: "PHILOSOPHIE<br>DU LIBRE",
+        manifesto_points: "> REFUS DE LA GAMIFICATION TOXIQUE.<br>> DES OUTILS, PAS DES JOUETS.<br>> PAS DE VENDEURS DE RÊVE. JUSTE LA GRAVITÉ.",
+        manifesto_text: "La plupart des applications vous enchaînent avec une gamification infantile et des nuages opaques. AERKO_ expose la structure. Notre code est Ouvert et votre base de données est locale. <br> <span class='text-acid'>Si je disparais demain, vos données survivent sur votre appareil.</span>",
+        manifesto_link: "> LIRE_LE_MANIFESTE_COMPLET_",
+
+        roadmap_title: "PLAN_DE_DÉPLOIEMENT",
+        roadmap_status: "/// ÉTAT ACTUEL: PHASE 0.5 (TESTS D'USABILITÉ)",
+        roadmap_link: "> VOIR_CALENDRIER_DÉPLOIEMENT_",
+
+        // Card 1
+        card1_tag: "EN DÉVELOPPEMENT",
+        card1_title: "LOCAL_PWA",
+        card1_list: "<li>> Architecture Local-First (Vrai Hors-ligne)</li><li>> Confidentialité Radicale : Stockage Local</li><li>> Logique Nutritionnelle Modulaire</li><li>> Entraînement & Biomécanique Intelligents</li><li>> Export/Import JSON</li><li style='margin-top:12px;'><a href='specs.html' style='text-decoration:underline; font-weight:800; color:inherit;'>> [ VOIR_TOUTES_LES_FONCTIONS ]</a></li>",
+        card1_status: "ÉTAT: COMPILATION (ETA: Q1_2026)",
+
+        // Card 2
+        card2_tag: "VERROUILLÉ",
+        card2_title: "CLOUD_SYNC",
+        card2_list: "<li>> Inclut tout le stack LOCAL_PWA</li><li>> Synchronisation Multi-appareils</li><li>> Sauvegardes Chiffrées (E2E)</li><li>> Sauvegardes Automatiques Gérées</li><li>> Plus de Puissance</li><li>> Même Confidentialité</li>",
+        card2_status: "ÉTAT: EN_ATTENTE_DE_REQUIS",
+
+        // Card 3
+        card3_tag: "VERROUILLÉ",
+        card3_title: "CLOUD_PRO",
+        card3_list: "<li>> Inclut tout le stack CLOUD_SYNC</li><li>> Tableau de Bord Coach (CRM)</li><li>> Gestion des Élèves</li><li>> Plus de Puissance</li><li>> Même Confidentialité</li>",
+        card3_status: "ÉTAT: EN_ATTENTE_DE_REQUIS",
+
+        input_title: "DÉBOGUEZ_AVEC_MOI",
+        input_desc: "> Projet né comme Mémoire de Fin d'Études. <br> > Développé par un seul étudiant.<br>> Vos retours ont compilé les fonctions de la Local_PWA.<br>> ACTUELLEMENT: Tests d'usabilité sur Maze.",
+        btn_contribute: "[ CONTRIBUER_DONNÉES ]",
+        btn_read_features: "> LIRE_FONCTIONNALITÉS_",
+
+        footer_source_title: "CONTRÔLE_DE_VERSION",
+        footer_link_page: "Ce_Site_Web",
+        footer_link_core: "App_PWA",
+        footer_link_cloud: "App_Cloud",
+        footer_link_pro: "App_Cloud_Pro",
+        
+        footer_protocols_title: "PROTOCOLES",
+        footer_link_privacy: "Manifeste_Confidentialité",
+        footer_link_terms: "Conditions (GNU AGPLv3)",
+        footer_link_data: "Propriété_Des_Données",
+
+        footer_cta_title: "PRÊT_À_DÉPLOYER ?",
+        footer_cta_text: "> Arrêtez d'utiliser des tableurs.<br>> Rejoignez l'évolution technique du fitness.",
+        footer_btn_join: "[ REJOINDRE_LISTE_ATTENTE ]",
+
+
+        // MANIFESTO PAGE V2
+        mani_bar_left: "MANIFESTE_FONDATEUR",
+        mani_bar_right: "/// AUTEUR: SR_PAKURA",
+
+        // COLUMN 1
+        mani_01_title: "01_PROTOCOLE_AERKO",
+        mani_01_text: "Ceci n'est pas une startup : aucun investisseur, aucun département marketing, et certainement aucune intention de vendre vos données pour m'acheter un yacht. \n\n C'est un projet open source, mais plus que cela, c'est ma déclaration de guerre contre les logiciels médiocres et les corporations qui exploitent l'utilisateur pour s'enrichir au détriment de sa vie privée. \n\n Je suis designer UX/UI et WebDev, mais aussi une personne lassée des applications comme MyFitnessPal, Hevy ou autres, dont le modèle économique est la prise d'otage de données, pour tenter de vous facturer un abonnement et finir par vendre les données de toute façon. \n\n Oui, le Bloc-notes et Excel fonctionnent, mais ils sont fastidieux. C'est exactement pour cela qu'Aerko est né : mon premier projet libre et l'outil définitif que je veux offrir à tous : gratuit, privé et puissant. \n\n Ma philosophie est simple : livrer quelque chose de léger, de vraiment bon, orienté vers les humains et non leurs comptes bancaires. Et comme le dirait ma référence Linus Torvalds, libre pour toute la communauté. \n\n C'est pourquoi, du design néo-brutaliste (optimisé pour la vitesse et la clarté) au code (construit en pur Vanilla JS, rejetant le confort des frameworks lourds en faveur d'une performance extrême), tout est architecturé pour que l'utilisateur final ait le contrôle absolu. \n\n Utilisez-le. Forkez-le. Appropriez-le-vous.",
+
+        // COLUMN 2
+        mani_02_title: "02_Confidentialité",
+        mani_02_text: "Peu importe quand vous lisez ceci, mon approche restera statique. Vos données sont vos données, et honnêtement, avec tout le respect que je vous dois, cela ne m'intéresse pas. \n\n Je vous offrirai toujours des outils pour exporter/importer, protéger (chiffrer) et supprimer vos données.",
+
+        // COLUMN 3
+        mani_03_title: "03_Objectif",
+        mani_03_text: "Mon objectif principal n'est pas de devenir riche — je déclare ici par écrit que tout ce que je gagnerai, je compte le contribuer personnellement et financièrement à l'open source pour que d'autres projets comme le mien puissent émerger. \n\n Mon but est de renverser les applications médiocres et d'établir de nouveaux standards, tant éthiques que technologiques. \n\n Cependant, pour ce faire, je ne transgresserai ni n'oublierai mes principes, ni les principes qui façonnent l'application.",
+
+        footer_reddit_cta: "REJOIGNEZ LA COMMUNAUTÉ REDDIT r/aerko",
+
+        
+        // ROADMAP PAGE V2
+        rm_bar_center: "FEUILLE_DE_ROUTE",
+
+        // PHASE 1
+        rm_p1_title: "Phase 01: PWA Locale",
+        rm_p1_desc: "Le Noyau. HTML, CSS et JS, hébergé sur GitHub Pages. N'importe qui peut entrer, tester, installer (PWA), auditer le code ou le forker ; le code est libre et l'application totalement gratuite.\n\nPas de backend, pas de cookies, pas de publicités, pas de micro-paiements et pas de mauvaises intentions. C'est ma première déclaration de guerre à l'industrie actuelle et dégoûtante du fitness. Tout s'exécute sur votre mobile, hors ligne si installé, et tout est sauvegardé localement. Vous avez la capacité d'exporter vos données et de partir quand vous voulez.",
+        
+        // OBJECTIVE 1
+        rm_obj1_title: "Objectif 1: Masse Critique",
+        rm_obj1_desc: "Avant de passer à la phase deux, qui nécessite un autre ingénieur et une infrastructure, je dois valider le build. Par conséquent, l'une de ces deux conditions doit être remplie :\n\n• 1500 Utilisateurs Actifs (mensuels) sur la PWA gratuite.\n• 750 membres sur r/aerko_\n\nUne fois atteint, nous activons une phase de Financement Participatif (Crowdfunding), offrant l'abonnement cloud à un prix réduit (3€ pour 3 mois, 15€ pour un an), dans le but de financer l'infrastructure serveur, le marketing et le développement continu sans vendre le projet à des investisseurs externes.",
+
+        // PHASE 2
+        rm_p2_title: "Phase 02: Cloud",
+        rm_p2_desc: "Pas un simple 'patch', mais une évolution totale du noyau. Nous maintenons le code 100% Open-source, mais migrons le backend vers Python sur une infrastructure hybride de pointe (VPS, Litestream + Cloudflare D1 et R2). Plus de fonctionnalités, plus de puissance, même confidentialité, et tous les avantages du cloud sans compromettre la souveraineté des données.\n\nDe plus, l'application sera traduite dès le Jour 1 en Portugais, Français et Japonais, en plus de l'Espagnol, Anglais et Allemand. Nous déploierons deux nouvelles interfaces globales : une standard, et une autre conçue pour les standards de densité d'information japonais (et pour ajouter une waifu).\n\nJe ne peux pas encore révéler toutes les fonctionnalités, mais la philosophie reste intacte : NOUS NE VOUS PRESSERONS PAS COMME DES CITRONS.\n\n• Auto-Hébergé : Si vous tenez à votre souveraineté, hébergez votre propre instance gratuitement.\n• Aerko Cloud : Si vous préférez le confort, nous offrons un abonnement de 3€/mois (ajusté PPA) pour que l'équipe gère la sécurité, les sauvegardes et l'infrastructure pour vous.\n\nOh, et préparez-vous pour le protocole 'Anti-Email_Marketing'. Nous redéfinissons le respect de l'utilisateur.",
+
+        // OBJECTIVE 2
+        rm_obj2_title: "Objectif 2: Soutenabilité",
+        rm_obj2_desc: "Assurer l'autonomie financière du projet. Contrairement aux startups gonflées qui brûlent des millions en marketing, Aerko_ est conçu sur des principes d'efficacité des coûts. Grâce à des coûts d'infrastructure bas et évolutifs, l'objectif est d'atteindre le seuil de rentabilité avec les abonnements Cloud.\n\nCela assure la continuité du service à long terme et finance le marketing nécessaire pour sauver plus d'utilisateurs des applications actuelles, sans compromettre nos principes éthiques.",
+
+        // PHASE 3
+        rm_p3_title: "Phase 03: Cloud PRO",
+        rm_p3_desc: "Le système complet. Restant 100% open-source, c'est l'étape finale : ajouter les coachs à l'équation. Cette version introduit des fonctionnalités de gestion d'élèves pour l'écosystème. Bien que le prix coach soit plus élevé, un plan gratuit sera créé pour les élèves. Encore une fois, publié sous licence AGPLv3, vous pouvez donc auditer le code ou l'héberger sur votre propre Raspberry Pi.",
+
+
+        
+        // SPECS PAGE v3.0 (EXPLORER)
+        specs_explorer_title: "Explorateur de Fonctions",
+        
+        // Sidebar Sections
+        specs_sec_disks: "// Disques Locaux",
+        specs_sec_funcs: "/// Fonctions",
+        specs_sec_proto: "PROTOCOLES",
+
+        // Sidebar Items
+        specs_nav_local: "> Local_PWA",
+        specs_nav_cloud: "> Cloud (bientôt)",
+        specs_nav_pro: "> Cloud_PRO (bientôt)",
+        
+        specs_nav_system: "> Système",
+        specs_nav_nutri: "> Nutrition",
+        specs_nav_train: "> Entraînement",
+        specs_nav_progress: "> Progrès",
+        specs_nav_special: "> Spécial",
+
+        // Tag Common
+        specs_tag_killer: "Fonctionnalité Clé",
+
+        // PANEL: SYSTEM
+        specs_title_system: "Système",
+        
+        spec_title_arch: "Architecture",
+        spec_desc_arch: "Projet hébergé sur GitHub Pages, techniquement limité à HTML/CSS/JS. Au sein de cela, l'architecture est aussi 'Vanilla' que possible, évitant les frameworks lourds pour assurer la performance.",
+        
+        spec_title_storage: "Stockage & Chiffrement",
+        spec_desc_storage: "Toutes les données persistent dans IndexedDB, avec une couche de sécurité supplémentaire (optionnelle mais recommandée) offrant un chiffrement AES-256 total ou partiel, déverrouillable via un PIN de sécurité récupérable uniquement sur l'appareil via des questions de sécurité.",
+        
+        spec_title_export: "Gestionnaire E/S",
+        spec_desc_export: "L'application offre des méthodes simples pour importer des données héritées d'applications comme Hevy, Strong, Google Fit, Samsung Health et Apple Health.",
+
+        // PANEL: NUTRITION
+        specs_title_nutri: "Nutrition",
+
+        spec_title_smart: "Vérifications Intelligentes",
+        spec_desc_smart: "Enregistrez votre carburant en 3 clics. Regardez les calories et macros se mettre à jour sur le tableau de bord. Le Mode Zen rend l'interface plus saine, éloignant l'anxiété.",
+
+        spec_title_diet: "Construction de Diète",
+        spec_desc_diet: "Créez des repas avec des aliments universels (constantes) et des variables (dépendant du jour) parmi 300 entrées curées manuellement, vos propres ajouts, ou toute l'API Open Food Facts. Une flexibilité inégalée.",
+
+        spec_title_cals: "Gestion Calories & Macros",
+        spec_desc_cals: "Connaissez vos besoins en carburant pour atteindre votre cible via un assistant rapide (logique guidée), ou personnalisez chaque détail en mode avancé. Obtenez vos kcal et macros calculés pour commencer à construire la diète en moins de 2 minutes.",
+
+        spec_title_obj: "Calculateur d'Objectif",
+        spec_desc_obj: "Voulez-vous connaître l'ETA pour votre poids cible ? Pas besoin de demander à une IA ; faites-le depuis l'application, qui connaît votre poids, votre déficit calorique et votre taux de perte de poids réel.",
+
+        // PANEL: TRAINING
+        specs_title_train: "Entraînement",
+
+        spec_title_create: "Logique de Routine & Analyse",
+        spec_desc_create: "Construisez votre routine avec 200 exercices curés (pourcentage d'activation par faisceau musculaire inclus), ou ajoutez les vôtres. Analysez l'équilibre, le surentraînement ou les faisceaux négligés avec la science de votre côté.",
+
+        spec_title_meso: "Mésocycles & Surcharge",
+        spec_desc_meso: "Configurez des mésocycles facilement. Profitez d'un algorithme automatique qui propose des poids pour chaque exercice afin d'optimiser la surcharge progressive selon vos objectifs.",
+
+        spec_title_ia: "Analyse de Forme IA Locale",
+        spec_desc_ia: "Propulsé par MediaPipe (IA légère s'exécutant sur l'appareil), analysez les angles de tous les exercices pour confirmer la technique, plus le ROM et le Tempo sur les 3 grands mouvements de powerlifting.",
+
+        spec_title_flow: "Flux Intelligent",
+        spec_desc_flow: "Sélectionnez votre routine prévue, choisissez l'exercice par lequel commencer, et profitez de la flexibilité du système. Des recommandations de poids à l'enregistrement des séries pour analyse ultérieure, plus un minuteur et une journalisation simple pour ne jamais quitter le contexte de l'application.",
+
+        spec_title_1rm: "Calculateur 1RM",
+        spec_desc_1rm: "Entrez les répétitions, le poids, et laissez le noyau appliquer la formule la plus précise pour votre cas.",
+
+        // PANEL: PROGRESS
+        specs_title_progress: "Progrès",
+
+        spec_title_logs: "Logs Complets & Évolution",
+        spec_desc_logs: "Entrez la télémétrie complète, de la bioimpédance de base aux mensurations et pinces pour contrôler votre évolution via des graphiques. Suivez l'évolution de la force générale et spécifique. Aucun détail ne manque pour visualiser votre effort.",
+
+        spec_title_fat: "Calc. Gras (Pince Adipeuse)",
+        spec_desc_fat: "Que vous ayez une balance ou non, les capteurs de bioimpédance ont une marge d'erreur de 4-8%. Les scans DEXA sont trop chers pour des vérifications hebdo. Mais une pince (<10€) a une marge d'erreur de 3-5%. L'app offre les formules les plus précises pour calculer votre taux de gras.",
+
+        // PANEL: SPECIALS
+        specs_title_special: "Spéciaux",
+
+        spec_title_zen: "Mode Zen",
+        spec_desc_zen: "J'ai de l'expérience avec l'anxiété et je connais des gens avec des TCA. Le Mode Zen est obligatoire. Il limite et altère certains aspects de l'app qui pourraient déclencher ces conditions, assurant une expérience saine pour tous.",
+
+        spec_title_tsundere: "Mode Tsundere/Brutal",
+        spec_desc_tsundere: "Appelez-le comme vous voulez. Remplace les phrases originales par des insultes et du mépris humoristique (ou pas si humoristique). Optionnel, mais hautement recommandé si vous aimez le masochisme.",
+        
+    }
         
 };
