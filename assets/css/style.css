@@ -956,39 +956,38 @@ h1, h2, h3, h4, .h0-title { font-family:var(--font-display); margin:0; color:cur
 
 /* --- CONTENIDO DERECHA --- */
 .explorer-content {
-    background-color: var(--white); /* Contraste fuerte: Panel blanco */
+    background-color: var(--white);
     padding: 3rem;
     position: relative;
+
+    /* GENERADOR DE PUNTOS CSS */
+    /* Crea un punto gris de 1.5px cada 24px de distancia */
+    background-image: radial-gradient(
+        #D1D1D1 1.5px, 
+        transparent 1.5px
+    );
+    background-size: 24px 24px;
 }
 
 /* Título de Sección con caja negra/trama */
 .content-header-box {
-    background-color: var(--black);
+    background-color: var(--black); /* Negro suave #1A1A1A */
     color: var(--acid);
-    padding: 1rem 2rem;
+    
+    /* Espaciado */
+    padding: 1.5rem 2rem;
     margin-bottom: 3rem;
+    
+    /* Tipografía */
     font-family: var(--font-display);
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    position: relative;
-    overflow: hidden; /* Para contener las rayas */
-    border: 4px solid var(--black); /* Borde negro para encuadrar */
-}
-
-/* Las rayas azules/negras del diseño (Fondo del header) */
-.header-trama-bg {
-    /* Fondo negro base */
-    background-color: var(--black);
-    /* Rayas diagonales sutiles */
-    background-image: repeating-linear-gradient(
-        45deg,
-        #222,
-        #222 2px,
-        #000 2px,
-        #000 4px
-    );
+    
+    /* EL CAMBIO: Borde Blanco + Sombra Negra */
+    border: 1px solid var(--white);
+    box-shadow: 4px 4px 0 0 var(--black); 
 }
 
 /* Bloques de Texto */
