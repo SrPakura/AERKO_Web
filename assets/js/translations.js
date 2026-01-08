@@ -207,7 +207,7 @@ es: {
 en: {
         nav_manifesto: "MANIFESTO",
         nav_roadmap: "ROADMAP",
-        nav_features: "SPECS",
+        nav_features: "FEATURES",
         nav_mobile_menu: "MENU [+]", 
         
         marquee_text: "/// SYSTEM STATUS: ONLINE /// PHASE 0: PROTOTYPING /// OPEN SOURCE ARCHITECTURE /// DATA SOVEREIGNTY /// LOCAL-FIRST KERNEL /// PRIVACY PROTOCOL /// SYSTEM STATUS: ONLINE /// PHASE 0: PROTOTYPING /// OPEN SOURCE ARCHITECTURE /// DATA SOVEREIGNTY /// LOCAL-FIRST KERNEL /// PRIVACY PROTOCOL ///", 
@@ -225,7 +225,7 @@ en: {
         hero_code_message: "> SYSTEM_MESSAGE: \"Coding my own solution.\"",
         
         hero_specs_title: "SYSTEM_SPECS",
-        hero_specs_list: "ARCHITECTURE: ................ LOCAL-FIRST / PWA<br>DATABASE: ............................ INDEXEDDB<br>ENCRYPTION: ............................ AES-256 <br>LICENSE: .............. Open Source (GNU AGPLv3)<br>COST: ........................ 0€ (Self-Hosted)",
+        hero_specs_list: "ARCHITECTURE: ................ LOCAL-FIRST / PWA<br>DATABASE: ............................ INDEXEDDB<br>ENCRYPTION: ............................ AES-256 <br>LICENSE: .............. Open Source (GNU AGPLv3)<br>COST: ......................... 0€ (Self-Hosted)",
 
         manifesto_title: "OPEN SOURCE<br>PHILOSOPHY",
         manifesto_points: "> NO TOXIC GAMIFICATION.<br>> TOOLS, NOT TOYS.<br>> NO SNAKE OIL. JUST GRAVITY.",
@@ -407,10 +407,208 @@ en: {
         
     },
 
-//Alemán de Lewandosky
+// Alemán de Lewandowski
 de: {
+        nav_manifesto: "MANIFEST",
+        nav_roadmap: "ROADMAP",
+        nav_features: "SPEZIFIKATIONEN",
+        nav_mobile_menu: "MENÜ [+]", 
         
-    }
+        marquee_text: "/// SYSTEMSTATUS: ONLINE /// PHASE 0: PROTOTYPING /// OPEN-SOURCE-ARCHITEKTUR /// DATENSOUVERÄNITÄT /// LOCAL-FIRST KERNEL /// DATENSCHUTZ-PROTOKOLL /// SYSTEMSTATUS: ONLINE /// PHASE 0: PROTOTYPING /// OPEN-SOURCE-ARCHITEKTUR /// DATENSOUVERÄNITÄT /// LOCAL-FIRST KERNEL /// DATENSCHUTZ-PROTOKOLL ///", 
+
+        hero_phase: "PHASE_USABILITY_TESTS",
+        hero_title: "KOMPILIEREN<br>SIE IHRE<br>LEISTUNG",
+        hero_desc: "Ihr Körper generiert Terabytes an Daten. Geben Sie diese nicht an 'hübsche' Apps weiter. AERKO_ ist Ernährung und Biomechanik ohne Internetverbindung: Ihre Daten bleiben auf Ihrem Gerät. <br> <br> Open Source, absolute Privatsphäre und sofortige Ladezeiten.",
+        btn_join: "MITWIRKEN_(GRATIS)",
+        btn_source: "DEV_LOG", 
+
+        hero_code_context: "> KONTEXT: MASTERARBEIT",
+        hero_code_author: "> AUTOR: PAKURA // STUDENT_19",
+        hero_code_arch: "> ARCHITEKTUR: OPEN_SOURCE",
+        hero_code_warning: "> WARNUNG: KEINE_VC_FINANZIERUNG",
+        hero_code_message: "> SYSTEM_MESSAGE: \"Programmiere eigene Lösung.\"",
+        
+        hero_specs_title: "SYSTEM_SPECS",
+        hero_specs_list: "ARCHITEKTUR: ................. LOCAL-FIRST / PWA<br>DATENBANK: ........................... INDEXEDDB<br>VERSCHLÜSSELUNG: ....................... AES-256 <br>LIZENZ: ............... Open Source (GNU AGPLv3)<br>KOSTEN: ........................ 0€ (Self-Hosted)",
+
+        manifesto_title: "OPEN-SOURCE<br>PHILOSOPHIE",
+        manifesto_points: "> KEINE TOXISCHE GAMIFICATION.<br>> WERKZEUGE, KEIN SPIELZEUG.<br>> KEIN MARKETING-GESCHWÄTZ. NUR GRAVITATION.",
+        manifesto_text: "Die meisten Apps fesseln Sie mit kindischer Gamification und undurchsichtigen Clouds. AERKO_ legt die Struktur offen. Unser Code ist Open Source und Ihre Datenbank ist lokal. <br> <span class='text-acid'>Wenn ich morgen verschwinde, überleben Ihre Daten auf Ihrem Gerät.</span>",
+        manifesto_link: "> VOLLSTÄNDIGES_MANIFEST_LESEN_",
+
+        roadmap_title: "ENTWICKLUNGSPLAN",
+        roadmap_status: "/// AKTUELLER STATUS: PHASE 0.5 (USABILITY-TESTS)",
+        roadmap_link: "> ZEITPLAN_ANZEIGEN_",
+
+        // Card 1
+        card1_tag: "IN ENTWICKLUNG",
+        card1_title: "LOKALE_PWA",
+        card1_list: "<li>> Local-First Architektur (Echtes Offline)</li><li>> Radikaler Datenschutz: Lokale Speicherung</li><li>> Modulare Ernährungslogik</li><li>> Intelligentes Training & Biomechanik</li><li>> JSON Export/Import</li><li style='margin-top:12px;'><a href='specs.html' style='text-decoration:underline; font-weight:800; color:inherit;'>> [ ALLE_FUNKTIONEN ]</a></li>",
+        card1_status: "STATUS: KOMPILIERUNG (ETA: Q1_2026)",
+
+        // Card 2
+        card2_tag: "GESPERRT",
+        card2_title: "CLOUD_SYNC",
+        card2_list: "<li>> Beinhaltet den vollen LOKALE_PWA Stack</li><li>> Multi-Device-Synchronisation</li><li>> Verschlüsselte Backups (E2E)</li><li>> Verwaltete automatische Backups</li><li>> Mehr Leistung</li><li>> Gleicher Datenschutz</li>",
+        card2_status: "STATUS: ANFORDERUNGEN_AUSSTEHEND",
+
+        // Card 3
+        card3_tag: "GESPERRT",
+        card3_title: "CLOUD_PRO",
+        card3_list: "<li>> Beinhaltet den vollen CLOUD_SYNC Stack</li><li>> Trainer-Dashboard (CRM)</li><li>> Schülerverwaltung</li><li>> Mehr Leistung</li><li>> Gleicher Datenschutz</li>",
+        card3_status: "STATUS: ANFORDERUNGEN_AUSSTEHEND",
+
+        input_title: "DEBUGGEN_SIE_MIT",
+        input_desc: "> Projekt entstanden als Masterarbeit. <br> > Entwickelt von einem einzelnen Studenten.<br>> Ihr Feedback hat die Funktionen der Local_PWA kompiliert.<br>> AKTUELL: Usability-Tests auf Maze.",
+        btn_contribute: "[ DATEN_BEITRAGEN ]",
+        btn_read_features: "> FUNKTIONEN_LESEN_",
+
+        footer_source_title: "VERSIONSKONTROLLE",
+        footer_link_page: "Diese_Web",
+        footer_link_core: "PWA_App",
+        footer_link_cloud: "Cloud_App",
+        footer_link_pro: "Cloud_Pro_App",
+        
+        footer_protocols_title: "PROTOKOLLE",
+        footer_link_privacy: "Datenschutz_Manifest",
+        footer_link_terms: "Nutzungsbedingungen (GNU AGPLv3)",
+        footer_link_data: "Dateneigentum",
+
+        footer_cta_title: "BEREIT_ZUM_DEPLOYMENT?",
+        footer_cta_text: "> Hören Sie auf, Tabellenkalkulationen zu nutzen.<br>> Treten Sie der technischen Fitness-Evolution bei.",
+        footer_btn_join: "[ WARTELISTE_BEITRETEN ]",
+
+
+        // MANIFESTO PAGE V2
+        mani_bar_left: "GRÜNDUNGSMANIFEST",
+        mani_bar_right: "/// AUTOR: SR_PAKURA",
+
+        // COLUMN 1
+        mani_01_title: "01_AERKO_PROTOKOLL",
+        mani_01_text: "Dies ist kein Startup: keine Investoren, keine Marketingabteilung und absolut keine Absicht, Ihre Daten zu verkaufen. \n\n Dies ist ein Open-Source-Projekt, aber mehr als das, es ist meine Kriegserklärung an mittelmäßige Software und Konzerne, die Nutzer ausbeuten, um sich auf Kosten ihrer Privatsphäre zu bereichern. \n\n Ich bin UX/UI-Designer und Webentwickler, aber auch eine Person, die genug hat von Apps wie MyFitnessPal, Hevy oder anderen, deren Geschäftsmodell auf Datenextraktion und Geiselnahme durch Abonnements basiert. \n\n Ja, Notepad und Excel funktionieren, aber sie sind ineffizient. Genau deshalb wurde Aerko geboren: mein erstes Open-Source-Projekt und das definitive Werkzeug, das ich jedem anbieten möchte – kostenlos, privat und leistungsstark. \n\n Meine Philosophie ist simpel: Etwas Leichtgewichtiges und wirklich Gutes liefern, orientiert an Menschen, nicht an Bankkonten. Und wie mein Vorbild Linus Torvalds sagen würde: frei für die gesamte Gemeinschaft. \n\n Deshalb ist alles – vom neo-brutalistischen Design (optimiert für Geschwindigkeit und Klarheit) bis zum Code (reines Vanilla JS, Verzicht auf schwere Frameworks zugunsten extremer Performance) – so architekuriert, dass der Endnutzer die absolute Kontrolle hat. \n\n Nutzen Sie es. Bearbeiten Sie es. Machen Sie es zu Ihrem Eigenen.",
+
+        // COLUMN 2
+        mani_02_title: "02_Datenschutz",
+        mani_02_text: "Egal wann Sie dies lesen, mein Ansatz bleibt statisch. Ihre Daten sind Ihre Daten, und ehrlich gesagt, bei allem Respekt, bin ich nicht daran interessiert. \n\n Ich werde Ihnen immer Werkzeuge anbieten, um Ihre Daten zu exportieren/importieren, zu schützen (verschlüsseln) und zu löschen.",
+
+        // COLUMN 3
+        mani_03_title: "03_Zielsetzung",
+        mani_03_text: "Mein Hauptziel ist nicht Reichtum – ich erkläre hiermit schriftlich, dass ich Einnahmen persönlich und finanziell in Open-Source investieren werde, damit mehr Projekte wie dieses entstehen können. \n\n Mein Ziel ist es, minderwertige Apps abzulösen und neue Standards zu setzen, sowohl ethisch als auch technologisch. \n\n Dafür werde ich jedoch meine Prinzipien und die Prinzipien der App nicht kompromittieren.",
+
+        footer_reddit_cta: "TRETEN SIE DER REDDIT-COMMUNITY BEI r/aerko",
+
+        
+        // ROADMAP PAGE V2
+        rm_bar_center: "PROJEKTPLAN",
+
+        // PHASE 1
+        rm_p1_title: "Phase 01: Lokale PWA",
+        rm_p1_desc: "Der Kernel. HTML, CSS und JS, gehostet auf GitHub Pages. Jeder kann eintreten, testen, installieren (PWA), den Code auditieren oder forken; der Quellcode ist offen und die App ist kostenlos.\n\nKein Backend, keine Cookies, keine Werbung, keine Mikropayments und keine bösen Absichten. Alles läuft auf Ihrem Gerät, offline bei Installation, und alles wird lokal gespeichert. Sie haben die Möglichkeit, Ihre Daten zu exportieren und jederzeit zu gehen.",
+        
+        // OBJECTIVE 1
+        rm_obj1_title: "Ziel 1: Kritische Masse",
+        rm_obj1_desc: "Bevor Phase zwei beginnt, die einen weiteren Ingenieur und Infrastruktur erfordert, muss der Build validiert werden. Daher muss eine dieser Bedingungen erfüllt sein:\n\n• 1500 Aktive Nutzer (monatlich) in der kostenlosen PWA.\n• 750 Mitglieder auf r/aerko_\n\nSobald erreicht, aktivieren wir eine Crowdfunding-Phase und bieten das Cloud-Abo zu einem reduzierten Preis an (3€ für 3 Monate, 15€ für ein Jahr), um Serverinfrastruktur, Marketing und kontinuierliche Entwicklung zu finanzieren, ohne an externe Investoren zu verkaufen.",
+
+        // PHASE 2
+        rm_p2_title: "Phase 02: Cloud",
+        rm_p2_desc: "Nicht nur ein 'Patch', sondern eine totale Kernevolution. Wir halten den Code 100% Open-Source, migrieren aber das Backend auf Python auf einer modernen hybriden Infrastruktur (VPS, Litestream + Cloudflare D1 und R2). Mehr Funktionen, mehr Leistung, gleicher Datenschutz und alle Cloud-Vorteile ohne Kompromisse bei der Datensouveränität.\n\nZusätzlich wird die App ab Tag 1 ins Portugiesische, Französische und Japanische übersetzt. Wir werden zwei neue globale Interfaces deployen: ein Standard-Interface und eines, das für japanische Informationsdichte-Standards entwickelt wurde (und um eine Waifu hinzuzufügen).\n\nIch kann noch nicht alle Funktionen enthüllen, aber die Philosophie bleibt intakt: WIR WERDEN SIE NICHT AUSNEHMEN.\n\n• Self-Hosted: Wenn Sie Souveränität schätzen, hosten Sie Ihre eigene Instanz kostenlos.\n• Aerko Cloud: Wenn Sie Komfort bevorzugen, bieten wir ein Abo für 3€/Monat (PPP-angepasst), damit das Team Sicherheit, Backups und Infrastruktur für Sie verwaltet.\n\nUnd machen Sie sich bereit für das 'Anti-Email_Marketing'-Protokoll. Wir definieren Nutzerrespekt neu.",
+
+        // OBJECTIVE 2
+        rm_obj2_title: "Ziel 2: Nachhaltigkeit",
+        rm_obj2_desc: "Sicherung der finanziellen Autonomie. Im Gegensatz zu aufgeblähten Startups, die Millionen für Marketing verbrennen, ist Aerko_ nach Kosteneffizienz-Prinzipien konzipiert. Dank niedriger Infrastrukturkosten, die effizient skalieren, ist das Ziel, den Break-Even-Point mit Cloud-Abonnements zu erreichen.\n\nDies sichert die langfristige Servicekontinuität und finanziert das Marketing, um mehr Nutzer von aktuellen Apps zu retten, ohne ethische Prinzipien zu kompromittieren.",
+
+        // PHASE 3
+        rm_p3_title: "Phase 03: Cloud PRO",
+        rm_p3_desc: "Das vollständige System. Zu 100% Open-Source bleibend, ist dies der finale Schritt: Trainer in die Gleichung aufnehmen. Diese Version führt Schülerverwaltungsfunktionen ein. Während der Preis für Trainer höher sein wird, wird ein kostenloser Plan für Schüler erstellt. Auch hier unter AGPLv3 veröffentlicht, sodass Sie den Code prüfen oder auf Ihrem eigenen Raspberry Pi hosten können.",
+
+
+        
+        // SPECS PAGE v3.0 (EXPLORER)
+        specs_explorer_title: "Funktions-Explorer",
+        
+        // Sidebar Sections
+        specs_sec_disks: "// Lokale Laufwerke",
+        specs_sec_funcs: "/// Funktionen",
+        specs_sec_proto: "PROTOKOLLE",
+
+        // Sidebar Items
+        specs_nav_local: "> Lokale_PWA",
+        specs_nav_cloud: "> Cloud (demnächst)",
+        specs_nav_pro: "> Cloud_PRO (bald)",
+        
+        specs_nav_system: "> System",
+        specs_nav_nutri: "> Ernährung",
+        specs_nav_train: "> Training",
+        specs_nav_progress: "> Fortschritt",
+        specs_nav_special: "> Spezial",
+
+        // Tag Common
+        specs_tag_killer: "Killer-Feature",
+
+        // PANEL: SYSTEM
+        specs_title_system: "System",
+        
+        spec_title_arch: "Architektur",
+        spec_desc_arch: "Das Projekt wird auf GitHub Pages gehostet, technisch auf HTML/CSS/JS beschränkt. Innerhalb dessen ist die Architektur so 'Vanilla' wie möglich, um schwere Frameworks zu vermeiden und Leistung zu sichern.",
+        
+        spec_title_storage: "Speicherung & Verschlüsselung",
+        spec_desc_storage: "Alle Daten persistieren in IndexedDB, mit einer zusätzlichen Sicherheitsebene (optional, aber empfohlen), die eine vollständige oder teilweise AES-256-Verschlüsselung bietet, entsperrbar über eine Sicherheits-PIN, die nur lokal auf dem Gerät wiederherstellbar ist.",
+        
+        spec_title_export: "I/O Manager",
+        spec_desc_export: "Die App bietet einfache Methoden zum Import von Legacy-Daten aus Apps wie Hevy, Strong, Google Fit, Samsung Health und Apple Health.",
+
+        // PANEL: NUTRITION
+        specs_title_nutri: "Ernährung",
+
+        spec_title_smart: "Smart Checks",
+        spec_desc_smart: "Protokollieren Sie die Nahrungsaufnahme mit 3 Klicks. Sehen Sie, wie Kalorien und Makros im Dashboard aktualisiert werden. Der Zen-Modus macht das Dashboard sauberer und hält Angstzustände fern.",
+
+        spec_title_diet: "Ernährungs-Konstruktion",
+        spec_desc_diet: "Erstellen Sie Mahlzeiten mit universellen Lebensmitteln (Konstanten) und Variablen (tagesabhängig) aus 300 manuell kuratierten Einträgen, eigenen Ergänzungen oder der gesamten Open Food Facts API. Unübertroffene Flexibilität.",
+
+        spec_title_cals: "Kalorien- & Makromanagement",
+        spec_desc_cals: "Kennen Sie Ihren Treibstoffbedarf, um Ihr Ziel über einen schnellen Wizard (geführte Logik) zu erreichen, oder passen Sie jedes Detail im erweiterten Modus an. Lassen Sie Kcal und Makros berechnen, um die Diät in unter 2 Minuten zu erstellen.",
+
+        spec_title_obj: "Ziel-Kalkulator",
+        spec_desc_obj: "Wollen Sie die ETA bis zum Zielgewicht wissen? Fragen Sie keine KI; tun Sie es über die App, die Ihr Gewicht, das Kaloriendefizit und die reale Gewichtsverlustrate kennt.",
+
+        // PANEL: TRAINING
+        specs_title_train: "Training",
+
+        spec_title_create: "Routinen-Logik & Analyse",
+        spec_desc_create: "Bauen Sie Ihre Routine mit 200 kuratierten Übungen (inkl. Aktivierungsprozentsatz pro Muskelkopf) oder fügen Sie eigene hinzu. Analysieren Sie Balance, Übertraining oder vernachlässigte Muskelgruppen wissenschaftlich fundiert.",
+
+        spec_title_meso: "Mesozyklen & Overload",
+        spec_desc_meso: "Konfigurieren Sie Mesozyklen einfach. Nutzen Sie einen automatischen Algorithmus, der Gewichte für jede Übung vorschlägt, um den progressiven Overload gemäß Ihren Zielen zu optimieren.",
+
+        spec_title_ia: "Lokale KI-Formanalyse",
+        spec_desc_ia: "Angetrieben von MediaPipe (leichtgewichtige KI on-device), analysieren Sie Winkel aller Übungen zur Technikbestätigung, plus ROM und Tempo bei den 3 großen Powerlifting-Bewegungen.",
+
+        spec_title_flow: "Smart Flow",
+        spec_desc_flow: "Wählen Sie Ihre geplante Routine, wählen Sie die Übung zum Starten und genießen Sie die Systemflexibilität. Von Gewichtsempfehlungen bis zur Satzaufzeichnung für spätere Analysen, plus Timer und einfachem Datenlogging, damit Sie den App-Kontext nie verlassen müssen.",
+
+        spec_title_1rm: "1RM Kalkulator",
+        spec_desc_1rm: "Geben Sie Wiederholungen und Gewicht ein und lassen Sie den Kernel die präziseste Formel für Ihren Fall anwenden.",
+
+        // PANEL: PROGRESS
+        specs_title_progress: "Fortschritt",
+
+        spec_title_logs: "Vollständige Logs & Evolution",
+        spec_desc_logs: "Erfassen Sie vollständige Telemetrie, von Basis-Bioimpedanz bis zu Maßen und Calipern, um Ihre Entwicklung über Grafiken zu kontrollieren. Verfolgen Sie die allgemeine und spezifische Kraftentwicklung. Kein Detail fehlt, um Ihren Einsatz zu visualisieren.",
+
+        spec_title_fat: "Körperfett-Kalk. (Caliper)",
+        spec_desc_fat: "Ob Waage oder nicht, Bioimpedanz-Sensoren haben eine Fehlerquote von 4-8%. DEXA-Scans sind zu teuer für wöchentliche Checks. Aber ein Caliper (<10€) hat eine Fehlerquote von 3-5%. Die App bietet die präzisesten Formeln zur Berechnung Ihres Körperfettanteils.",
+
+        // PANEL: SPECIALS
+        specs_title_special: "Spezial",
+
+        spec_title_zen: "Zen-Modus",
+        spec_desc_zen: "Ich habe Erfahrung mit Angstzuständen und kenne Menschen mit Essstörungen. Der Zen-Modus ist obligatorisch. Er begrenzt und verändert bestimmte App-Aspekte, die diese Zustände auslösen könnten, um eine großartige Erfahrung für alle zu sichern.",
+
+        spec_title_tsundere: "Tsundere/Hardcore-Modus",
+        spec_desc_tsundere: "Nennen Sie es, wie Sie wollen. Ersetzt Originalphrasen durch Kritik und humorvolle (oder nicht so humorvolle) Verachtung. Optional, aber sehr empfohlen, wenn Sie Masochismus mögen.",
+        
+    },
         
 // añadir portugues, frances, y dejar el hueco vacio para el japones. 
         
