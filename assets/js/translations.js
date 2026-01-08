@@ -121,7 +121,6 @@ es: {
         // Sidebar Sections
         specs_sec_disks: "// Discos locales",
         specs_sec_funcs: "/// Funciones",
-        specs_sec_repos: "REPOSITORIOS",
         specs_sec_proto: "PROTOCOLOS",
 
         // Sidebar Items
@@ -135,42 +134,71 @@ es: {
         specs_nav_progress: "> Progreso",
         specs_nav_special: "> Especiales",
 
-        // Content Headers
-        specs_title_system: "Sistema",
-        specs_title_nutri: "Nutrición",
-        specs_title_train: "Entrenamiento",
-        specs_title_progress: "Progreso",
-        specs_title_special: "Especiales",
-
-        // Tags
+        // Tag Común
         specs_tag_killer: "Killer_Feature",
 
-        // Subtítulos (Hardcodeados en i18n por ahora, texto en "Lorem")
-        spec_sub_arch: "Arquitectura",
-        spec_sub_storage: "Almacenamiento y encriptación",
-        spec_sub_export: "Gestor de importación y exportación de datos",
+        // PANEL: SISTEMA
+        specs_title_system: "Sistema",
         
-        spec_sub_smart: "Smart Checks",
-        spec_sub_diet: "Creación de dietas",
-        spec_sub_cals: "Gestión de calorías y macros",
-        spec_sub_obj: "Calculadora de objetivos",
+        spec_title_arch: "Arquitectura",
+        spec_desc_arch: "El proyecto se aloja en github pages, lo que de por si limita a HTML/CSS/JS. Dentro de eso, la arquitectura será lo más vanilla posible, evitando frameworks pesados para asegurar el rendimiento.",
+        
+        spec_title_storage: "Almacenamiento y encriptación",
+        spec_desc_storage: "Todos los datos se guardan en IndexedDB, con una capa de seguridad extra (opcional pero recomendada) que ofrecerá la encriptación total o parcial de los datos, desbloqueables mediante un pin de seguridad, que a su vez solo será recuperable en el propio dispositivo, mediante preguntas de seguridad.",
+        
+        spec_title_export: "Gestor de importación y exportación de datos",
+        spec_desc_export: "Desde la app, se ofrecerán métodos sencillos para importar datos desde apps como Hevy, strong, google fit, samsung health y apple health.",
 
-        spec_sub_create: "Creación y análisis de rutinas",
-        spec_sub_meso: "Mesociclos y sobrecarga progresiva",
-        spec_sub_ia: "Análisis de forma con IA local",
-        spec_sub_flow: "Smart Flow",
-        spec_sub_1rm: "Calculo de 1RM",
+        // PANEL: NUTRICIÓN
+        specs_title_nutri: "Nutrición",
 
-        spec_sub_logs: "Registros completos y evolución",
-        spec_sub_fat: "Calculadora de grasa mediante pliegues",
+        spec_title_smart: "Smart Checks",
+        spec_desc_smart: "Registra lo que comes con 3 clicks y mira como las calorías y macros avanzan en el dashboard. Además, nuestro modo zen hace el dashboard mucho más amigable, alejándote de la ansiedad.",
 
-        spec_sub_zen: "Modo Zen",
-        spec_sub_tsundere: "Modo Tsundere/Bullying",
+        spec_title_diet: "Creación de dietas",
+        spec_desc_diet: "Crea comidas con alimentos universales (los que comes siempre) y variables (los que dependiendo del día varían) dentro de los 300 alimentos curados manualmente, añadidos por ti, o directamente cualquier alimento del mundo gracias a la API de Open Food Facts, y disfruta de una flexibilidad que ninguna otra app te puede ofrecer.",
 
-        // Texto Temporal (Placeholder)
-        specs_temp_text: "Texto temporal del sistema. Aquí irá la descripción detallada de la función seleccionada. El contenido final se redactará más adelante.",
+        spec_title_cals: "Gestión de calorías y macros",
+        spec_desc_cals: "Conoce lo que deberías comer para alcanzar tu objetivo de forma sencilla y rápida a través de un pequeño wizard (creación guiada y separada en pasos lógicos), o personaliza cada detalle con el modo avanzado. Sea como sea, podrás tener tus kcal y macros calculados para empezar a crear la dieta en menos de 2 minutos.",
 
-       spec_other_modules: "OTROS_MÓDULOS",
+        spec_title_obj: "Calculadora de objetivos",
+        spec_desc_obj: "¿Quieres saber cuanto vas a tardar en llegar a tu peso objetivo? Pues ya no lo tendrás que preguntar a chatgpt, ahora lo podrás hacer desde tu app, que conoce tu peso, déficit calórico, y cuanta peso pierdes realmente.",
+
+        // PANEL: ENTRENAMIENTO
+        specs_title_train: "Entrenamiento",
+
+        spec_title_create: "Creación y análisis de rutinas",
+        spec_desc_create: "Crea tu rutina con 200 ejercicios curados manualmente (con porcentaje de activación por cabeza muscular), o añade tus propios ejercicios, y analiza si tu rutina es equilibrada, o si sobreentrenas/desprecias una cabeza muscular con la ciencia a tu lado.",
+
+        spec_title_meso: "Mesociclos y sobrecarga progresiva",
+        spec_desc_meso: "Configura mesociclos fácilmente y disfruta de un algoritmo automático que te propone pesos en cada ejercicio para optimizar la sobrecarga progresiva según tus objetivos.",
+
+        spec_title_ia: "Análisis de forma con IA local",
+        spec_desc_ia: "Gracias a MediaPipe, una IA ligera capaz de correr en tu móvil, podrás analizar los ángulos de todos los ejercicios para confirmar que haces bien la técnica, además del ROM y Tempo en los 3 básicos del powerlifting.",
+
+        spec_title_flow: "Smart Flow",
+        spec_desc_flow: "Elije la rutina que te toque, el ejercicio por el que más te apetezca empezar, y disfruta de la flexibilidad que ofrece el sistema. Desde las recomendaciones de peso para la sobrecarga o la opción de grabar el ejercicio para analizar después, hasta un cronometro y registro sencillo de tus datos para que no tengas que salir de la app en ningún momento. Todas las comodidades en el mismo lugar.",
+
+        spec_title_1rm: "Calculo de 1RM",
+        spec_desc_1rm: "Introduce las repeticiones, el peso, y deja que la app use la formula más precisa para tu caso.",
+
+        // PANEL: PROGRESO
+        specs_title_progress: "Progreso",
+
+        spec_title_logs: "Registros completos y evolución",
+        spec_desc_logs: "Añade toda tu información al completo, desde datos de bioimpedancia básica, hasta medidas y pliegues para controlar tu evolución mediante gráficas y datos. Además, también podrás ver la evolución de tu fuerza de forma general y especifica. De está forma, no te faltará detalle para presumir de tu esfuerzo.",
+
+        spec_title_fat: "Calculadora de grasa mediante pliegues",
+        spec_desc_fat: "Algunos tenemos una bascula en nuestra casa, otros no, pero la tengamos o no, todas tienen un porcentaje de error que dependiendo del número de sensores puede ir desde el 4 hasta el 8%. Un examen DEXA es demasiado caro para hacerse todas las semanas, pero hay algo con un 3-5% de error (dependiendo de la habilidad de quien tome las medidas) y menos de 10€, un plicómetro. Es por eso que nuestra app ofrece las formulas más precisas para calcular lo mejor posible tu porcentaje de grasa.",
+
+        // PANEL: ESPECIALES
+        specs_title_special: "Especiales",
+
+        spec_title_zen: "Modo Zen",
+        spec_desc_zen: "Personalmente tengo experiencia con la ansiedad, y se de personas que han tenido TCAs, es por eso que incluyo el modo Zen como imprescindible. Básicamente limita y cambia ciertos aspectos de la app que pueden producir estas enfermedades para que así todo el mundo pueda tener una gran experiencia usando la app.",
+
+        spec_title_tsundere: "Modo Tsundere/Bullying",
+        spec_desc_tsundere: "Llámalo como quieras, pero básicamente reemplaza parte de las frases originales para añadir insultos y desprecio humorístico (o no tanto). Opcional, pero altamente recomendado si te gusta el masoquismo.",
         
     },
 
