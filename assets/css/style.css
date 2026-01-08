@@ -627,367 +627,43 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
 }
 
 
-/* Contenido para specs.html */
 
-/* =========================================
-   SPECS PAGE v2.1 (Tabs Fix & Grid)
-   ========================================= */
-
-/* --- 1. TABS SELECTOR (Los botones de arriba) --- */
-.tabs-row {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap; /* Para que en móvil bajen */
-}
-
-.tab-btn {
-    flex: 1; /* Todos del mismo ancho */
-    padding: 1rem 1rem;
-    border: var(--border-std);
-    background: var(--white);
-    color: var(--grey-hover); /* Texto gris apagado si no está activo */
-    font-family: var(--font-mono);
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-align: center;
-}
-
-.tab-btn:hover {
-    background: var(--black);
-    color: var(--white);
-}
-
-/* Estado Activo del Botón */
-.tab-btn.active {
-    background: var(--acid);
-    color: var(--black);
-    box-shadow: var(--shadow-hard);
-    border-color: var(--black);
-    opacity: 1;
-}
-
-/* --- 2. LOGICA DE VISIBILIDAD (La magia) --- */
-/* Por defecto, OCULTAMOS todos los paneles */
-.tab-panel {
-    display: none;
-}
-
-/* Solo mostramos el que tenga la clase active */
-.tab-panel.active {
-    display: block;
-    /* Sin animación, cambio seco y limpio */
-}
-
-/* --- 3. LAYOUT DEL CONTENIDO (Grid 60/40) --- */
-.specs-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr; /* 60% - 40% */
-    gap: 2rem;
-    align-items: stretch;
-}
-
-/* Caja Izquierda: KILLER (Acid) */
-.killer-box {
-    background-color: var(--acid);
-    border: var(--border-std);
-    box-shadow: var(--shadow-hard);
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.killer-tag {
-    background: var(--black);
-    color: var(--acid);
-    padding: 4px 8px;
-    font-family: var(--font-mono);
-    font-weight: 700;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 1.5rem;
-}
-
-.tech-snippet {
-    margin-top: 3rem;
-    background: rgba(255, 255, 255, 0.5);
-    border-left: 4px solid var(--black);
-    padding: 1rem;
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    color: var(--black);
-    font-weight: 500;
-}
-
-/* Caja Derecha: LISTA (Blanca) */
-.features-box {
-    background-color: var(--white);
-    border: var(--border-std);
-    padding: 2.5rem;
-}
-
-.features-list {
-    list-style: none;
-    margin-top: 1.5rem;
-}
-
-.features-list li {
-    font-family: var(--font-mono);
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
-    line-height: 1.4;
-}
-
-.features-list li::before {
-    content: ">";
-    position: absolute;
-    left: 0;
-    font-weight: 700;
-    color: var(--black);
-}
-
-/* Responsive Móvil */
-@media (max-width: 900px) {
-    .specs-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-    .killer-box, .features-box { padding: 1.5rem; }
-    .tabs-row { gap: 0.5rem; }
-    .tab-btn { padding: 0.75rem 0.5rem; font-size: 0.8rem; }
-    .hero-right { display: none; }
+/* --- 8. PAGE: MANIFIESTO (Neo-Brutalism V2) --- */
+/* Utility específica para esta página */
+.footer-seamless {
+    border-top: none !important;
 }
 
 
-
-
-
-/* Contenido para roadmap.html */
-
-/* =========================================
-   ROADMAP SYSTEM v3.0 (Grid Alignment)
-   ========================================= */
-
-/* Contenedor principal */
-.roadmap-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    position: relative; /* Contexto para la línea */
-    padding-bottom: 5rem;
-}
-
-/* --- LA LÍNEA VERTICAL (Fondo) --- */
-/* La sacamos del flujo para que cruce todo sin molestar */
-.roadmap-track-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 80px; /* Centrado en la columna izquierda (aprox) */
-    width: 4px; /* Grosor línea */
-    background-color: var(--black); /* Línea negra base */
-    z-index: 0;
-    transform: translateX(-50%);
-}
-
-/* La línea de progreso verde */
-.roadmap-progress-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%; /* JS cambiará esto */
-    background-color: var(--acid);
-    transition: height 0.1s linear;
-    z-index: 1;
-}
-
-/* --- ESTRUCTURA GRID (Contenido) --- */
-/* Cada ítem es una fila con 2 columnas: Marcador | Contenido */
-.rm-row {
-    display: grid;
-    grid-template-columns: 160px 1fr; /* 160px para el marcador, resto para texto */
-    position: relative;
-    z-index: 2; /* Encima de la línea */
-    margin-bottom: 4rem; /* Separación entre bloques */
-}
-
-/* Columna Izquierda: El Marcador */
-.rm-marker-col {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* ESTO ES LA MAGIA: CENTRADO VERTICAL */
-    height: 100%; /* Ocupa toda la altura de la tarjeta */
-}
-
-/* Estilo de la Bola Grande (Fases) */
-.phase-marker {
-    width: 64px; height: 64px;
-    background: var(--white);
-    border: 3px solid var(--black);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--font-display);
-    font-weight: 700; font-size: 2rem;
-    transition: all 0.3s ease;
-}
-/* Cuando la línea verde pasa por encima */
-.phase-marker.active {
-    background-color: var(--acid);
-    box-shadow: 0 0 15px var(--acid);
-    border-color: var(--black);
-}
-
-/* Estilo del Punto Pequeño (Objetivos) */
-.obj-dot {
-    width: 24px; height: 24px;
-    background: var(--black); /* Por defecto negro para verse sobre blanco */
-    border: 2px solid var(--white); /* Borde blanco para separar de la línea */
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-.obj-dot.active {
-    background: var(--acid);
-    transform: scale(1.5);
-    border-color: var(--black);
-}
-
-/* Columna Derecha: Las Tarjetas */
-.rm-card {
-    padding: 3rem;
-    border: 1px solid var(--black);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Tema Negro (Fases) */
-.rm-card.theme-black {
-    background-color: var(--black);
-    color: var(--white);
-    border: none; /* Se funde si el fondo es negro, o le ponemos borde si queremos */
-}
-.rm-card.theme-black h2 { color: var(--acid); margin-bottom: 1rem; }
-.rm-card.theme-black p { color: var(--white); opacity: 0.9; }
-
-/* Tema Blanco (Objetivos) */
-.rm-card.theme-white {
-    background-color: var(--white);
-    color: var(--black);
-    box-shadow: 8px 8px 0 var(--black); /* Sombra dura estilo Figma */
-}
-.rm-card.theme-white h3 { font-family: var(--font-display); font-size: 2rem; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; }
-
-/* --- RESPONSIVE MOBILE --- */
-@media (max-width: 900px) {
-    .roadmap-track-container { left: 30px; } /* Mover línea a la izq */
-    .rm-row { grid-template-columns: 60px 1fr; gap: 1rem; padding-right: 1.5rem; }
-    .phase-marker { width: 40px; height: 40px; font-size: 1.2rem; border-width: 2px; }
-    .obj-dot { width: 16px; height: 16px; }
-    .rm-card { padding: 1.5rem; }
-    .rm-card.theme-white h3 { font-size: 1.5rem; }
-}
-
-
-
-/* Para minifiesto.html */
-
-/* --- MANIFESTO PAGE: READING MODE --- */
-.manifesto-section { background-color:var(--black); min-height:100vh; border-top:var(--border-std); }
-.reading-container { max-width:800px; margin:0 auto; padding:5rem 1.5rem 8rem; }
-.manifesto-text p { font-family:var(--font-mono); font-size:1.1rem; line-height:1.8; color:var(--white); margin-bottom:2rem; }
-.manifesto-highlight { border-left:4px solid var(--acid); padding-left:1.5rem; font-size:1.5rem; font-family:var(--font-display); color:var(--acid); margin:3rem 0; line-height:1.3; }
-.manifesto-divider { height:1px; background-color:var(--grey-hover); margin:4rem 0; width:100%; }
-
-/* --- UTILS: DARK MODE & MANIFESTO OVERRIDES --- */
-.header-container { background-color:var(--white); position:relative; z-index:10; }
-.bg-black-force { background-color:var(--black)!important; }
-.footer-seamless { border-top:none!important; }
-
-/* --- MODAL SYSTEM --- */
-.modal-overlay {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.85); /* Fondo oscuro semi-transparente */
-    backdrop-filter: blur(5px); /* Efecto borroso pro */
-    z-index: 9999;
-    display: flex; justify-content: center; align-items: center;
-}
-
-.modal-box {
-    background: var(--black);
-    border: 1px solid var(--acid); /* Borde verde ácido */
-    padding: 2rem;
-    width: 90%; max-width: 500px;
-    box-shadow: 0 0 20px rgba(204, 255, 0, 0.2);
-}
-
-.cyber-input {
-    width: 100%;
-    background: var(--black);
-    border: 1px solid var(--white);
-    color: var(--white);
-    padding: 1rem;
-    font-family: var(--font-mono);
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    outline: none;
-}
-
-.cyber-input:focus {
-    border-color: var(--acid);
-    box-shadow: 0 0 10px var(--acid);
-}
-
-.modal-actions {
-    display: flex; gap: 1rem; justify-content: flex-end;
-}
-
-/* --- FIX TÍTULO MANIFIESTO --- */
-.manifesto-section .h1-title {
-    font-size: clamp(2rem, 5vw, 4rem); /* Mínimo 2rem, Ideal 5vw, Máximo 4rem */
-    word-break: normal; /* Intentar no romper la palabra */
-    overflow-wrap: normal;
-    hyphens: none;
-}
-
-/* =========================================
-   MANIFESTO V2 REDESIGN (Neo-Brutalism)
-   ========================================= */
-
-/* Barra Superior (Marquee estático) */
+/* 8.1 Barra Superior (Marquee estático) */
 .manifesto-bar {
-    display: grid; /* Cambiamos Flex por Grid */
-    grid-template-columns: 59% 41%; /* IGUAL QUE TU GRID DE ABAJO */
-    align-items: center; /* Centrado vertical */
-    justify-items: center; /* ESTO ES LA MAGIA: Centrado horizontal en su columna */
-    
+    display: grid;
+    grid-template-columns: 59% 41%;
+    align-items: center;
+    justify-items: center;
     background-color: var(--black);
-    padding: 0.5rem 0; /* Quitamos padding lateral para que el centro sea matemático */
-    
+    padding: 0.5rem 0;
     border-left: var(--border-std);
     border-right: var(--border-std);
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
-/* Grid Principal */
+
+/* 8.2 Grid Principal */
 .manifesto-v2-grid {
     display: grid;
-    /* IMPORTANTE: Aquí definimos el ancho. 
-       Si el menú corta al 61% (como tu hero antiguo), usamos eso. 
-       Ajusta este porcentaje si la línea no casa perfecta. */
-    grid-template-columns: 59% 41%; 
+    grid-template-columns: 59% 41%;
     max-width: var(--max-width);
     margin: 0 auto;
     border-left: var(--border-std);
     border-right: var(--border-std);
-    border-bottom: var(--border-std); /* Cerramos la caja abajo */
+    border-bottom: var(--border-std);
     background-color: var(--white);
 }
 
-/* Columna Izquierda (01) */
+
+/* 8.3 Columnas */
 .col-01 {
     padding: 2.5rem;
     border-right: var(--border-std);
@@ -996,31 +672,29 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     gap: 1.5rem;
 }
 
-/* Columna Derecha (Contenedor de 02 y 03) */
 .col-right-container {
     display: flex;
     flex-direction: column;
 }
 
-/* Cajas Derecha (02 y 03) */
 .col-02, .col-03 {
     padding: 2.5rem;
-    flex: 1; /* Para que ocupen espacio si falta contenido */
+    flex: 1;
 }
 
 .col-02 {
     border-bottom: var(--border-std);
 }
 
-/* Tipografía Específica V2 */
+/* 8.4 Tipografía Específica */
 .h2-manifesto {
     font-family: var(--font-display);
-    font-size: 3.5rem; /* Grande y fuerte */
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 100%;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    word-break: break-word; /* Para que no rompa el móvil */
+    word-break: break-word;
     hyphens: auto;
 }
 
@@ -1029,60 +703,61 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    white-space: pre-line; /* Respeta los saltos de línea del JSON */
+    white-space: pre-line;
 }
 
-/* RESPONSIVE (Móvil) */
+
+/* 8.5 Responsive Manifesto */
 @media (max-width: 900px) {
-    .manifesto-v2-grid {
-        grid-template-columns: 1fr; /* Una sola columna */
+    .manifesto-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
     }
+
+    .manifesto-v2-grid {
+        grid-template-columns: 1fr;
+    }
+
     .col-01 {
         border-right: none;
         border-bottom: var(--border-std);
         padding: 1.5rem;
     }
+
     .col-02 {
         padding: 1.5rem;
     }
+
     .col-03 {
         padding: 1.5rem;
-        border-top: var(--border-std); /* Asegurar división */
+        border-top: var(--border-std);
     }
+
     .h2-manifesto {
-        font-size: 2.5rem; /* Un poco más pequeño en móvil */
-    }
-    .manifesto-bar {
-        display: flex; /* En móvil volvemos a flex columna */
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem;
-    }
-    
-    .manifesto-v2-grid {
-        grid-template-columns: 1fr; /* Una columna en móvil */
+        font-size: 2.5rem;
     }
 }
 
-/* =========================================
-   ROADMAP V2 (CORREGIDO - V2.1)
-   ========================================= */
-
-/* BARRA SUPERIOR (Solo ROADMAP centrado) */
+/* --- 9. PAGE: ROADMAP (System V2) --- */
+/* 9.1 Barra Superior */
 .roadmap-bar {
-    display: flex;             
-    justify-content: center;   
-    align-items: center;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--black);
     padding: 0.5rem 0;
     border-left: var(--border-std);
     border-right: var(--border-std);
     max-width: var(--max-width);
     margin: 0 auto;
-    z-index: 10; position: relative;
+    z-index: 10;
+    position: relative;
 }
 
-/* CONTENEDOR PRINCIPAL */
+
+/* 9.2 Contenedor Principal */
 .roadmap-container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -1091,14 +766,16 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     border-left: var(--border-std);
     border-right: var(--border-std);
     background: var(--white);
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-/* --- LA LÍNEA (TRACK) --- */
+
+/* 9.3 Línea de Progreso (Track) */
 .roadmap-track-container {
     position: absolute;
-    top: 0; bottom: 0;
-    left: 72.5px; /* Mitad de 145px */
+    top: 0;
+    bottom: 0;
+    left: 72.5px; /* Mitad de la columna de 145px */
     width: 4px;
     background-color: var(--black);
     z-index: 0;
@@ -1107,13 +784,17 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
 
 .roadmap-progress-bar {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%; /* JS controla esto */
     background-color: var(--acid);
     transition: height 0.1s linear;
     z-index: 1;
 }
 
-/* --- LAS FILAS --- */
+
+/* 9.4 Filas (Grid) */
 .rm-row {
     display: grid;
     grid-template-columns: 145px 1fr;
@@ -1121,35 +802,38 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     z-index: 2;
 }
 
-/* COLUMNA IZQUIERDA (Marcadores) */
 .rm-marker-col {
     display: flex;
     justify-content: center;
-    padding-top: 2rem; /* Alineado al inicio del texto */
+    padding-top: 2rem;
 }
 
-/* COLUMNA DERECHA (Textos) */
 .rm-content-cell {
-    /* PADDING CORREGIDO: Arriba 2rem, Derecha 0, Abajo 2rem, Izquierda 2rem */
     padding: 2rem 0 2rem 2rem;
-    
     border-bottom: 1px solid #e5e5e5;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.rm-row:last-child .rm-content-cell { border-bottom: none; }
+/* Quitar borde al último elemento */
+.rm-row:last-child .rm-content-cell {
+    border-bottom: none;
+}
 
 
-/* --- BOLAS Y PUNTOS --- */
+/* 9.5 Marcadores (Bolas y Puntos) */
 .rm-bubble {
-    width: 64px; height: 64px;
+    width: 64px;
+    height: 64px;
     background-color: var(--white);
     border: 3px solid var(--black);
     border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-display);
-    font-weight: 700; font-size: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
     z-index: 5;
     transition: all 0.3s ease;
 }
@@ -1159,7 +843,8 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
 }
 
 .rm-dot {
-    width: 24px; height: 24px;
+    width: 24px;
+    height: 24px;
     background-color: var(--black);
     border: 4px solid var(--white);
     border-radius: 50%;
@@ -1173,22 +858,23 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     transform: scale(1.3);
 }
 
-/* --- TIPOGRAFÍA (AQUÍ ESTÁ EL ARREGLO) --- */
-.rm-title-h2 { 
-    font-family: var(--font-display); 
-    font-size: 3rem; 
-    font-weight: 700; 
-    line-height: 1; 
-    margin-bottom: 1rem; 
+
+/* 9.6 Tipografía Específica */
+.rm-title-h2 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
     color: var(--black);
 }
 
-.rm-obj-h3 { 
-    font-family: var(--font-display); 
-    font-size: 2rem; 
-    font-weight: 700; 
-    color: #333; 
-    margin-bottom: 1rem; 
+.rm-obj-h3 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
 .rm-text-p {
@@ -1196,41 +882,65 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--black);
-    
-    /* 1. SOLUCIÓN SALTOS DE LÍNEA: 
-       'pre-line' obliga al navegador a respetar los \n que pusiste en el JSON */
-    white-space: pre-line; 
-    
-    /* 2. SOLUCIÓN ANCHO 100%: 
-       Asegura el ancho total y elimina el margen derecho que lo frenaba */
-    width: 100%;      
+    white-space: pre-line; /* Respeta saltos de línea del JSON */
+    width: 100%;
     max-width: 100%;
-    padding-right: 0; /* Antes tenías 1.5rem, esto lo cortaba antes de llegar al borde */
+    padding-right: 0;
 }
 
-/* RESPONSIVE */
+
+/* 9.7 Responsive Roadmap */
 @media (max-width: 900px) {
-    .roadmap-bar, .rm-row { grid-template-columns: 60px 1fr; }
-    .roadmap-track-container { left: 30px; }
-    .rm-bubble { width: 40px; height: 40px; font-size: 1.2rem; border-width: 2px; }
-    .rm-dot { width: 16px; height: 16px; border-width: 2px; }
-    .rm-content-cell { padding: 1.5rem 0 1.5rem 1rem; }
-    .rm-marker-col { padding-top: 1.5rem; }
-    .rm-title-h2 { font-size: 2rem; }
+    .roadmap-bar,
+    .rm-row {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .roadmap-track-container {
+        left: 30px;
+    }
+
+    .rm-bubble {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        border-width: 2px;
+    }
+
+    .rm-dot {
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+    }
+
+    .rm-content-cell {
+        padding: 1.5rem 0 1.5rem 1rem;
+    }
+
+    .rm-marker-col {
+        padding-top: 1.5rem;
+    }
+
+    .rm-title-h2 {
+        font-size: 2rem;
+    }
 }
 
-/* =========================================
-   SPECS V3.0: EXPLORER LAYOUT
-   ========================================= */
-
-/* --- LAYOUT PRINCIPAL --- */
+/* --- 10. PAGE: SPECS (Explorer System V3) --- */
+/* 10.1 Layout Principal */
 .explorer-container {
     max-width: var(--max-width);
     margin: 0 auto;
     border-left: var(--border-std);
     border-right: var(--border-std);
-    background-color: var(--black); /* Fondo general oscuro */
+    background-color: var(--black);
     min-height: 100vh;
+}
+
+.explorer-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 80vh;
 }
 
 /* Barra Superior (Marquee estático) */
@@ -1246,44 +956,28 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     letter-spacing: 1px;
 }
 
-/* Grid: Sidebar (280px) | Content (Auto) */
-.explorer-grid {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    min-height: 80vh;
-}
 
-/* --- SIDEBAR IZQUIERDA --- */
+/* 10.2 Sidebar (Izquierda) */
 .explorer-sidebar {
-    background-color: var(--black); /* #1A1A1A */
-    width: 280px; /* Ancho fijo según Figma */
-    border-right: var(--border-std); /* Borde derecho estándar */
-    
-    /* Configuración Sticky */
-    position: sticky; 
+    background-color: var(--black);
+    width: 280px;
+    border-right: var(--border-std);
+    position: sticky;
     top: 0;
     height: 100vh;
     overflow-y: auto;
-    
-    /* Flex para distribuir si fuera necesario, pero block va bien */
     display: flex;
     flex-direction: column;
 }
 
-/* Secciones de la Sidebar */
 .sidebar-section-title {
-    color: var(--white); /* Blanco puro #FFFFFF */
+    color: var(--white);
     font-family: var(--font-mono);
-    
-    /* Tipografía Figma: 16px / Medium / 100% */
-    font-size: 1rem;       /* 16px */
+    font-size: 1rem;
     font-weight: 500;
     line-height: 100%;
-    
-    /* Espaciado Figma: 24px alrededor */
-    padding: 24px; 
-    
-    text-transform: none; /* Quitamos uppercase forzado si lo había */
+    padding: 24px;
+    text-transform: none;
 }
 
 /* Items de Navegación */
@@ -1295,46 +989,34 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     border: none;
     cursor: pointer;
     text-decoration: none;
-    
-    /* Tipografía Figma: 14px / Regular / 140% */
     font-family: var(--font-mono);
-    font-size: 0.875rem;   /* 14px */
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 140%;
-    
-    /* Espaciado Figma: Top/Bot 8px, Left 40px, Right 20px */
-    padding: 8px 20px 8px 40px; 
-    
-    /* Color por defecto */
+    padding: 8px 20px 8px 40px;
     color: var(--white);
     transition: background-color 0.2s;
 }
 
 .nav-item:hover {
-    background-color: var(--grey-hover); /* #2F2F2F */
-    color: var(--white); /* Se mantiene blanco */
+    background-color: var(--grey-hover);
+    color: var(--white);
 }
 
 .nav-item.active {
-    background-color: var(--grey-hover); /* #2F2F2F */
-    color: var(--acid); /* #CCFF00 (Verde Ácido) */
+    background-color: var(--grey-hover);
+    color: var(--acid);
 }
 
-/* ESTADO DISABLED (Próximamente) */
 .nav-item.disabled {
     cursor: not-allowed;
-    /* Opcional: Si quieres que se note un poco menos, baja la opacidad, 
-       pero si quieres contraste puro, déjalo así */
-    opacity: 0.5; 
+    opacity: 0.5;
 }
 
-/* Trama rallada decorativa (Stripes) */
+/* Elementos decorativos Sidebar */
 .stripe-bar {
-    height: 32px; /* Según captura */
+    height: 32px;
     width: 100%;
-    
-    /* Patrón rallado: Negro y Verde (o el color que prefieras de la trama) */
-    /* Si en la captura era rosa/negro por debugging, aquí pongo el estilo final Acid/Black */
     background-image: repeating-linear-gradient(
         -45deg,
         transparent,
@@ -1342,42 +1024,36 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
         var(--acid) 4px,
         var(--acid) 5px
     );
-    
-    /* Borde superior e inferior para separar visualmente si es necesario */
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
-    
-    margin: 0; /* Sin margen externo, pega con los elementos */
+    margin: 0;
 }
 
-/* Links externos en sidebar (Repositorios) */
 .sidebar-link {
-    /* Hereda estilos base de nav-item para consistencia */
     display: block;
     width: 100%;
     text-align: left;
     font-family: var(--font-mono);
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 140%;
     color: var(--white);
     padding: 8px 20px 8px 40px;
     text-decoration: underline;
-    text-decoration-color: #555; /* Subrayado sutil */
+    text-decoration-color: #555;
 }
 .sidebar-link:hover {
     background-color: var(--grey-hover);
     color: var(--acid);
 }
 
-/* --- CONTENIDO DERECHA --- */
+
+/* 10.3 Contenido (Derecha) */
 .explorer-content {
     background-color: var(--white);
     padding: 3rem;
     position: relative;
-
-    /* GENERADOR DE PUNTOS CSS */
-    /* Crea un punto gris de 1.5px cada 24px de distancia */
+    /* Generador de puntos CSS */
     background-image: radial-gradient(
         #D1D1D1 1.5px, 
         transparent 1.5px
@@ -1385,34 +1061,30 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     background-size: 24px 24px;
 }
 
-/* Título de Sección con caja negra/trama */
+/* Header de la sección (Caja Negra) */
 .content-header-box {
-    background-color: var(--black); /* Negro suave #1A1A1A */
+    background-color: var(--black);
     color: var(--acid);
-    
-    /* Espaciado */
     padding: 1.5rem 2rem;
     margin-bottom: 3rem;
-    
-    /* Tipografía */
     font-family: var(--font-display);
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    
-    /* EL CAMBIO: Borde Blanco + Sombra Negra */
     border: 1px solid var(--white);
-    box-shadow: 4px 4px 0 0 var(--black); 
+    box-shadow: 4px 4px 0 0 var(--black);
 }
 
-/* Bloques de Texto */
+/* Bloques de características */
 .feature-block {
     margin-bottom: 4rem;
-    border-bottom: 1px dashed #ccc; /* Separador sutil */
+    border-bottom: 1px dashed #ccc;
     padding-bottom: 2rem;
 }
-.feature-block:last-child { border-bottom: none; }
+.feature-block:last-child {
+    border-bottom: none;
+}
 
 .feature-top-row {
     display: flex;
@@ -1450,23 +1122,28 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     max-width: 100%;
 }
 
-/* Paneles (Lógica JS) */
+
+/* 10.4 Lógica de Paneles (Display) */
 .explorer-panel {
     display: none;
     animation: fadeIn 0.3s ease;
 }
-.explorer-panel.active { display: block; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.explorer-panel.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-
-/* --- RESPONSIVE MOBILE --- */
+/* 10.5 Responsive Specs */
 @media (max-width: 900px) {
     .explorer-grid {
-        grid-template-columns: 1fr; /* Una columna */
-        display: block; /* Rompemos el grid */
+        grid-template-columns: 1fr;
+        display: block;
     }
 
-    /* Sidebar se convierte en Top Nav Scrollable */
+    /* Sidebar convertida en menú horizontal scrollable */
     .explorer-sidebar {
         width: 100%;
         height: auto;
@@ -1476,14 +1153,17 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
         background-color: var(--black);
         padding: 0.5rem;
         display: flex;
-        overflow-x: auto; /* SCROLL HORIZONTAL */
-        white-space: nowrap; /* Evitar salto de línea */
+        flex-direction: row; /* Cambio clave */
+        overflow-x: auto;
+        white-space: nowrap;
         border-bottom: 1px solid var(--acid);
     }
-    
-    /* Ocultamos títulos de sección en móvil para ahorrar espacio */
-    .sidebar-section-title, .stripe-bar, .sidebar-link {
-        display: none; 
+
+    /* Ocultar elementos decorativos en móvil */
+    .sidebar-section-title,
+    .stripe-bar,
+    .sidebar-link {
+        display: none;
     }
     
     .nav-item {
