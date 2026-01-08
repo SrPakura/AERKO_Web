@@ -224,6 +224,7 @@ h1, h2, h3, h4, .h0-title {
     height: auto;
     position: relative;
     background-color: var(--white); /* Añadido para asegurar consistencia */
+    z-index: 1000 
 }
 
 .logo-box {
@@ -1147,8 +1148,8 @@ h1, h2, h3, .h0-title, .h1-title, .h2-title, .h3-title {
     .explorer-sidebar {
         width: 100%;
         height: auto;
-        position: sticky;
-        top: 0;
+        position: relative;
+        top: auto;
         z-index: 50;
         background-color: var(--black);
         padding: 0.5rem;
