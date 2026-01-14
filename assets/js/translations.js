@@ -178,7 +178,7 @@ es: {
         spec_desc_ia: "Gracias a MediaPipe, una IA ligera capaz de correr en tu móvil, podrás analizar los ángulos de todos los ejercicios para confirmar que haces bien la técnica, además del ROM y Tempo en los 3 básicos del powerlifting.",
 
         spec_title_flow: "Smart Flow",
-        spec_desc_flow: "Elije la rutina que te toque, el ejercicio por el que más te apetezca empezar, y disfruta de la flexibilidad que ofrece el sistema. Desde las recomendaciones de peso para la sobrecarga o la opción de grabar el ejercicio para analizar después, hasta un cronometro y registro sencillo de tus datos para que no tengas que salir de la app en ningún momento. Todas las comodidades en el mismo lugar.",
+        spec_desc_flow: "Elige la rutina que te toque, el ejercicio por el que más te apetezca empezar, y disfruta de la flexibilidad que ofrece el sistema. Desde las recomendaciones de peso para la sobrecarga o la opción de grabar el ejercicio para analizar después, hasta un cronometro y registro sencillo de tus datos para que no tengas que salir de la app en ningún momento. Todas las comodidades en el mismo lugar.",
 
         spec_title_1rm: "Calculo de 1RM",
         spec_desc_1rm: "Introduce las repeticiones, el peso, y deja que la app use la formula más precisa para tu caso.",
