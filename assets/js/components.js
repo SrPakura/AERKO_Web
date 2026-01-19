@@ -52,7 +52,7 @@ function renderHeader() {
         <nav class="nav-links">
             ${navButtonsHTML}
             <!-- Botón Fijo a Maze -->
-            <button class="nav-btn btn-acid body-label" onclick="window.open('https://t.maze.co/487183250', '_blank')" data-i18n="btn_join">CONTRIBUIR</button>
+            <button class="nav-btn btn-acid body-label" data-i18n="btn_join">PROXIMAMENTE</button>
         </nav>
         
         <!-- Mobile Toggle -->
