@@ -11,7 +11,7 @@ es: {
         hero_phase: "FASE_PRUEBAS_USABILIDAD",
         hero_title: "COMPILA<br>TU<br>ESFUERZO",
         hero_desc: "Tu cuerpo genera Terabytes de datos. Deja de regalárselos a apps 'bonitas'. AERKO_ es nutrición y biomecánica sin conexión a internet: tus datos viven en tu dispositivo. <br> <br> Código abierto, privacidad absoluta y carga instantánea.",
-        btn_join: "CONTRIBUIR_(GRATIS)",
+        btn_join: "PRÓXIMAMENTE...",
         btn_source: "DIARIO_DEV", 
 
         hero_code_context: "> CONTEXTO: TFM_PROYECTO_FINAL",
@@ -51,7 +51,7 @@ es: {
         card3_status: "ESTADO: PENDIENTE_REQUISITOS",
 
         input_title: "DEBUGGEA_CONMIGO",
-        input_desc: "> Proyecto nacido como TFM. <br> > Desarrollado por un solo estudiante.<br>> Tu feedback ha compilado las funciones de la Local_PWA.<br>> ACTUALMENTE: Tests de usabilidad en Maze.",
+        input_desc: "> Proyecto nacido como TFM. <br> > Desarrollado por un solo estudiante.<br>> Tu feedback ha compilado las funciones de la Local_PWA.<br>> 2 problemas graves de UX solucionados.",
         btn_contribute: "[ CONTRIBUIR_DATOS ]",
         btn_read_features: "> LEER_FUNCIONES_",
 
@@ -78,7 +78,7 @@ es: {
 
         // COLUMNA 1
         mani_01_title: "01_PROTOCOLO_AERKO",
-        mani_01_text: "Esto no es una startup: no hay inversores, no hay departamento de marketing, y desde luego, no hay intención de vender tus datos para comprarme un yate. \n\n Esto es un proyecto open source, pero más que eso, mi declaración de guerra contra el software mediocre, y las corporaciones que se aprovechan del usuario para enriquecerse a costa de su privacidad. \n\n Soy un diseñador UX/UI y WebDev, pero también una persona que está harta de aplicaciones como Myfitnesspal, hevy, u otras aplicaciones cuyo modelo de negocio es sacar tus datos, secuestrarlos, intentar cobrarte una suscripción, y todo eso para acabar vendiendo los datos igualmente. \n\n Sí, claro que el Bloc de notas y Excel funcionan, pero son tediosos. Por eso mismo nace Aerko, mi primer proyecto open source y la aplicación con la que quiero ofrecer a todo el mundo, no solo algo mejor que esas aplicaciones, sino la herramienta definitiva, libre, privada y potente. \n\n Mi filosofía es muy sencilla ofrecer: algo ligero, realmente bueno, orientado a las personas y no a sus cuentas bancarias, Y como diría mi referente, Linus Torvalds, libre para toda la comunidad. \n\n Por eso, desde el diseño neo-brutalista (pensado para la velocidad y claridad) hasta el código (construido en JS Vanilla puro, renunciando a la comodidad de los frameworks pesados en favor del rendimiento extremo), todo está hecho para que el usuario final tenga el control absoluto. \n\n Úsalo. Edítalo. Hazlo tuyo.",
+        mani_01_text: "Esto no es una startup: no hay inversores, no hay departamento de marketing, y desde luego, no hay intención de vender tus datos para comprarme un yate. \n\n Esto es un proyecto open source, pero más que eso, mi declaración de guerra contra el software mediocre, y las corporaciones que se aprovechan del usuario para enriquecerse a costa de su privacidad. \n\n Soy un diseñador UX/UI y WebDev, pero también una persona que está harta de aplicaciones como Myfitnesspal, hevy, u otras aplicaciones cuyo modelo de negocio es sacar tus datos, secuestrarlos, intentar cobrarte una suscripción, y todo eso para acabar vendiendo los datos igualmente. \n\n Sí, claro que el Bloc de notas y Excel funcionan, pero son tediosos. Por eso mismo nace Aerko, mi primer proyecto open source y la aplicación con la que quiero ofrecer a todo el mundo, no solo algo mejor que esas aplicaciones, sino la herramienta definitiva, libre, privada y potente. \n\n Mi filosofía es muy sencilla ofrecer: algo ligero, realmente bueno, orientado a las personas y no a sus cuentas bancarias, Y como diría mi referente, Linus Torvalds, libre para toda la comunidad. \n\n Por eso, desde el diseño neo-brutalista (pensado para la velocidad y claridad) hasta el código (construido en JS semi-Vanilla (se usan las librerías mínimas), renunciando a la comodidad de los frameworks pesados en favor del rendimiento extremo), todo está hecho para que el usuario final tenga el control absoluto. \n\n Úsalo. Edítalo. Hazlo tuyo.",
 
         // COLUMNA 2 (Arriba Derecha)
         mani_02_title: "02_Privacidad",
@@ -215,7 +215,7 @@ en: {
         hero_phase: "PHASE_USABILITY_TESTING",
         hero_title: "COMPILE<br>YOUR<br>EFFORT",
         hero_desc: "Your body generates Terabytes of data. Stop donating it to 'candy-UI' apps. AERKO_ is fuel and biomechanics with no internet connection: your data lives on your silicon. <br> <br> Open source, absolute privacy, and zero latency.",
-        btn_join: "CONTRIBUTE_(FREE)",
+        btn_join: "COMING SOON...",
         btn_source: "DEV_LOG", 
 
         hero_code_context: "> CONTEXT: FINAL_DEGREE_PROJECT",
@@ -255,7 +255,7 @@ en: {
         card3_status: "STATUS: PENDING_REQUIREMENTS",
 
         input_title: "DEBUG_WITH_ME",
-        input_desc: "> Project born as a Master's Thesis. <br> > Developed by a single student.<br>> Your feedback compiled the Local_PWA features.<br>> CURRENTLY: Running usability tests on Maze.",
+        input_desc: "> Project born as a Master's Thesis. <br> > Developed by a single student.<br>> Your feedback compiled the Local_PWA features.<br>> 2 severe UX issues fixed.",
         btn_contribute: "[ CONTRIBUTE_DATA ]",
         btn_read_features: "> READ_SPECS_",
 
@@ -282,7 +282,7 @@ en: {
 
         // COLUMN 1
         mani_01_title: "01_AERKO_PROTOCOL",
-        mani_01_text: "This is not a startup: zero investors, zero marketing department, and certainly no intention of selling your data to buy myself a yacht. \n\n This is an open-source project, but more than that, it is my declaration of war against mediocre software and corporations that exploit users to get rich at the expense of their privacy. \n\n I am a UX/UI designer and WebDev, but also a person who is fed up with apps like MyFitnessPal, Hevy, or others whose business model is data hijacking, holding it hostage behind a subscription, and selling it anyway. \n\n Yes, Notepad and Excel work, but they are tedious. That is exactly why Aerko was born: my first open-source project and the definitive tool I want to offer everyone—free, private, and powerful. \n\n My philosophy is simple: ship something lightweight, genuinely good, oriented towards people and not their bank accounts. And as my reference Linus Torvalds would say, free for the whole community. \n\n That's why, from the neo-brutalist design (optimized for speed and clarity) to the code (built in pure Vanilla JS, rejecting heavy frameworks in favor of extreme performance), everything is architected so the end-user has absolute control. \n\n Use it. Fork it. Make it yours.",
+        mani_01_text: "This is not a startup: zero investors, zero marketing department, and certainly no intention of selling your data to buy myself a yacht. \n\n This is an open-source project, but more than that, it is my declaration of war against mediocre software and corporations that exploit users to get rich at the expense of their privacy. \n\n I am a UX/UI designer and WebDev, but also a person who is fed up with apps like MyFitnessPal, Hevy, or others whose business model is data hijacking, holding it hostage behind a subscription, and selling it anyway. \n\n Yes, Notepad and Excel work, but they are tedious. That is exactly why Aerko was born: my first open-source project and the definitive tool I want to offer everyone—free, private, and powerful. \n\n My philosophy is simple: ship something lightweight, genuinely good, oriented towards people and not their bank accounts. And as my reference Linus Torvalds would say, free for the whole community. \n\n That's why, from the neo-brutalist design (optimized for speed and clarity) to the code (built in semi-Vanilla JS (minimal libraries used), rejecting heavy frameworks in favor of extreme performance), everything is architected so the end-user has absolute control. \n\n Use it. Fork it. Make it yours.",
 
         // COLUMN 2
         mani_02_title: "02_Privacy",
@@ -419,7 +419,7 @@ de: {
         hero_phase: "PHASE_USABILITY_TESTS",
         hero_title: "KOMPILIEREN<br>SIE IHRE<br>LEISTUNG",
         hero_desc: "Ihr Körper generiert Terabytes an Daten. Geben Sie diese nicht an 'hübsche' Apps weiter. AERKO_ ist Ernährung und Biomechanik ohne Internetverbindung: Ihre Daten bleiben auf Ihrem Gerät. <br> <br> Open Source, absolute Privatsphäre und sofortige Ladezeiten.",
-        btn_join: "MITWIRKEN_(GRATIS)",
+        btn_join: "DEMNÄCHST...",
         btn_source: "DEV_LOG", 
 
         hero_code_context: "> KONTEXT: MASTERARBEIT",
@@ -459,7 +459,7 @@ de: {
         card3_status: "STATUS: ANFORDERUNGEN_AUSSTEHEND",
 
         input_title: "DEBUGGEN_SIE_MIT",
-        input_desc: "> Projekt entstanden als Masterarbeit. <br> > Entwickelt von einem einzelnen Studenten.<br>> Ihr Feedback hat die Funktionen der Local_PWA kompiliert.<br>> AKTUELL: Usability-Tests auf Maze.",
+        input_desc: "> Projekt entstanden als Masterarbeit. <br> > Entwickelt von einem einzelnen Studenten.<br>> Ihr Feedback hat die Funktionen der Local_PWA kompiliert.<br>> 2 schwere UX-Probleme behoben.",
         btn_contribute: "[ DATEN_BEITRAGEN ]",
         btn_read_features: "> FUNKTIONEN_LESEN_",
 
@@ -485,7 +485,7 @@ de: {
 
         // COLUMN 1
         mani_01_title: "01_AERKO_PROTOKOLL",
-        mani_01_text: "Dies ist kein Startup: keine Investoren, keine Marketingabteilung und absolut keine Absicht, Ihre Daten zu verkaufen. \n\n Dies ist ein Open-Source-Projekt, aber mehr als das, es ist meine Kriegserklärung an mittelmäßige Software und Konzerne, die Nutzer ausbeuten, um sich auf Kosten ihrer Privatsphäre zu bereichern. \n\n Ich bin UX/UI-Designer und Webentwickler, aber auch eine Person, die genug hat von Apps wie MyFitnessPal, Hevy oder anderen, deren Geschäftsmodell auf Datenextraktion und Geiselnahme durch Abonnements basiert. \n\n Ja, Notepad und Excel funktionieren, aber sie sind ineffizient. Genau deshalb wurde Aerko geboren: mein erstes Open-Source-Projekt und das definitive Werkzeug, das ich jedem anbieten möchte – kostenlos, privat und leistungsstark. \n\n Meine Philosophie ist simpel: Etwas Leichtgewichtiges und wirklich Gutes liefern, orientiert an Menschen, nicht an Bankkonten. Und wie mein Vorbild Linus Torvalds sagen würde: frei für die gesamte Gemeinschaft. \n\n Deshalb ist alles – vom neo-brutalistischen Design (optimiert für Geschwindigkeit und Klarheit) bis zum Code (reines Vanilla JS, Verzicht auf schwere Frameworks zugunsten extremer Performance) – so architekuriert, dass der Endnutzer die absolute Kontrolle hat. \n\n Nutzen Sie es. Bearbeiten Sie es. Machen Sie es zu Ihrem Eigenen.",
+        mani_01_text: "Dies ist kein Startup: keine Investoren, keine Marketingabteilung und absolut keine Absicht, Ihre Daten zu verkaufen. \n\n Dies ist ein Open-Source-Projekt, aber mehr als das, es ist meine Kriegserklärung an mittelmäßige Software und Konzerne, die Nutzer ausbeuten, um sich auf Kosten ihrer Privatsphäre zu bereichern. \n\n Ich bin UX/UI-Designer und Webentwickler, aber auch eine Person, die genug hat von Apps wie MyFitnessPal, Hevy oder anderen, deren Geschäftsmodell auf Datenextraktion und Geiselnahme durch Abonnements basiert. \n\n Ja, Notepad und Excel funktionieren, aber sie sind ineffizient. Genau deshalb wurde Aerko geboren: mein erstes Open-Source-Projekt und das definitive Werkzeug, das ich jedem anbieten möchte – kostenlos, privat und leistungsstark. \n\n Meine Philosophie ist simpel: Etwas Leichtgewichtiges und wirklich Gutes liefern, orientiert an Menschen, nicht an Bankkonten. Und wie mein Vorbild Linus Torvalds sagen würde: frei für die gesamte Gemeinschaft. \n\n Deshalb ist alles – vom neo-brutalistischen Design (optimiert für Geschwindigkeit und Klarheit) bis zum Code (erstellt in semi-Vanilla JS (minimale Bibliotheken verwendet), Verzicht auf schwere Frameworks zugunsten extremer Performance) – so architekuriert, dass der Endnutzer die absolute Kontrolle hat. \n\n Nutzen Sie es. Bearbeiten Sie es. Machen Sie es zu Ihrem Eigenen.",
 
         // COLUMN 2
         mani_02_title: "02_Datenschutz",
@@ -622,7 +622,7 @@ fr: {
         hero_phase: "PHASE_TESTS_USABILITÉ",
         hero_title: "COMPILEZ<br>VOTRE<br>EFFORT",
         hero_desc: "Votre corps génère des téraoctets de données. Arrêtez de les offrir aux applications 'jolies' des GAFAM. AERKO_ est de la nutrition et de la biomécanique sans connexion internet : vos données résident sur votre machine. <br> <br> Code source ouvert, confidentialité absolue et latence zéro.",
-        btn_join: "CONTRIBUER_(GRATUIT)",
+        btn_join: "BIENTÔT...",
         btn_source: "JOURNAL_DEV", 
 
         hero_code_context: "> CONTEXTE: PROJET_FIN_ÉTUDES",
@@ -662,7 +662,7 @@ fr: {
         card3_status: "ÉTAT: EN_ATTENTE_DE_REQUIS",
 
         input_title: "DÉBOGUEZ_AVEC_MOI",
-        input_desc: "> Projet né comme Mémoire de Fin d'Études. <br> > Développé par un seul étudiant.<br>> Vos retours ont compilé les fonctions de la Local_PWA.<br>> ACTUELLEMENT: Tests d'usabilité sur Maze.",
+        input_desc: "> Projet né comme Mémoire de Fin d'Études. <br> > Développé par un seul étudiant.<br>> Vos retours ont compilé les fonctions de la Local_PWA.<br>> 2 problèmes UX graves résolus.",
         btn_contribute: "[ CONTRIBUER_DONNÉES ]",
         btn_read_features: "> LIRE_FONCTIONNALITÉS_",
 
@@ -688,7 +688,7 @@ fr: {
 
         // COLUMN 1
         mani_01_title: "01_PROTOCOLE_AERKO",
-        mani_01_text: "Ceci n'est pas une startup : aucun investisseur, aucun département marketing, et certainement aucune intention de vendre vos données pour m'acheter un yacht. \n\n C'est un projet open source, mais plus que cela, c'est ma déclaration de guerre contre les logiciels médiocres et les corporations qui exploitent l'utilisateur pour s'enrichir au détriment de sa vie privée. \n\n Je suis designer UX/UI et WebDev, mais aussi une personne lassée des applications comme MyFitnessPal, Hevy ou autres, dont le modèle économique est la prise d'otage de données, pour tenter de vous facturer un abonnement et finir par vendre les données de toute façon. \n\n Oui, le Bloc-notes et Excel fonctionnent, mais ils sont fastidieux. C'est exactement pour cela qu'Aerko est né : mon premier projet libre et l'outil définitif que je veux offrir à tous : gratuit, privé et puissant. \n\n Ma philosophie est simple : livrer quelque chose de léger, de vraiment bon, orienté vers les humains et non leurs comptes bancaires. Et comme le dirait ma référence Linus Torvalds, libre pour toute la communauté. \n\n C'est pourquoi, du design néo-brutaliste (optimisé pour la vitesse et la clarté) au code (construit en pur Vanilla JS, rejetant le confort des frameworks lourds en faveur d'une performance extrême), tout est architecturé pour que l'utilisateur final ait le contrôle absolu. \n\n Utilisez-le. Forkez-le. Appropriez-le-vous.",
+        mani_01_text: "Ceci n'est pas une startup : aucun investisseur, aucun département marketing, et certainement aucune intention de vendre vos données pour m'acheter un yacht. \n\n C'est un projet open source, mais plus que cela, c'est ma déclaration de guerre contre les logiciels médiocres et les corporations qui exploitent l'utilisateur pour s'enrichir au détriment de sa vie privée. \n\n Je suis designer UX/UI et WebDev, mais aussi une personne lassée des applications comme MyFitnessPal, Hevy ou autres, dont le modèle économique est la prise d'otage de données, pour tenter de vous facturer un abonnement et finir par vendre les données de toute façon. \n\n Oui, le Bloc-notes et Excel fonctionnent, mais ils sont fastidieux. C'est exactement pour cela qu'Aerko est né : mon premier projet libre et l'outil définitif que je veux offrir à tous : gratuit, privé et puissant. \n\n Ma philosophie est simple : livrer quelque chose de léger, de vraiment bon, orienté vers les humains et non leurs comptes bancaires. Et comme le dirait ma référence Linus Torvalds, libre pour toute la communauté. \n\n C'est pourquoi, du design néo-brutaliste (optimisé pour la vitesse et la clarté) au code (construit en semi-Vanilla JS (bibliothèques minimales utilisées), rejetant le confort des frameworks lourds en faveur d'une performance extrême), tout est architecturé pour que l'utilisateur final ait le contrôle absolu. \n\n Utilisez-le. Forkez-le. Appropriez-le-vous.",
 
         // COLUMN 2
         mani_02_title: "02_Confidentialité",
@@ -825,7 +825,7 @@ pt: {
         hero_phase: "FASE_TESTES_USABILIDADE",
         hero_title: "COMPILE<br>SEU<br>ESFORÇO",
         hero_desc: "Seu corpo gera Terabytes de dados. Pare de entregá-los para apps 'enfeitados'. AERKO_ é nutrição e biomecânica sem conexão com a internet: seus dados moram no seu aparelho. <br> <br> Código aberto, privacidade absoluta e zero latência.",
-        btn_join: "CONTRIBUIR_(GRÁTIS)",
+        btn_join: "EM BREVE...",
         btn_source: "DEV_LOG", 
 
         hero_code_context: "> CONTEXTO: TCC_PROJETO_FINAL",
@@ -865,7 +865,7 @@ pt: {
         card3_status: "STATUS: AGUARDANDO_REQUISITOS",
 
         input_title: "DEBUGUE_COMIGO",
-        input_desc: "> Projeto nascido como TCC (Trabalho de Conclusão de Curso). <br> > Desenvolvido por um único estudante.<br>> Seu feedback compilou as funções da Local_PWA.<br>> ATUALMENTE: Testes de usabilidade no Maze.",
+        input_desc: "> Projeto nascido como TCC (Trabalho de Conclusão de Curso). <br> > Desenvolvido por um único estudante.<br>> Seu feedback compilou as funções da Local_PWA.<br>> 2 problemas graves de UX resolvidos",
         btn_contribute: "[ CONTRIBUIR_DADOS ]",
         btn_read_features: "> LER_RECURSOS_",
 
@@ -891,7 +891,7 @@ pt: {
 
         // COLUMNA 1
         mani_01_title: "01_PROTOCOLO_AERKO",
-        mani_01_text: "Isso não é uma startup: zero investidores, zero departamento de marketing e, com certeza, zero intenção de vender seus dados para comprar um iate. \n\n Este é um projeto open source, mas mais que isso, é minha declaração de guerra contra softwares medíocres e corporações que exploram o usuário para enriquecer às custas da sua privacidade. \n\n Sou designer UX/UI e Dev Web, mas também alguém farto de apps como MyFitnessPal, Hevy ou outros cujo modelo de negócio é sequestrar seus dados, mantê-los reféns de uma assinatura e vendê-los de qualquer jeito. \n\n Sim, o Bloco de Notas e o Excel funcionam, mas são chatos. É exatamente por isso que o Aerko nasceu: meu primeiro projeto open source e a ferramenta definitiva que quero oferecer a todos — grátis, privada e potente. \n\n Minha filosofia é simples: entregar algo leve, realmente bom, orientado a pessoas e não a contas bancárias. E como diria minha referência Linus Torvalds, livre para toda a comunidade. \n\n Por isso, do design neo-brutalista (otimizado para velocidade e clareza) ao código (construído em puro Vanilla JS, rejeitando frameworks pesados em favor de performance extrema), tudo é arquitetado para que o usuário final tenha o controle absoluto. \n\n Use. Faça um Fork. Torne-o seu.",
+        mani_01_text: "Isso não é uma startup: zero investidores, zero departamento de marketing e, com certeza, zero intenção de vender seus dados para comprar um iate. \n\n Este é um projeto open source, mas mais que isso, é minha declaração de guerra contra softwares medíocres e corporações que exploram o usuário para enriquecer às custas da sua privacidade. \n\n Sou designer UX/UI e Dev Web, mas também alguém farto de apps como MyFitnessPal, Hevy ou outros cujo modelo de negócio é sequestrar seus dados, mantê-los reféns de uma assinatura e vendê-los de qualquer jeito. \n\n Sim, o Bloco de Notas e o Excel funcionam, mas são chatos. É exatamente por isso que o Aerko nasceu: meu primeiro projeto open source e a ferramenta definitiva que quero oferecer a todos — grátis, privada e potente. \n\n Minha filosofia é simples: entregar algo leve, realmente bom, orientado a pessoas e não a contas bancárias. E como diria minha referência Linus Torvalds, livre para toda a comunidade. \n\n Por isso, do design neo-brutalista (otimizado para velocidade e clareza) ao código (construído em semi-Vanilla JS (bibliotecas mínimas usadas), rejeitando frameworks pesados em favor de performance extrema), tudo é arquitetado para que o usuário final tenha o controle absoluto. \n\n Use. Faça um Fork. Torne-o seu.",
 
         // COLUMNA 2
         mani_02_title: "02_Privacidade",
